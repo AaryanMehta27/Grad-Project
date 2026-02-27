@@ -1,0 +1,1017 @@
+ONET_SOC_Code,Base_SOC,ONET_Title,FO_Score,FO_Probability,FO_Occupation,Mapping_Method
+11-1011.00,11-1011,Chief Executives,1.5,0.015,Chief Executives,direct
+11-1011.03,11-1011,Chief Sustainability Officers,1.5,0.015,Chief Executives,direct
+11-1021.00,11-1021,General and Operations Managers,9.1,0.091,Gaming Managers,direct
+11-1031.00,11-1031,Legislators,5.3,0.053,[Group avg: 11-10],group_avg
+11-2011.00,11-2011,Advertising and Promotions Managers,3.9,0.039,Advertising and Promotions Managers,direct
+11-2021.00,11-2021,Marketing Managers,1.4,0.014,Marketing Managers,direct
+11-2022.00,11-2022,Sales Managers,1.3,0.013,Sales Managers,direct
+11-2032.00,11-2032,Public Relations Managers,1.5,0.015,Public Relations and Fundraising Managers,direct
+11-2033.00,11-2033,Fundraising Managers,2.025,0.02025,[Group avg: 11-20],group_avg
+11-3012.00,11-3012,Administrative Services Managers,73.0,0.73,Administrative Services Managers,direct
+11-3013.00,11-3013,Facilities Managers,24.733333333333334,0.24733333333333335,[Group avg: 11-30],group_avg
+11-3013.01,11-3013,Security Managers,24.733333333333334,0.24733333333333335,[Group avg: 11-30],group_avg
+11-3021.00,11-3021,Computer and Information Systems Managers,3.5,0.035,Computer and Information Systems Managers,direct
+11-3031.00,11-3031,Financial Managers,6.9,0.069,Financial Managers,direct
+11-3031.01,11-3031,Treasurers and Controllers,6.9,0.069,Financial Managers,direct
+11-3031.03,11-3031,Investment Fund Managers,6.9,0.069,Financial Managers,direct
+11-3051.00,11-3051,Industrial Production Managers,3.0,0.03,Industrial Production Managers,direct
+11-3051.01,11-3051,Quality Control Systems Managers,3.0,0.03,Industrial Production Managers,direct
+11-3051.02,11-3051,Geothermal Production Managers,3.0,0.03,Industrial Production Managers,direct
+11-3051.03,11-3051,Biofuels Production Managers,3.0,0.03,Industrial Production Managers,direct
+11-3051.04,11-3051,Biomass Power Plant Managers,3.0,0.03,Industrial Production Managers,direct
+11-3051.06,11-3051,Hydroelectric Production Managers,3.0,0.03,Industrial Production Managers,direct
+11-3061.00,11-3061,Purchasing Managers,3.0,0.03,Purchasing Managers,direct
+11-3071.00,11-3071,"Transportation, Storage, and Distribution Managers",59.0,0.59,Transportation; Storage; and Distribution Managers,direct
+11-3071.04,11-3071,Supply Chain Managers,59.0,0.59,Transportation; Storage; and Distribution Managers,direct
+11-3111.00,11-3111,Compensation and Benefits Managers,96.0,0.96,Compensation and Benefits Managers,direct
+11-3121.00,11-3121,Human Resources Managers,0.55,0.0055,Human Resources Managers,direct
+11-3131.00,11-3131,Training and Development Managers,0.63,0.0063,Training and Development Managers,direct
+11-9013.00,11-9013,"Farmers, Ranchers, and Other Agricultural Managers",4.7,0.047,Farmers; Ranchers; and Other Agricultural Managers,direct
+11-9021.00,11-9021,Construction Managers,7.1,0.071,Construction Managers,direct
+11-9031.00,11-9031,"Education and Childcare Administrators, Preschool and Daycare",0.46,0.0046,Education Administrators; Elementary and Secondary School,direct
+11-9032.00,11-9032,"Education Administrators, Kindergarten through Secondary",3.378571428571429,0.03378571428571429,[Group avg: 11-90],group_avg
+11-9033.00,11-9033,"Education Administrators, Postsecondary",1.0,0.01,Education Administrators; Postsecondary,direct
+11-9039.00,11-9039,"Education Administrators, All Other",3.378571428571429,0.03378571428571429,[Group avg: 11-90],group_avg
+11-9041.00,11-9041,Architectural and Engineering Managers,1.7,0.017,Architectural and Engineering Managers,direct
+11-9041.01,11-9041,Biofuels/Biodiesel Technology and Product Development Managers,1.7,0.017,Architectural and Engineering Managers,direct
+11-9051.00,11-9051,Food Service Managers,8.3,0.083,Food Service Managers,direct
+11-9071.00,11-9071,Gambling Managers,3.378571428571429,0.03378571428571429,[Group avg: 11-90],group_avg
+11-9072.00,11-9072,"Entertainment and Recreation Managers, Except Gambling",3.378571428571429,0.03378571428571429,[Group avg: 11-90],group_avg
+11-9081.00,11-9081,Lodging Managers,0.39,0.0039,Lodging Managers,direct
+11-9111.00,11-9111,Medical and Health Services Managers,0.73,0.0073,Medical and Health Services Managers,direct
+11-9121.00,11-9121,Natural Sciences Managers,1.8,0.018,Natural Sciences Managers,direct
+11-9121.01,11-9121,Clinical Research Coordinators,1.8,0.018,Natural Sciences Managers,direct
+11-9121.02,11-9121,Water Resource Specialists,1.8,0.018,Natural Sciences Managers,direct
+11-9131.00,11-9131,Postmasters and Mail Superintendents,75.0,0.75,Postmasters and Mail Superintendents,direct
+11-9141.00,11-9141,"Property, Real Estate, and Community Association Managers",81.0,0.81,Property; Real Estate; and Community Association Managers,direct
+11-9151.00,11-9151,Social and Community Service Managers,0.67,0.0067,Social and Community Service Managers,direct
+11-9161.00,11-9161,Emergency Management Directors,0.3,0.003,Emergency Management Directors,direct
+11-9171.00,11-9171,Funeral Home Managers,26.357142857142858,0.26357142857142857,[Group avg: 11-91],group_avg
+11-9179.00,11-9179,"Personal Service Managers, All Other",26.357142857142858,0.26357142857142857,[Group avg: 11-91],group_avg
+11-9179.01,11-9179,Fitness and Wellness Coordinators,26.357142857142858,0.26357142857142857,[Group avg: 11-91],group_avg
+11-9179.02,11-9179,Spa Managers,26.357142857142858,0.26357142857142857,[Group avg: 11-91],group_avg
+11-9199.00,11-9199,"Managers, All Other",25.0,0.25,Managers; All Other,direct
+11-9199.01,11-9199,Regulatory Affairs Managers,25.0,0.25,Managers; All Other,direct
+11-9199.02,11-9199,Compliance Managers,25.0,0.25,Managers; All Other,direct
+11-9199.08,11-9199,Loss Prevention Managers,25.0,0.25,Managers; All Other,direct
+11-9199.09,11-9199,Wind Energy Operations Managers,25.0,0.25,Managers; All Other,direct
+11-9199.10,11-9199,Wind Energy Development Managers,25.0,0.25,Managers; All Other,direct
+11-9199.11,11-9199,Brownfield Redevelopment Specialists and Site Managers,25.0,0.25,Managers; All Other,direct
+13-1011.00,13-1011,"Agents and Business Managers of Artists, Performers, and Athletes",24.0,0.24,Agents and Business Managers of Artists; Performers; and Athletes,direct
+13-1021.00,13-1021,"Buyers and Purchasing Agents, Farm Products",87.0,0.87,Buyers and Purchasing Agents; Farm Products,direct
+13-1022.00,13-1022,"Wholesale and Retail Buyers, Except Farm Products",29.0,0.29,Wholesale and Retail Buyers; Except Farm Products,direct
+13-1023.00,13-1023,"Purchasing Agents, Except Wholesale, Retail, and Farm Products",77.0,0.77,Purchasing Agents; Except Wholesale; Retail; and Farm Products,direct
+13-1031.00,13-1031,"Claims Adjusters, Examiners, and Investigators",98.0,0.98,Claims Adjusters; Examiners; and Investigators,direct
+13-1032.00,13-1032,"Insurance Appraisers, Auto Damage",98.0,0.98,Insurance Appraisers; Auto Damage,direct
+13-1041.00,13-1041,Compliance Officers,8.0,0.08,Compliance Officers,direct
+13-1041.01,13-1041,Environmental Compliance Inspectors,8.0,0.08,Compliance Officers,direct
+13-1041.03,13-1041,Equal Opportunity Representatives and Officers,8.0,0.08,Compliance Officers,direct
+13-1041.04,13-1041,Government Property Inspectors and Investigators,8.0,0.08,Compliance Officers,direct
+13-1041.06,13-1041,Coroners,8.0,0.08,Compliance Officers,direct
+13-1041.07,13-1041,Regulatory Affairs Specialists,8.0,0.08,Compliance Officers,direct
+13-1041.08,13-1041,Customs Brokers,8.0,0.08,Compliance Officers,direct
+13-1051.00,13-1051,Cost Estimators,57.0,0.57,Cost Estimators,direct
+13-1071.00,13-1071,Human Resources Specialists,55.2,0.552,[Group avg: 13-10],group_avg
+13-1074.00,13-1074,Farm Labor Contractors,97.0,0.97,Farm Labor Contractors,direct
+13-1075.00,13-1075,Labor Relations Specialists,55.2,0.552,[Group avg: 13-10],group_avg
+13-1081.00,13-1081,Logisticians,1.2,0.012,Logisticians,direct
+13-1081.01,13-1081,Logistics Engineers,1.2,0.012,Logisticians,direct
+13-1081.02,13-1081,Logistics Analysts,1.2,0.012,Logisticians,direct
+13-1082.00,13-1082,Project Management Specialists,55.2,0.552,[Group avg: 13-10],group_avg
+13-1111.00,13-1111,Management Analysts,13.0,0.13,Management Analysts,direct
+13-1121.00,13-1121,"Meeting, Convention, and Event Planners",3.7,0.037,Meeting; Convention; and Event Planners,direct
+13-1131.00,13-1131,Fundraisers,24.850000000000005,0.24850000000000005,[Group avg: 13-11],group_avg
+13-1141.00,13-1141,"Compensation, Benefits, and Job Analysis Specialists",47.0,0.47,Compensation; Benefits; and Job Analysis Specialists,direct
+13-1151.00,13-1151,Training and Development Specialists,1.4,0.014,Training and Development Specialists,direct
+13-1161.00,13-1161,Market Research Analysts and Marketing Specialists,61.0,0.61,Market Research Analysts and Marketing Specialists,direct
+13-1161.01,13-1161,Search Marketing Strategists,61.0,0.61,Market Research Analysts and Marketing Specialists,direct
+13-1199.00,13-1199,"Business Operations Specialists, All Other",23.0,0.23,Business Operations Specialists; All Other,direct
+13-1199.04,13-1199,Business Continuity Planners,23.0,0.23,Business Operations Specialists; All Other,direct
+13-1199.05,13-1199,Sustainability Specialists,23.0,0.23,Business Operations Specialists; All Other,direct
+13-1199.06,13-1199,Online Merchants,23.0,0.23,Business Operations Specialists; All Other,direct
+13-1199.07,13-1199,Security Management Specialists,23.0,0.23,Business Operations Specialists; All Other,direct
+13-2011.00,13-2011,Accountants and Auditors,94.0,0.94,Accountants and Auditors,direct
+13-2022.00,13-2022,Appraisers of Personal and Business Property,69.23076923076923,0.6923076923076923,[Group avg: 13-20],group_avg
+13-2023.00,13-2023,Appraisers and Assessors of Real Estate,69.23076923076923,0.6923076923076923,[Group avg: 13-20],group_avg
+13-2031.00,13-2031,Budget Analysts,94.0,0.94,Budget Analysts,direct
+13-2041.00,13-2041,Credit Analysts,98.0,0.98,Credit Analysts,direct
+13-2051.00,13-2051,Financial and Investment Analysts,23.0,0.23,Financial Analysts,direct
+13-2052.00,13-2052,Personal Financial Advisors,58.0,0.58,Personal Financial Advisors,direct
+13-2053.00,13-2053,Insurance Underwriters,99.0,0.99,Insurance Underwriters,direct
+13-2054.00,13-2054,Financial Risk Specialists,69.23076923076923,0.6923076923076923,[Group avg: 13-20],group_avg
+13-2061.00,13-2061,Financial Examiners,17.0,0.17,Financial Examiners,direct
+13-2071.00,13-2071,Credit Counselors,4.0,0.04,Credit Counselors,direct
+13-2072.00,13-2072,Loan Officers,98.0,0.98,Loan Officers,direct
+13-2081.00,13-2081,"Tax Examiners and Collectors, and Revenue Agents",93.0,0.93,Tax Examiners and Collectors; and Revenue Agents,direct
+13-2082.00,13-2082,Tax Preparers,99.0,0.99,Tax Preparers,direct
+13-2099.00,13-2099,"Financial Specialists, All Other",33.0,0.33,Financial Specialists; All Other,direct
+13-2099.01,13-2099,Financial Quantitative Analysts,33.0,0.33,Financial Specialists; All Other,direct
+13-2099.04,13-2099,"Fraud Examiners, Investigators and Analysts",33.0,0.33,Financial Specialists; All Other,direct
+15-1211.00,15-1211,Computer Systems Analysts,22.10333333333333,0.2210333333333333,[Major group avg: 15],group_avg
+15-1211.01,15-1211,Health Informatics Specialists,22.10333333333333,0.2210333333333333,[Major group avg: 15],group_avg
+15-1212.00,15-1212,Information Security Analysts,22.10333333333333,0.2210333333333333,[Major group avg: 15],group_avg
+15-1221.00,15-1221,Computer and Information Research Scientists,22.10333333333333,0.2210333333333333,[Major group avg: 15],group_avg
+15-1231.00,15-1231,Computer Network Support Specialists,22.10333333333333,0.2210333333333333,[Major group avg: 15],group_avg
+15-1232.00,15-1232,Computer User Support Specialists,22.10333333333333,0.2210333333333333,[Major group avg: 15],group_avg
+15-1241.00,15-1241,Computer Network Architects,22.10333333333333,0.2210333333333333,[Major group avg: 15],group_avg
+15-1241.01,15-1241,Telecommunications Engineering Specialists,22.10333333333333,0.2210333333333333,[Major group avg: 15],group_avg
+15-1242.00,15-1242,Database Administrators,22.10333333333333,0.2210333333333333,[Major group avg: 15],group_avg
+15-1243.00,15-1243,Database Architects,22.10333333333333,0.2210333333333333,[Major group avg: 15],group_avg
+15-1243.01,15-1243,Data Warehousing Specialists,22.10333333333333,0.2210333333333333,[Major group avg: 15],group_avg
+15-1244.00,15-1244,Network and Computer Systems Administrators,22.10333333333333,0.2210333333333333,[Major group avg: 15],group_avg
+15-1251.00,15-1251,Computer Programmers,22.10333333333333,0.2210333333333333,[Major group avg: 15],group_avg
+15-1252.00,15-1252,Software Developers,22.10333333333333,0.2210333333333333,[Major group avg: 15],group_avg
+15-1253.00,15-1253,Software Quality Assurance Analysts and Testers,22.10333333333333,0.2210333333333333,[Major group avg: 15],group_avg
+15-1254.00,15-1254,Web Developers,22.10333333333333,0.2210333333333333,[Major group avg: 15],group_avg
+15-1255.00,15-1255,Web and Digital Interface Designers,22.10333333333333,0.2210333333333333,[Major group avg: 15],group_avg
+15-1255.01,15-1255,Video Game Designers,22.10333333333333,0.2210333333333333,[Major group avg: 15],group_avg
+15-1299.00,15-1299,"Computer Occupations, All Other",22.10333333333333,0.2210333333333333,[Major group avg: 15],group_avg
+15-1299.01,15-1299,Web Administrators,22.10333333333333,0.2210333333333333,[Major group avg: 15],group_avg
+15-1299.02,15-1299,Geographic Information Systems Technologists and Technicians,22.10333333333333,0.2210333333333333,[Major group avg: 15],group_avg
+15-1299.03,15-1299,Document Management Specialists,22.10333333333333,0.2210333333333333,[Major group avg: 15],group_avg
+15-1299.04,15-1299,Penetration Testers,22.10333333333333,0.2210333333333333,[Major group avg: 15],group_avg
+15-1299.05,15-1299,Information Security Engineers,22.10333333333333,0.2210333333333333,[Major group avg: 15],group_avg
+15-1299.06,15-1299,Digital Forensics Analysts,22.10333333333333,0.2210333333333333,[Major group avg: 15],group_avg
+15-1299.07,15-1299,Blockchain Engineers,22.10333333333333,0.2210333333333333,[Major group avg: 15],group_avg
+15-1299.08,15-1299,Computer Systems Engineers/Architects,22.10333333333333,0.2210333333333333,[Major group avg: 15],group_avg
+15-1299.09,15-1299,Information Technology Project Managers,22.10333333333333,0.2210333333333333,[Major group avg: 15],group_avg
+15-2011.00,15-2011,Actuaries,21.0,0.21,Actuaries,direct
+15-2021.00,15-2021,Mathematicians,4.7,0.047,Mathematicians,direct
+15-2031.00,15-2031,Operations Research Analysts,3.5,0.035,Operations Research Analysts,direct
+15-2041.00,15-2041,Statisticians,22.0,0.22,Statisticians,direct
+15-2041.01,15-2041,Biostatisticians,22.0,0.22,Statisticians,direct
+15-2051.00,15-2051,Data Scientists,30.04,0.3004,[Group avg: 15-20],group_avg
+15-2051.01,15-2051,Business Intelligence Analysts,30.04,0.3004,[Group avg: 15-20],group_avg
+15-2051.02,15-2051,Clinical Data Managers,30.04,0.3004,[Group avg: 15-20],group_avg
+15-2099.00,15-2099,"Mathematical Science Occupations, All Other",30.04,0.3004,[Group avg: 15-20],group_avg
+15-2099.01,15-2099,Bioinformatics Technicians,30.04,0.3004,[Group avg: 15-20],group_avg
+17-1011.00,17-1011,"Architects, Except Landscape and Naval",1.8,0.018,Architects; Except Landscape and Naval,direct
+17-1012.00,17-1012,Landscape Architects,4.5,0.045,Landscape Architects,direct
+17-1021.00,17-1021,Cartographers and Photogrammetrists,88.0,0.88,Cartographers and Photogrammetrists,direct
+17-1022.00,17-1022,Surveyors,38.0,0.38,Surveyors,direct
+17-1022.01,17-1022,Geodetic Surveyors,38.0,0.38,Surveyors,direct
+17-2011.00,17-2011,Aerospace Engineers,1.7,0.017,Aerospace Engineers,direct
+17-2021.00,17-2021,Agricultural Engineers,49.0,0.49,Agricultural Engineers,direct
+17-2031.00,17-2031,Bioengineers and Biomedical Engineers,3.7,0.037,Biomedical Engineers,direct
+17-2041.00,17-2041,Chemical Engineers,1.7,0.017,Chemical Engineers,direct
+17-2051.00,17-2051,Civil Engineers,1.9,0.019,Civil Engineers,direct
+17-2051.01,17-2051,Transportation Engineers,1.9,0.019,Civil Engineers,direct
+17-2051.02,17-2051,Water/Wastewater Engineers,1.9,0.019,Civil Engineers,direct
+17-2061.00,17-2061,Computer Hardware Engineers,22.0,0.22,Computer Hardware Engineers,direct
+17-2071.00,17-2071,Electrical Engineers,10.0,0.1,Electrical Engineers,direct
+17-2072.00,17-2072,"Electronics Engineers, Except Computer",2.5,0.025,Electronics Engineers; Except Computer,direct
+17-2072.01,17-2072,Radio Frequency Identification Device Specialists,2.5,0.025,Electronics Engineers; Except Computer,direct
+17-2081.00,17-2081,Environmental Engineers,1.8,0.018,Environmental Engineers,direct
+17-2111.00,17-2111,"Health and Safety Engineers, Except Mining Safety Engineers and Inspectors",2.8,0.028,Health and Safety Engineers; Except Mining Safety Engineers and Inspectors,direct
+17-2111.02,17-2111,Fire-Prevention and Protection Engineers,2.8,0.028,Health and Safety Engineers; Except Mining Safety Engineers and Inspectors,direct
+17-2112.00,17-2112,Industrial Engineers,2.9,0.029,Industrial Engineers,direct
+17-2112.01,17-2112,Human Factors Engineers and Ergonomists,2.9,0.029,Industrial Engineers,direct
+17-2112.02,17-2112,Validation Engineers,2.9,0.029,Industrial Engineers,direct
+17-2112.03,17-2112,Manufacturing Engineers,2.9,0.029,Industrial Engineers,direct
+17-2121.00,17-2121,Marine Engineers and Naval Architects,1.0,0.01,Marine Engineers and Naval Architects,direct
+17-2131.00,17-2131,Materials Engineers,2.1,0.021,Materials Engineers,direct
+17-2141.00,17-2141,Mechanical Engineers,1.1,0.011,Mechanical Engineers,direct
+17-2141.01,17-2141,Fuel Cell Engineers,1.1,0.011,Mechanical Engineers,direct
+17-2141.02,17-2141,Automotive Engineers,1.1,0.011,Mechanical Engineers,direct
+17-2151.00,17-2151,"Mining and Geological Engineers, Including Mining Safety Engineers",14.0,0.14,Mining and Geological Engineers; Including Mining Safety Engineers,direct
+17-2161.00,17-2161,Nuclear Engineers,7.0,0.07,Nuclear Engineers,direct
+17-2171.00,17-2171,Petroleum Engineers,16.0,0.16,Petroleum Engineers,direct
+17-2199.00,17-2199,"Engineers, All Other",1.4,0.014,Engineers; All Other,direct
+17-2199.03,17-2199,"Energy Engineers, Except Wind and Solar",1.4,0.014,Engineers; All Other,direct
+17-2199.05,17-2199,Mechatronics Engineers,1.4,0.014,Engineers; All Other,direct
+17-2199.06,17-2199,Microsystems Engineers,1.4,0.014,Engineers; All Other,direct
+17-2199.07,17-2199,Photonics Engineers,1.4,0.014,Engineers; All Other,direct
+17-2199.08,17-2199,Robotics Engineers,1.4,0.014,Engineers; All Other,direct
+17-2199.09,17-2199,Nanosystems Engineers,1.4,0.014,Engineers; All Other,direct
+17-2199.10,17-2199,Wind Energy Engineers,1.4,0.014,Engineers; All Other,direct
+17-2199.11,17-2199,Solar Energy Systems Engineers,1.4,0.014,Engineers; All Other,direct
+17-3011.00,17-3011,Architectural and Civil Drafters,52.0,0.52,Architectural and Civil Drafters,direct
+17-3012.00,17-3012,Electrical and Electronics Drafters,81.0,0.81,Electrical and Electronics Drafters,direct
+17-3013.00,17-3013,Mechanical Drafters,68.0,0.68,Mechanical Drafters,direct
+17-3019.00,17-3019,"Drafters, All Other",56.25,0.5625,[Group avg: 17-30],group_avg
+17-3021.00,17-3021,Aerospace Engineering and Operations Technologists and Technicians,48.0,0.48,Aerospace Engineering and Operations Technicians,direct
+17-3022.00,17-3022,Civil Engineering Technologists and Technicians,75.0,0.75,Civil Engineering Technicians,direct
+17-3023.00,17-3023,Electrical and Electronic Engineering Technologists and Technicians,84.0,0.84,Electrical and Electronics Engineering Technicians,direct
+17-3024.00,17-3024,Electro-Mechanical and Mechatronics Technologists and Technicians,81.0,0.81,Electro-Mechanical Technicians,direct
+17-3024.01,17-3024,Robotics Technicians,81.0,0.81,Electro-Mechanical Technicians,direct
+17-3025.00,17-3025,Environmental Engineering Technologists and Technicians,25.0,0.25,Environmental Engineering Technicians,direct
+17-3026.00,17-3026,Industrial Engineering Technologists and Technicians,3.0,0.03,Industrial Engineering Technicians,direct
+17-3026.01,17-3026,Nanotechnology Engineering Technologists and Technicians,3.0,0.03,Industrial Engineering Technicians,direct
+17-3027.00,17-3027,Mechanical Engineering Technologists and Technicians,38.0,0.38,Mechanical Engineering Technicians,direct
+17-3027.01,17-3027,Automotive Engineering Technicians,38.0,0.38,Mechanical Engineering Technicians,direct
+17-3028.00,17-3028,Calibration Technologists and Technicians,56.25,0.5625,[Group avg: 17-30],group_avg
+17-3029.00,17-3029,"Engineering Technologists and Technicians, Except Drafters, All Other",24.0,0.24,Engineering Technicians; Except Drafters; All Other,direct
+17-3029.01,17-3029,Non-Destructive Testing Specialists,24.0,0.24,Engineering Technicians; Except Drafters; All Other,direct
+17-3029.08,17-3029,Photonics Technicians,24.0,0.24,Engineering Technicians; Except Drafters; All Other,direct
+17-3031.00,17-3031,Surveying and Mapping Technicians,96.0,0.96,Surveying and Mapping Technicians,direct
+19-1011.00,19-1011,Animal Scientists,6.1,0.061,Animal Scientists,direct
+19-1012.00,19-1012,Food Scientists and Technologists,7.7,0.077,Food Scientists and Technologists,direct
+19-1013.00,19-1013,Soil and Plant Scientists,2.1,0.021,Soil and Plant Scientists,direct
+19-1021.00,19-1021,Biochemists and Biophysicists,2.7,0.027,Biochemists and Biophysicists,direct
+19-1022.00,19-1022,Microbiologists,1.2,0.012,Microbiologists,direct
+19-1023.00,19-1023,Zoologists and Wildlife Biologists,30.0,0.3,Zoologists and Wildlife Biologists,direct
+19-1029.00,19-1029,"Biological Scientists, All Other",1.5,0.015,Biological Scientists; All Other,direct
+19-1029.01,19-1029,Bioinformatics Scientists,1.5,0.015,Biological Scientists; All Other,direct
+19-1029.02,19-1029,Molecular and Cellular Biologists,1.5,0.015,Biological Scientists; All Other,direct
+19-1029.03,19-1029,Geneticists,1.5,0.015,Biological Scientists; All Other,direct
+19-1029.04,19-1029,Biologists,1.5,0.015,Biological Scientists; All Other,direct
+19-1031.00,19-1031,Conservation Scientists,1.6,0.016,Conservation Scientists,direct
+19-1031.02,19-1031,Range Managers,1.6,0.016,Conservation Scientists,direct
+19-1031.03,19-1031,Park Naturalists,1.6,0.016,Conservation Scientists,direct
+19-1032.00,19-1032,Foresters,0.81,0.0081,Foresters,direct
+19-1041.00,19-1041,Epidemiologists,20.0,0.2,Epidemiologists,direct
+19-1042.00,19-1042,"Medical Scientists, Except Epidemiologists",0.45,0.0045,Medical Scientists; Except Epidemiologists,direct
+19-1099.00,19-1099,"Life Scientists, All Other",6.741818181818183,0.06741818181818184,[Group avg: 19-10],group_avg
+19-2011.00,19-2011,Astronomers,4.1,0.041,Astronomers,direct
+19-2012.00,19-2012,Physicists,10.0,0.1,Physicists,direct
+19-2021.00,19-2021,Atmospheric and Space Scientists,67.0,0.67,Atmospheric and Space Scientists,direct
+19-2031.00,19-2031,Chemists,10.0,0.1,Chemists,direct
+19-2032.00,19-2032,Materials Scientists,2.1,0.021,Materials Scientists,direct
+19-2041.00,19-2041,"Environmental Scientists and Specialists, Including Health",3.3,0.033,Environmental Scientists and Specialists; Including Health,direct
+19-2041.01,19-2041,Climate Change Policy Analysts,3.3,0.033,Environmental Scientists and Specialists; Including Health,direct
+19-2041.02,19-2041,Environmental Restoration Planners,3.3,0.033,Environmental Scientists and Specialists; Including Health,direct
+19-2041.03,19-2041,Industrial Ecologists,3.3,0.033,Environmental Scientists and Specialists; Including Health,direct
+19-2042.00,19-2042,"Geoscientists, Except Hydrologists and Geographers",63.0,0.63,Geoscientists; Except Hydrologists and Geographers,direct
+19-2043.00,19-2043,Hydrologists,1.4,0.014,Hydrologists,direct
+19-2099.00,19-2099,"Physical Scientists, All Other",43.0,0.43,Physical Scientists; All Other,direct
+19-2099.01,19-2099,Remote Sensing Scientists and Technologists,43.0,0.43,Physical Scientists; All Other,direct
+19-3011.00,19-3011,Economists,43.0,0.43,Economists,direct
+19-3011.01,19-3011,Environmental Economists,43.0,0.43,Economists,direct
+19-3022.00,19-3022,Survey Researchers,23.0,0.23,Survey Researchers,direct
+19-3032.00,19-3032,Industrial-Organizational Psychologists,1.2,0.012,Industrial-Organizational Psychologists,direct
+19-3033.00,19-3033,Clinical and Counseling Psychologists,13.722500000000002,0.137225,[Group avg: 19-30],group_avg
+19-3034.00,19-3034,School Psychologists,13.722500000000002,0.137225,[Group avg: 19-30],group_avg
+19-3039.00,19-3039,"Psychologists, All Other",0.43,0.0043,Psychologists; All Other,direct
+19-3039.02,19-3039,Neuropsychologists,0.43,0.0043,Psychologists; All Other,direct
+19-3039.03,19-3039,Clinical Neuropsychologists,0.43,0.0043,Psychologists; All Other,direct
+19-3041.00,19-3041,Sociologists,5.9,0.059,Sociologists,direct
+19-3051.00,19-3051,Urban and Regional Planners,13.0,0.13,Urban and Regional Planners,direct
+19-3091.00,19-3091,Anthropologists and Archeologists,0.77,0.0077,Anthropologists and Archeologists,direct
+19-3092.00,19-3092,Geographers,25.0,0.25,Geographers,direct
+19-3093.00,19-3093,Historians,44.0,0.44,Historians,direct
+19-3094.00,19-3094,Political Scientists,3.9,0.039,Political Scientists,direct
+19-3099.00,19-3099,"Social Scientists and Related Workers, All Other",4.0,0.04,Social Scientists and Related Workers; All Other,direct
+19-3099.01,19-3099,Transportation Planners,4.0,0.04,Social Scientists and Related Workers; All Other,direct
+19-4012.00,19-4012,Agricultural Technicians,60.595000000000006,0.6059500000000001,[Group avg: 19-40],group_avg
+19-4012.01,19-4012,Precision Agriculture Technicians,60.595000000000006,0.6059500000000001,[Group avg: 19-40],group_avg
+19-4013.00,19-4013,Food Science Technicians,60.595000000000006,0.6059500000000001,[Group avg: 19-40],group_avg
+19-4021.00,19-4021,Biological Technicians,30.0,0.3,Biological Technicians,direct
+19-4031.00,19-4031,Chemical Technicians,57.0,0.57,Chemical Technicians,direct
+19-4042.00,19-4042,"Environmental Science and Protection Technicians, Including Health",60.595000000000006,0.6059500000000001,[Group avg: 19-40],group_avg
+19-4043.00,19-4043,"Geological Technicians, Except Hydrologic Technicians",60.595000000000006,0.6059500000000001,[Group avg: 19-40],group_avg
+19-4044.00,19-4044,Hydrologic Technicians,60.595000000000006,0.6059500000000001,[Group avg: 19-40],group_avg
+19-4051.00,19-4051,Nuclear Technicians,85.0,0.85,Nuclear Technicians,direct
+19-4051.02,19-4051,Nuclear Monitoring Technicians,85.0,0.85,Nuclear Technicians,direct
+19-4061.00,19-4061,Social Science Research Assistants,65.0,0.65,Social Science Research Assistants,direct
+19-4071.00,19-4071,Forest and Conservation Technicians,60.595000000000006,0.6059500000000001,[Group avg: 19-40],group_avg
+19-4092.00,19-4092,Forensic Science Technicians,0.95,0.0095,Forensic Science Technicians,direct
+19-4099.00,19-4099,"Life, Physical, and Social Science Technicians, All Other",61.0,0.61,Life; Physical; and Social Science Technicians; All Other,direct
+19-4099.01,19-4099,Quality Control Analysts,61.0,0.61,Life; Physical; and Social Science Technicians; All Other,direct
+19-4099.03,19-4099,Remote Sensing Technicians,61.0,0.61,Life; Physical; and Social Science Technicians; All Other,direct
+19-5011.00,19-5011,Occupational Health and Safety Specialists,24.968571428571426,0.24968571428571426,[Major group avg: 19],group_avg
+19-5012.00,19-5012,Occupational Health and Safety Technicians,24.968571428571426,0.24968571428571426,[Major group avg: 19],group_avg
+21-1011.00,21-1011,Substance Abuse and Behavioral Disorder Counselors,3.3,0.033,Substance Abuse and Behavioral Disorder Counselors,direct
+21-1012.00,21-1012,"Educational, Guidance, and Career Counselors and Advisors",0.85,0.0085,Educational; Guidance; School; and Vocational Counselors,direct
+21-1013.00,21-1013,Marriage and Family Therapists,1.4,0.014,Marriage and Family Therapists,direct
+21-1014.00,21-1014,Mental Health Counselors,0.48,0.0048,Mental Health Counselors,direct
+21-1015.00,21-1015,Rehabilitation Counselors,0.94,0.0094,Rehabilitation Counselors,direct
+21-1019.00,21-1019,"Counselors, All Other",4.8118181818181816,0.04811818181818182,[Group avg: 21-10],group_avg
+21-1021.00,21-1021,"Child, Family, and School Social Workers",2.8,0.028,Child; Family; and School Social Workers,direct
+21-1022.00,21-1022,Healthcare Social Workers,0.35,0.0035,Healthcare Social Workers,direct
+21-1023.00,21-1023,Mental Health and Substance Abuse Social Workers,0.31,0.0031,Mental Health and Substance Abuse Social Workers,direct
+21-1029.00,21-1029,"Social Workers, All Other",4.8118181818181816,0.04811818181818182,[Group avg: 21-10],group_avg
+21-1091.00,21-1091,Health Education Specialists,4.5,0.045,Health Educators,direct
+21-1092.00,21-1092,Probation Officers and Correctional Treatment Specialists,25.0,0.25,Probation Officers and Correctional Treatment Specialists,direct
+21-1093.00,21-1093,Social and Human Service Assistants,13.0,0.13,Social and Human Service Assistants,direct
+21-1094.00,21-1094,Community Health Workers,4.8118181818181816,0.04811818181818182,[Group avg: 21-10],group_avg
+21-1099.00,21-1099,"Community and Social Service Specialists, All Other",4.8118181818181816,0.04811818181818182,[Group avg: 21-10],group_avg
+21-2011.00,21-2011,Clergy,0.81,0.0081,Clergy,direct
+21-2021.00,21-2021,"Directors, Religious Activities and Education",2.5,0.025,Directors; Religious Activities and Education,direct
+21-2099.00,21-2099,"Religious Workers, All Other",1.655,0.01655,[Group avg: 21-20],group_avg
+23-1011.00,23-1011,Lawyers,3.5,0.035,Lawyers,direct
+23-1012.00,23-1012,Judicial Law Clerks,41.0,0.41,Judicial Law Clerks,direct
+23-1021.00,23-1021,"Administrative Law Judges, Adjudicators, and Hearing Officers",64.0,0.64,Administrative Law Judges; Adjudicators; and Hearing Officers,direct
+23-1022.00,23-1022,"Arbitrators, Mediators, and Conciliators",6.0,0.06,Arbitrators; Mediators; and Conciliators,direct
+23-1023.00,23-1023,"Judges, Magistrate Judges, and Magistrates",40.0,0.4,Judges; Magistrate Judges; and Magistrates,direct
+23-2011.00,23-2011,Paralegals and Legal Assistants,94.0,0.94,Paralegals and Legal Assistants,direct
+23-2093.00,23-2093,"Title Examiners, Abstractors, and Searchers",99.0,0.99,Title Examiners; Abstractors; and Searchers,direct
+23-2099.00,23-2099,"Legal Support Workers, All Other",81.0,0.81,[Group avg: 23-20],group_avg
+25-1011.00,25-1011,"Business Teachers, Postsecondary",3.2,0.032,[Group avg: 25-10],group_avg
+25-1021.00,25-1021,"Computer Science Teachers, Postsecondary",3.2,0.032,[Group avg: 25-10],group_avg
+25-1022.00,25-1022,"Mathematical Science Teachers, Postsecondary",3.2,0.032,[Group avg: 25-10],group_avg
+25-1031.00,25-1031,"Architecture Teachers, Postsecondary",3.2,0.032,[Group avg: 25-10],group_avg
+25-1032.00,25-1032,"Engineering Teachers, Postsecondary",3.2,0.032,[Group avg: 25-10],group_avg
+25-1041.00,25-1041,"Agricultural Sciences Teachers, Postsecondary",3.2,0.032,[Group avg: 25-10],group_avg
+25-1042.00,25-1042,"Biological Science Teachers, Postsecondary",3.2,0.032,[Group avg: 25-10],group_avg
+25-1043.00,25-1043,"Forestry and Conservation Science Teachers, Postsecondary",3.2,0.032,[Group avg: 25-10],group_avg
+25-1051.00,25-1051,"Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary",3.2,0.032,[Group avg: 25-10],group_avg
+25-1052.00,25-1052,"Chemistry Teachers, Postsecondary",3.2,0.032,[Group avg: 25-10],group_avg
+25-1053.00,25-1053,"Environmental Science Teachers, Postsecondary",3.2,0.032,[Group avg: 25-10],group_avg
+25-1054.00,25-1054,"Physics Teachers, Postsecondary",3.2,0.032,[Group avg: 25-10],group_avg
+25-1061.00,25-1061,"Anthropology and Archeology Teachers, Postsecondary",3.2,0.032,[Group avg: 25-10],group_avg
+25-1062.00,25-1062,"Area, Ethnic, and Cultural Studies Teachers, Postsecondary",3.2,0.032,[Group avg: 25-10],group_avg
+25-1063.00,25-1063,"Economics Teachers, Postsecondary",3.2,0.032,[Group avg: 25-10],group_avg
+25-1064.00,25-1064,"Geography Teachers, Postsecondary",3.2,0.032,[Group avg: 25-10],group_avg
+25-1065.00,25-1065,"Political Science Teachers, Postsecondary",3.2,0.032,[Group avg: 25-10],group_avg
+25-1066.00,25-1066,"Psychology Teachers, Postsecondary",3.2,0.032,[Group avg: 25-10],group_avg
+25-1067.00,25-1067,"Sociology Teachers, Postsecondary",3.2,0.032,[Group avg: 25-10],group_avg
+25-1069.00,25-1069,"Social Sciences Teachers, Postsecondary, All Other",3.2,0.032,[Group avg: 25-10],group_avg
+25-1071.00,25-1071,"Health Specialties Teachers, Postsecondary",3.2,0.032,[Group avg: 25-10],group_avg
+25-1072.00,25-1072,"Nursing Instructors and Teachers, Postsecondary",3.2,0.032,[Group avg: 25-10],group_avg
+25-1081.00,25-1081,"Education Teachers, Postsecondary",3.2,0.032,[Group avg: 25-10],group_avg
+25-1082.00,25-1082,"Library Science Teachers, Postsecondary",3.2,0.032,[Group avg: 25-10],group_avg
+25-1111.00,25-1111,"Criminal Justice and Law Enforcement Teachers, Postsecondary",22.509545454545457,0.22509545454545457,[Major group avg: 25],group_avg
+25-1112.00,25-1112,"Law Teachers, Postsecondary",22.509545454545457,0.22509545454545457,[Major group avg: 25],group_avg
+25-1113.00,25-1113,"Social Work Teachers, Postsecondary",22.509545454545457,0.22509545454545457,[Major group avg: 25],group_avg
+25-1121.00,25-1121,"Art, Drama, and Music Teachers, Postsecondary",22.509545454545457,0.22509545454545457,[Major group avg: 25],group_avg
+25-1122.00,25-1122,"Communications Teachers, Postsecondary",22.509545454545457,0.22509545454545457,[Major group avg: 25],group_avg
+25-1123.00,25-1123,"English Language and Literature Teachers, Postsecondary",22.509545454545457,0.22509545454545457,[Major group avg: 25],group_avg
+25-1124.00,25-1124,"Foreign Language and Literature Teachers, Postsecondary",22.509545454545457,0.22509545454545457,[Major group avg: 25],group_avg
+25-1125.00,25-1125,"History Teachers, Postsecondary",22.509545454545457,0.22509545454545457,[Major group avg: 25],group_avg
+25-1126.00,25-1126,"Philosophy and Religion Teachers, Postsecondary",22.509545454545457,0.22509545454545457,[Major group avg: 25],group_avg
+25-1192.00,25-1192,"Family and Consumer Sciences Teachers, Postsecondary",22.509545454545457,0.22509545454545457,[Major group avg: 25],group_avg
+25-1193.00,25-1193,"Recreation and Fitness Studies Teachers, Postsecondary",22.509545454545457,0.22509545454545457,[Major group avg: 25],group_avg
+25-1194.00,25-1194,"Career/Technical Education Teachers, Postsecondary",22.509545454545457,0.22509545454545457,[Major group avg: 25],group_avg
+25-1199.00,25-1199,"Postsecondary Teachers, All Other",22.509545454545457,0.22509545454545457,[Major group avg: 25],group_avg
+25-2011.00,25-2011,"Preschool Teachers, Except Special Education",0.74,0.0074,Preschool Teachers; Except Special Education,direct
+25-2012.00,25-2012,"Kindergarten Teachers, Except Special Education",15.0,0.15,Kindergarten Teachers; Except Special Education,direct
+25-2021.00,25-2021,"Elementary School Teachers, Except Special Education",0.44,0.0044,Elementary School Teachers; Except Special Education,direct
+25-2022.00,25-2022,"Middle School Teachers, Except Special and Career/Technical Education",17.0,0.17,Middle School Teachers; Except Special and Career/Technical Education,direct
+25-2023.00,25-2023,"Career/Technical Education Teachers, Middle School",26.0,0.26,Career/Technical Education Teachers; Middle School,direct
+25-2031.00,25-2031,"Secondary School Teachers, Except Special and Career/Technical Education",0.78,0.0078,Secondary School Teachers; Except Special and Career/Technical Education,direct
+25-2032.00,25-2032,"Career/Technical Education Teachers, Secondary School",0.88,0.0088,Career/Technical Education Teachers; Secondary School,direct
+25-2051.00,25-2051,"Special Education Teachers, Preschool",7.023333333333333,0.07023333333333333,[Group avg: 25-20],group_avg
+25-2055.00,25-2055,"Special Education Teachers, Kindergarten",7.023333333333333,0.07023333333333333,[Group avg: 25-20],group_avg
+25-2056.00,25-2056,"Special Education Teachers, Elementary School",7.023333333333333,0.07023333333333333,[Group avg: 25-20],group_avg
+25-2057.00,25-2057,"Special Education Teachers, Middle School",7.023333333333333,0.07023333333333333,[Group avg: 25-20],group_avg
+25-2058.00,25-2058,"Special Education Teachers, Secondary School",7.023333333333333,0.07023333333333333,[Group avg: 25-20],group_avg
+25-2059.00,25-2059,"Special Education Teachers, All Other",7.023333333333333,0.07023333333333333,[Group avg: 25-20],group_avg
+25-2059.01,25-2059,Adapted Physical Education Specialists,7.023333333333333,0.07023333333333333,[Group avg: 25-20],group_avg
+25-3011.00,25-3011,"Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors",19.0,0.19,Adult Basic and Secondary Education and Literacy Teachers and Instructors,direct
+25-3021.00,25-3021,Self-Enrichment Teachers,13.0,0.13,Self-Enrichment Education Teachers,direct
+25-3031.00,25-3031,"Substitute Teachers, Short-Term",16.0,0.16,[Group avg: 25-30],group_avg
+25-3041.00,25-3041,Tutors,16.0,0.16,[Group avg: 25-30],group_avg
+25-3099.00,25-3099,"Teachers and Instructors, All Other",16.0,0.16,[Group avg: 25-30],group_avg
+25-4011.00,25-4011,Archivists,76.0,0.76,Archivists,direct
+25-4012.00,25-4012,Curators,0.68,0.0068,Curators,direct
+25-4013.00,25-4013,Museum Technicians and Conservators,59.0,0.59,Museum Technicians and Conservators,direct
+25-4022.00,25-4022,Librarians and Media Collections Specialists,59.936,0.59936,[Group avg: 25-40],group_avg
+25-4031.00,25-4031,Library Technicians,99.0,0.99,Library Technicians,direct
+25-9021.00,25-9021,Farm and Home Management Educators,0.75,0.0075,Farm and Home Management Advisors,direct
+25-9031.00,25-9031,Instructional Coordinators,0.42,0.0042,Instructional Coordinators,direct
+25-9042.00,25-9042,"Teaching Assistants, Preschool, Elementary, Middle, and Secondary School, Except Special Education",24.0425,0.240425,[Group avg: 25-90],group_avg
+25-9043.00,25-9043,"Teaching Assistants, Special Education",24.0425,0.240425,[Group avg: 25-90],group_avg
+25-9044.00,25-9044,"Teaching Assistants, Postsecondary",24.0425,0.240425,[Group avg: 25-90],group_avg
+25-9049.00,25-9049,"Teaching Assistants, All Other",24.0425,0.240425,[Group avg: 25-90],group_avg
+25-9099.00,25-9099,"Educational Instruction and Library Workers, All Other",24.0425,0.240425,[Group avg: 25-90],group_avg
+27-1011.00,27-1011,Art Directors,2.3,0.023,Art Directors,direct
+27-1012.00,27-1012,Craft Artists,3.5,0.035,Craft Artists,direct
+27-1013.00,27-1013,"Fine Artists, Including Painters, Sculptors, and Illustrators",4.2,0.042,Fine Artists; Including Painters; Sculptors; and Illustrators,direct
+27-1014.00,27-1014,Special Effects Artists and Animators,1.5,0.015,Multimedia Artists and Animators,direct
+27-1019.00,27-1019,"Artists and Related Workers, All Other",7.359090909090909,0.0735909090909091,[Group avg: 27-10],group_avg
+27-1021.00,27-1021,Commercial and Industrial Designers,3.7,0.037,Commercial and Industrial Designers,direct
+27-1022.00,27-1022,Fashion Designers,2.1,0.021,Fashion Designers,direct
+27-1023.00,27-1023,Floral Designers,4.7,0.047,Floral Designers,direct
+27-1024.00,27-1024,Graphic Designers,8.2,0.082,Graphic Designers,direct
+27-1025.00,27-1025,Interior Designers,2.2,0.022,Interior Designers,direct
+27-1026.00,27-1026,Merchandise Displayers and Window Trimmers,48.0,0.48,Merchandise Displayers and Window Trimmers,direct
+27-1027.00,27-1027,Set and Exhibit Designers,0.55,0.0055,Set and Exhibit Designers,direct
+27-1029.00,27-1029,"Designers, All Other",7.359090909090909,0.0735909090909091,[Group avg: 27-10],group_avg
+27-2011.00,27-2011,Actors,37.0,0.37,Actors,direct
+27-2012.00,27-2012,Producers and Directors,2.2,0.022,Producers and Directors,direct
+27-2012.03,27-2012,Media Programming Directors,2.2,0.022,Producers and Directors,direct
+27-2012.04,27-2012,Talent Directors,2.2,0.022,Producers and Directors,direct
+27-2012.05,27-2012,Media Technical Directors/Managers,2.2,0.022,Producers and Directors,direct
+27-2021.00,27-2021,Athletes and Sports Competitors,28.0,0.28,Athletes and Sports Competitors,direct
+27-2022.00,27-2022,Coaches and Scouts,1.3,0.013,Coaches and Scouts,direct
+27-2023.00,27-2023,"Umpires, Referees, and Other Sports Officials",98.0,0.98,Umpires; Referees; and Other Sports Officials,direct
+27-2031.00,27-2031,Dancers,13.0,0.13,Dancers,direct
+27-2032.00,27-2032,Choreographers,0.4,0.004,Choreographers,direct
+27-2041.00,27-2041,Music Directors and Composers,1.5,0.015,Music Directors and Composers,direct
+27-2042.00,27-2042,Musicians and Singers,7.4,0.074,Musicians and Singers,direct
+27-2091.00,27-2091,"Disc Jockeys, Except Radio",20.977777777777778,0.20977777777777779,[Group avg: 27-20],group_avg
+27-2099.00,27-2099,"Entertainers and Performers, Sports and Related Workers, All Other",20.977777777777778,0.20977777777777779,[Group avg: 27-20],group_avg
+27-3011.00,27-3011,Broadcast Announcers and Radio Disc Jockeys,10.0,0.1,Radio and Television Announcers,direct
+27-3023.00,27-3023,"News Analysts, Reporters, and Journalists",28.22222222222222,0.2822222222222222,[Group avg: 27-30],group_avg
+27-3031.00,27-3031,Public Relations Specialists,18.0,0.18,Public Relations Specialists,direct
+27-3041.00,27-3041,Editors,5.5,0.055,Editors,direct
+27-3042.00,27-3042,Technical Writers,89.0,0.89,Technical Writers,direct
+27-3043.00,27-3043,Writers and Authors,3.8,0.038,Writers and Authors,direct
+27-3043.05,27-3043,"Poets, Lyricists and Creative Writers",3.8,0.038,Writers and Authors,direct
+27-3091.00,27-3091,Interpreters and Translators,38.0,0.38,Interpreters and Translators,direct
+27-3092.00,27-3092,Court Reporters and Simultaneous Captioners,28.22222222222222,0.2822222222222222,[Group avg: 27-30],group_avg
+27-3099.00,27-3099,"Media and Communication Workers, All Other",28.22222222222222,0.2822222222222222,[Group avg: 27-30],group_avg
+27-4011.00,27-4011,Audio and Video Technicians,55.0,0.55,Audio and Video Equipment Technicians,direct
+27-4012.00,27-4012,Broadcast Technicians,74.0,0.74,Broadcast Technicians,direct
+27-4014.00,27-4014,Sound Engineering Technicians,13.0,0.13,Sound Engineering Technicians,direct
+27-4015.00,27-4015,Lighting Technicians,47.58571428571429,0.47585714285714287,[Group avg: 27-40],group_avg
+27-4021.00,27-4021,Photographers,2.1,0.021,Photographers,direct
+27-4031.00,27-4031,"Camera Operators, Television, Video, and Film",60.0,0.6,Camera Operators; Television; Video; and Motion Picture,direct
+27-4032.00,27-4032,Film and Video Editors,31.0,0.31,Film and Video Editors,direct
+27-4099.00,27-4099,"Media and Communication Equipment Workers, All Other",47.58571428571429,0.47585714285714287,[Group avg: 27-40],group_avg
+29-1011.00,29-1011,Chiropractors,2.7,0.027,Chiropractors,direct
+29-1021.00,29-1021,"Dentists, General",0.44,0.0044,Dentists; General,direct
+29-1022.00,29-1022,Oral and Maxillofacial Surgeons,0.36,0.0036,Oral and Maxillofacial Surgeons,direct
+29-1023.00,29-1023,Orthodontists,2.3,0.023,Orthodontists,direct
+29-1024.00,29-1024,Prosthodontists,5.5,0.055,Prosthodontists,direct
+29-1029.00,29-1029,"Dentists, All Other Specialists",3.7972727272727274,0.037972727272727276,[Group avg: 29-10],group_avg
+29-1031.00,29-1031,Dietitians and Nutritionists,0.39,0.0039,Dietitians and Nutritionists,direct
+29-1041.00,29-1041,Optometrists,14.0,0.14,Optometrists,direct
+29-1051.00,29-1051,Pharmacists,1.2,0.012,Pharmacists,direct
+29-1071.00,29-1071,Physician Assistants,14.0,0.14,Physician Assistants,direct
+29-1071.01,29-1071,Anesthesiologist Assistants,14.0,0.14,Physician Assistants,direct
+29-1081.00,29-1081,Podiatrists,0.46,0.0046,Podiatrists,direct
+29-1122.00,29-1122,Occupational Therapists,0.35,0.0035,Occupational Therapists,direct
+29-1122.01,29-1122,"Low Vision Therapists, Orientation and Mobility Specialists, and Vision Rehabilitation Therapists",0.35,0.0035,Occupational Therapists,direct
+29-1123.00,29-1123,Physical Therapists,2.1,0.021,Physical Therapists,direct
+29-1124.00,29-1124,Radiation Therapists,34.0,0.34,Radiation Therapists,direct
+29-1125.00,29-1125,Recreational Therapists,0.28,0.0028,Recreational Therapists,direct
+29-1126.00,29-1126,Respiratory Therapists,6.6,0.066,Respiratory Therapists,direct
+29-1127.00,29-1127,Speech-Language Pathologists,0.64,0.0064,Speech-Language Pathologists,direct
+29-1128.00,29-1128,Exercise Physiologists,5.1,0.051,[Group avg: 29-11],group_avg
+29-1129.00,29-1129,"Therapists, All Other",5.1,0.051,[Group avg: 29-11],group_avg
+29-1129.01,29-1129,Art Therapists,5.1,0.051,[Group avg: 29-11],group_avg
+29-1129.02,29-1129,Music Therapists,5.1,0.051,[Group avg: 29-11],group_avg
+29-1131.00,29-1131,Veterinarians,3.8,0.038,Veterinarians,direct
+29-1141.00,29-1141,Registered Nurses,5.1,0.051,[Group avg: 29-11],group_avg
+29-1141.01,29-1141,Acute Care Nurses,5.1,0.051,[Group avg: 29-11],group_avg
+29-1141.02,29-1141,Advanced Practice Psychiatric Nurses,5.1,0.051,[Group avg: 29-11],group_avg
+29-1141.03,29-1141,Critical Care Nurses,5.1,0.051,[Group avg: 29-11],group_avg
+29-1141.04,29-1141,Clinical Nurse Specialists,5.1,0.051,[Group avg: 29-11],group_avg
+29-1151.00,29-1151,Nurse Anesthetists,5.1,0.051,[Group avg: 29-11],group_avg
+29-1161.00,29-1161,Nurse Midwives,5.1,0.051,[Group avg: 29-11],group_avg
+29-1171.00,29-1171,Nurse Practitioners,5.1,0.051,[Group avg: 29-11],group_avg
+29-1181.00,29-1181,Audiologists,0.33,0.0033,Audiologists,direct
+29-1211.00,29-1211,Anesthesiologists,18.391590909090908,0.18391590909090907,[Major group avg: 29],group_avg
+29-1212.00,29-1212,Cardiologists,18.391590909090908,0.18391590909090907,[Major group avg: 29],group_avg
+29-1213.00,29-1213,Dermatologists,18.391590909090908,0.18391590909090907,[Major group avg: 29],group_avg
+29-1214.00,29-1214,Emergency Medicine Physicians,18.391590909090908,0.18391590909090907,[Major group avg: 29],group_avg
+29-1215.00,29-1215,Family Medicine Physicians,18.391590909090908,0.18391590909090907,[Major group avg: 29],group_avg
+29-1216.00,29-1216,General Internal Medicine Physicians,18.391590909090908,0.18391590909090907,[Major group avg: 29],group_avg
+29-1217.00,29-1217,Neurologists,18.391590909090908,0.18391590909090907,[Major group avg: 29],group_avg
+29-1218.00,29-1218,Obstetricians and Gynecologists,18.391590909090908,0.18391590909090907,[Major group avg: 29],group_avg
+29-1221.00,29-1221,"Pediatricians, General",18.391590909090908,0.18391590909090907,[Major group avg: 29],group_avg
+29-1222.00,29-1222,"Physicians, Pathologists",18.391590909090908,0.18391590909090907,[Major group avg: 29],group_avg
+29-1223.00,29-1223,Psychiatrists,18.391590909090908,0.18391590909090907,[Major group avg: 29],group_avg
+29-1224.00,29-1224,Radiologists,18.391590909090908,0.18391590909090907,[Major group avg: 29],group_avg
+29-1229.00,29-1229,"Physicians, All Other",18.391590909090908,0.18391590909090907,[Major group avg: 29],group_avg
+29-1229.01,29-1229,Allergists and Immunologists,18.391590909090908,0.18391590909090907,[Major group avg: 29],group_avg
+29-1229.02,29-1229,Hospitalists,18.391590909090908,0.18391590909090907,[Major group avg: 29],group_avg
+29-1229.03,29-1229,Urologists,18.391590909090908,0.18391590909090907,[Major group avg: 29],group_avg
+29-1229.04,29-1229,Physical Medicine and Rehabilitation Physicians,18.391590909090908,0.18391590909090907,[Major group avg: 29],group_avg
+29-1229.05,29-1229,Preventive Medicine Physicians,18.391590909090908,0.18391590909090907,[Major group avg: 29],group_avg
+29-1229.06,29-1229,Sports Medicine Physicians,18.391590909090908,0.18391590909090907,[Major group avg: 29],group_avg
+29-1241.00,29-1241,"Ophthalmologists, Except Pediatric",18.391590909090908,0.18391590909090907,[Major group avg: 29],group_avg
+29-1242.00,29-1242,"Orthopedic Surgeons, Except Pediatric",18.391590909090908,0.18391590909090907,[Major group avg: 29],group_avg
+29-1243.00,29-1243,Pediatric Surgeons,18.391590909090908,0.18391590909090907,[Major group avg: 29],group_avg
+29-1249.00,29-1249,"Surgeons, All Other",18.391590909090908,0.18391590909090907,[Major group avg: 29],group_avg
+29-1291.00,29-1291,Acupuncturists,18.391590909090908,0.18391590909090907,[Major group avg: 29],group_avg
+29-1292.00,29-1292,Dental Hygienists,18.391590909090908,0.18391590909090907,[Major group avg: 29],group_avg
+29-1299.00,29-1299,"Healthcare Diagnosing or Treating Practitioners, All Other",18.391590909090908,0.18391590909090907,[Major group avg: 29],group_avg
+29-1299.01,29-1299,Naturopathic Physicians,18.391590909090908,0.18391590909090907,[Major group avg: 29],group_avg
+29-1299.02,29-1299,Orthoptists,18.391590909090908,0.18391590909090907,[Major group avg: 29],group_avg
+29-2011.00,29-2011,Medical and Clinical Laboratory Technologists,90.0,0.9,Medical and Clinical Laboratory Technologists,direct
+29-2011.01,29-2011,Cytogenetic Technologists,90.0,0.9,Medical and Clinical Laboratory Technologists,direct
+29-2011.02,29-2011,Cytotechnologists,90.0,0.9,Medical and Clinical Laboratory Technologists,direct
+29-2011.04,29-2011,Histotechnologists,90.0,0.9,Medical and Clinical Laboratory Technologists,direct
+29-2012.00,29-2012,Medical and Clinical Laboratory Technicians,47.0,0.47,Medical and Clinical Laboratory Technicians,direct
+29-2012.01,29-2012,Histology Technicians,47.0,0.47,Medical and Clinical Laboratory Technicians,direct
+29-2031.00,29-2031,Cardiovascular Technologists and Technicians,23.0,0.23,Cardiovascular Technologists and Technicians,direct
+29-2032.00,29-2032,Diagnostic Medical Sonographers,35.0,0.35,Diagnostic Medical Sonographers,direct
+29-2033.00,29-2033,Nuclear Medicine Technologists,13.0,0.13,Nuclear Medicine Technologists,direct
+29-2034.00,29-2034,Radiologic Technologists and Technicians,34.902777777777786,0.3490277777777779,[Group avg: 29-20],group_avg
+29-2035.00,29-2035,Magnetic Resonance Imaging Technologists,34.902777777777786,0.3490277777777779,[Group avg: 29-20],group_avg
+29-2036.00,29-2036,Medical Dosimetrists,34.902777777777786,0.3490277777777779,[Group avg: 29-20],group_avg
+29-2042.00,29-2042,Emergency Medical Technicians,34.902777777777786,0.3490277777777779,[Group avg: 29-20],group_avg
+29-2043.00,29-2043,Paramedics,34.902777777777786,0.3490277777777779,[Group avg: 29-20],group_avg
+29-2051.00,29-2051,Dietetic Technicians,13.0,0.13,Dietetic Technicians,direct
+29-2052.00,29-2052,Pharmacy Technicians,92.0,0.92,Pharmacy Technicians,direct
+29-2053.00,29-2053,Psychiatric Technicians,4.3,0.043,Psychiatric Technicians,direct
+29-2055.00,29-2055,Surgical Technologists,34.0,0.34,Surgical Technologists,direct
+29-2056.00,29-2056,Veterinary Technologists and Technicians,2.9,0.029,Veterinary Technologists and Technicians,direct
+29-2057.00,29-2057,Ophthalmic Medical Technicians,34.902777777777786,0.3490277777777779,[Group avg: 29-20],group_avg
+29-2061.00,29-2061,Licensed Practical and Licensed Vocational Nurses,5.8,0.058,Licensed Practical and Licensed Vocational Nurses,direct
+29-2072.00,29-2072,Medical Records Specialists,34.902777777777786,0.3490277777777779,[Group avg: 29-20],group_avg
+29-2081.00,29-2081,"Opticians, Dispensing",71.0,0.71,Opticians; Dispensing,direct
+29-2091.00,29-2091,Orthotists and Prosthetists,0.35,0.0035,Orthotists and Prosthetists,direct
+29-2092.00,29-2092,Hearing Aid Specialists,34.902777777777786,0.3490277777777779,[Group avg: 29-20],group_avg
+29-2099.00,29-2099,"Health Technologists and Technicians, All Other",34.902777777777786,0.3490277777777779,[Group avg: 29-20],group_avg
+29-2099.01,29-2099,Neurodiagnostic Technologists,34.902777777777786,0.3490277777777779,[Group avg: 29-20],group_avg
+29-2099.05,29-2099,Ophthalmic Medical Technologists,34.902777777777786,0.3490277777777779,[Group avg: 29-20],group_avg
+29-2099.08,29-2099,Patient Representatives,34.902777777777786,0.3490277777777779,[Group avg: 29-20],group_avg
+29-9021.00,29-9021,Health Information Technologists and Medical Registrars,14.236666666666666,0.14236666666666667,[Group avg: 29-90],group_avg
+29-9091.00,29-9091,Athletic Trainers,0.71,0.0071,Athletic Trainers,direct
+29-9092.00,29-9092,Genetic Counselors,14.236666666666666,0.14236666666666667,[Group avg: 29-90],group_avg
+29-9093.00,29-9093,Surgical Assistants,14.236666666666666,0.14236666666666667,[Group avg: 29-90],group_avg
+29-9099.00,29-9099,"Healthcare Practitioners and Technical Workers, All Other",14.236666666666666,0.14236666666666667,[Group avg: 29-90],group_avg
+29-9099.01,29-9099,Midwives,14.236666666666666,0.14236666666666667,[Group avg: 29-90],group_avg
+31-1121.00,31-1121,Home Health Aides,50.114285714285714,0.5011428571428571,[Major group avg: 31],group_avg
+31-1122.00,31-1122,Personal Care Aides,50.114285714285714,0.5011428571428571,[Major group avg: 31],group_avg
+31-1131.00,31-1131,Nursing Assistants,50.114285714285714,0.5011428571428571,[Major group avg: 31],group_avg
+31-1132.00,31-1132,Orderlies,50.114285714285714,0.5011428571428571,[Major group avg: 31],group_avg
+31-1133.00,31-1133,Psychiatric Aides,50.114285714285714,0.5011428571428571,[Major group avg: 31],group_avg
+31-2011.00,31-2011,Occupational Therapy Assistants,2.8,0.028,Occupational Therapy Assistants,direct
+31-2012.00,31-2012,Occupational Therapy Aides,27.0,0.27,Occupational Therapy Aides,direct
+31-2021.00,31-2021,Physical Therapist Assistants,1.8,0.018,Physical Therapist Assistants,direct
+31-2022.00,31-2022,Physical Therapist Aides,61.0,0.61,Physical Therapist Aides,direct
+31-9011.00,31-9011,Massage Therapists,54.0,0.54,Massage Therapists,direct
+31-9091.00,31-9091,Dental Assistants,51.0,0.51,Dental Assistants,direct
+31-9092.00,31-9092,Medical Assistants,30.0,0.3,Medical Assistants,direct
+31-9093.00,31-9093,Medical Equipment Preparers,78.0,0.78,Medical Equipment Preparers,direct
+31-9094.00,31-9094,Medical Transcriptionists,89.0,0.89,Medical Transcriptionists,direct
+31-9095.00,31-9095,Pharmacy Aides,72.0,0.72,Pharmacy Aides,direct
+31-9096.00,31-9096,Veterinary Assistants and Laboratory Animal Caretakers,86.0,0.86,Veterinary Assistants and Laboratory Animal Caretakers,direct
+31-9097.00,31-9097,Phlebotomists,65.71428571428571,0.657142857142857,[Group avg: 31-90],group_avg
+31-9099.00,31-9099,"Healthcare Support Workers, All Other",65.71428571428571,0.657142857142857,[Group avg: 31-90],group_avg
+31-9099.01,31-9099,Speech-Language Pathology Assistants,65.71428571428571,0.657142857142857,[Group avg: 31-90],group_avg
+31-9099.02,31-9099,Endoscopy Technicians,65.71428571428571,0.657142857142857,[Group avg: 31-90],group_avg
+33-1011.00,33-1011,First-Line Supervisors of Correctional Officers,2.5,0.025,First-Line Supervisors of Correctional Officers,direct
+33-1012.00,33-1012,First-Line Supervisors of Police and Detectives,0.44,0.0044,First-Line Supervisors of Police and Detectives,direct
+33-1021.00,33-1021,First-Line Supervisors of Firefighting and Prevention Workers,0.36,0.0036,First-Line Supervisors of Fire Fighting and Prevention Workers,direct
+33-1091.00,33-1091,First-Line Supervisors of Security Workers,1.0999999999999999,0.011,[Group avg: 33-10],group_avg
+33-1099.00,33-1099,"First-Line Supervisors of Protective Service Workers, All Other",1.0999999999999999,0.011,[Group avg: 33-10],group_avg
+33-2011.00,33-2011,Firefighters,17.0,0.17,Firefighters,direct
+33-2021.00,33-2021,Fire Inspectors and Investigators,48.0,0.48,Fire Inspectors and Investigators,direct
+33-2022.00,33-2022,Forest Fire Inspectors and Prevention Specialists,4.8,0.048,Forest Fire Inspectors and Prevention Specialists,direct
+33-3011.00,33-3011,Bailiffs,36.0,0.36,Bailiffs,direct
+33-3012.00,33-3012,Correctional Officers and Jailers,60.0,0.6,Correctional Officers and Jailers,direct
+33-3021.00,33-3021,Detectives and Criminal Investigators,34.0,0.34,Detectives and Criminal Investigators,direct
+33-3021.02,33-3021,Police Identification and Records Officers,34.0,0.34,Detectives and Criminal Investigators,direct
+33-3021.06,33-3021,Intelligence Analysts,34.0,0.34,Detectives and Criminal Investigators,direct
+33-3031.00,33-3031,Fish and Game Wardens,8.0,0.08,Fish and Game Wardens,direct
+33-3041.00,33-3041,Parking Enforcement Workers,84.0,0.84,Parking Enforcement Workers,direct
+33-3051.00,33-3051,Police and Sheriff's Patrol Officers,9.8,0.098,Police and Sheriffs Patrol Officers,direct
+33-3051.04,33-3051,Customs and Border Protection Officers,9.8,0.098,Police and Sheriffs Patrol Officers,direct
+33-3052.00,33-3052,Transit and Railroad Police,57.0,0.57,Transit and Railroad Police,direct
+33-9011.00,33-9011,Animal Control Workers,21.0,0.21,Animal Control Workers,direct
+33-9021.00,33-9021,Private Detectives and Investigators,31.0,0.31,Private Detectives and Investigators,direct
+33-9031.00,33-9031,Gambling Surveillance Officers and Gambling Investigators,95.0,0.95,Gaming Surveillance Officers and Gaming Investigators,direct
+33-9032.00,33-9032,Security Guards,84.0,0.84,Security Guards,direct
+33-9091.00,33-9091,Crossing Guards and Flaggers,49.0,0.49,Crossing Guards,direct
+33-9092.00,33-9092,"Lifeguards, Ski Patrol, and Other Recreational Protective Service Workers",67.0,0.67,Lifeguards; Ski Patrol; and Other Recreational Protective Service Workers,direct
+33-9093.00,33-9093,Transportation Security Screeners,57.833333333333336,0.5783333333333334,[Group avg: 33-90],group_avg
+33-9094.00,33-9094,School Bus Monitors,57.833333333333336,0.5783333333333334,[Group avg: 33-90],group_avg
+33-9099.00,33-9099,"Protective Service Workers, All Other",57.833333333333336,0.5783333333333334,[Group avg: 33-90],group_avg
+33-9099.02,33-9099,Retail Loss Prevention Specialists,57.833333333333336,0.5783333333333334,[Group avg: 33-90],group_avg
+35-1011.00,35-1011,Chefs and Head Cooks,10.0,0.1,Chefs and Head Cooks,direct
+35-1012.00,35-1012,First-Line Supervisors of Food Preparation and Serving Workers,63.0,0.63,First-Line Supervisors of Food Preparation and Serving Workers,direct
+35-2011.00,35-2011,"Cooks, Fast Food",81.0,0.81,Cooks; Fast Food,direct
+35-2012.00,35-2012,"Cooks, Institution and Cafeteria",83.0,0.83,Cooks; Institution and Cafeteria,direct
+35-2013.00,35-2013,"Cooks, Private Household",30.0,0.3,Cooks; Private Household,direct
+35-2014.00,35-2014,"Cooks, Restaurant",96.0,0.96,Cooks; Restaurant,direct
+35-2015.00,35-2015,"Cooks, Short Order",94.0,0.94,Cooks; Short Order,direct
+35-2019.00,35-2019,"Cooks, All Other",78.5,0.785,[Group avg: 35-20],group_avg
+35-2021.00,35-2021,Food Preparation Workers,87.0,0.87,Food Preparation Workers,direct
+35-3011.00,35-3011,Bartenders,77.0,0.77,Bartenders,direct
+35-3023.00,35-3023,Fast Food and Counter Workers,89.0,0.89,[Group avg: 35-30],group_avg
+35-3023.01,35-3023,Baristas,89.0,0.89,[Group avg: 35-30],group_avg
+35-3031.00,35-3031,Waiters and Waitresses,94.0,0.94,Waiters and Waitresses,direct
+35-3041.00,35-3041,"Food Servers, Nonrestaurant",86.0,0.86,Food Servers; Nonrestaurant,direct
+35-9011.00,35-9011,Dining Room and Cafeteria Attendants and Bartender Helpers,91.0,0.91,Dining Room and Cafeteria Attendants and Bartender Helpers,direct
+35-9021.00,35-9021,Dishwashers,77.0,0.77,Dishwashers,direct
+35-9031.00,35-9031,"Hosts and Hostesses, Restaurant, Lounge, and Coffee Shop",97.0,0.97,Hosts and Hostesses; Restaurant; Lounge; and Coffee Shop,direct
+35-9099.00,35-9099,"Food Preparation and Serving Related Workers, All Other",88.33333333333333,0.8833333333333333,[Group avg: 35-90],group_avg
+37-1011.00,37-1011,First-Line Supervisors of Housekeeping and Janitorial Workers,94.0,0.94,First-Line Supervisors of Housekeeping and Janitorial Workers,direct
+37-1012.00,37-1012,"First-Line Supervisors of Landscaping, Lawn Service, and Groundskeeping Workers",57.0,0.57,First-Line Supervisors of Landscaping; Lawn Service; and Groundskeeping Workers,direct
+37-2011.00,37-2011,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",66.0,0.66,Janitors and Cleaners; Except Maids and Housekeeping Cleaners,direct
+37-2012.00,37-2012,Maids and Housekeeping Cleaners,69.0,0.69,Maids and Housekeeping Cleaners,direct
+37-2019.00,37-2019,"Building Cleaning Workers, All Other",67.0,0.67,[Group avg: 37-20],group_avg
+37-2021.00,37-2021,Pest Control Workers,66.0,0.66,Pest Control Workers,direct
+37-3011.00,37-3011,Landscaping and Groundskeeping Workers,95.0,0.95,Landscaping and Groundskeeping Workers,direct
+37-3012.00,37-3012,"Pesticide Handlers, Sprayers, and Applicators, Vegetation",97.0,0.97,Pesticide Handlers; Sprayers; and Applicators; Vegetation,direct
+37-3013.00,37-3013,Tree Trimmers and Pruners,77.0,0.77,Tree Trimmers and Pruners,direct
+37-3019.00,37-3019,"Grounds Maintenance Workers, All Other",89.66666666666667,0.8966666666666667,[Group avg: 37-30],group_avg
+39-1013.00,39-1013,First-Line Supervisors of Gambling Services Workers,29.866666666666664,0.29866666666666664,[Group avg: 39-10],group_avg
+39-1014.00,39-1014,"First-Line Supervisors of Entertainment and Recreation Workers, Except Gambling Services",29.866666666666664,0.29866666666666664,[Group avg: 39-10],group_avg
+39-1022.00,39-1022,First-Line Supervisors of Personal Service Workers,29.866666666666664,0.29866666666666664,[Group avg: 39-10],group_avg
+39-2011.00,39-2011,Animal Trainers,10.0,0.1,Animal Trainers,direct
+39-2021.00,39-2021,Animal Caretakers,82.0,0.82,Nonfarm Animal Caretakers,direct
+39-3011.00,39-3011,Gambling Dealers,96.0,0.96,Gaming Dealers,direct
+39-3012.00,39-3012,Gambling and Sports Book Writers and Runners,91.0,0.91,Gaming and Sports Book Writers and Runners,direct
+39-3019.00,39-3019,"Gambling Service Workers, All Other",79.42857142857143,0.7942857142857143,[Group avg: 39-30],group_avg
+39-3021.00,39-3021,Motion Picture Projectionists,97.0,0.97,Motion Picture Projectionists,direct
+39-3031.00,39-3031,"Ushers, Lobby Attendants, and Ticket Takers",96.0,0.96,Ushers; Lobby Attendants; and Ticket Takers,direct
+39-3091.00,39-3091,Amusement and Recreation Attendants,72.0,0.72,Amusement and Recreation Attendants,direct
+39-3092.00,39-3092,Costume Attendants,61.0,0.61,Costume Attendants,direct
+39-3093.00,39-3093,"Locker Room, Coatroom, and Dressing Room Attendants",43.0,0.43,Locker Room; Coatroom; and Dressing Room Attendants,direct
+39-3099.00,39-3099,"Entertainment Attendants and Related Workers, All Other",79.42857142857143,0.7942857142857143,[Group avg: 39-30],group_avg
+39-4011.00,39-4011,Embalmers,54.0,0.54,Embalmers,direct
+39-4012.00,39-4012,Crematory Operators,45.5,0.455,[Group avg: 39-40],group_avg
+39-4021.00,39-4021,Funeral Attendants,37.0,0.37,Funeral Attendants,direct
+39-4031.00,39-4031,"Morticians, Undertakers, and Funeral Arrangers",45.5,0.455,[Group avg: 39-40],group_avg
+39-5011.00,39-5011,Barbers,80.0,0.8,Barbers,direct
+39-5012.00,39-5012,"Hairdressers, Hairstylists, and Cosmetologists",11.0,0.11,Hairdressers; Hairstylists; and Cosmetologists,direct
+39-5091.00,39-5091,"Makeup Artists, Theatrical and Performance",1.0,0.01,Makeup Artists; Theatrical and Performance,direct
+39-5092.00,39-5092,Manicurists and Pedicurists,95.0,0.95,Manicurists and Pedicurists,direct
+39-5093.00,39-5093,Shampooers,79.0,0.79,Shampooers,direct
+39-5094.00,39-5094,Skincare Specialists,29.0,0.29,Skincare Specialists,direct
+39-6011.00,39-6011,Baggage Porters and Bellhops,83.0,0.83,Baggage Porters and Bellhops,direct
+39-6012.00,39-6012,Concierges,21.0,0.21,Concierges,direct
+39-7011.00,39-7011,Tour Guides and Escorts,91.0,0.91,Tour Guides and Escorts,direct
+39-7012.00,39-7012,Travel Guides,5.7,0.057,Travel Guides,direct
+39-9011.00,39-9011,Childcare Workers,8.4,0.084,Childcare Workers,direct
+39-9011.01,39-9011,Nannies,8.4,0.084,Childcare Workers,direct
+39-9031.00,39-9031,Exercise Trainers and Group Fitness Instructors,8.5,0.085,Fitness Trainers and Aerobics Instructors,direct
+39-9032.00,39-9032,Recreation Workers,0.61,0.0061,Recreation Workers,direct
+39-9041.00,39-9041,Residential Advisors,6.4,0.064,Residential Advisors,direct
+39-9099.00,39-9099,"Personal Care and Service Workers, All Other",19.582,0.19582,[Group avg: 39-90],group_avg
+41-1011.00,41-1011,First-Line Supervisors of Retail Sales Workers,28.0,0.28,First-Line Supervisors of Retail Sales Workers,direct
+41-1012.00,41-1012,First-Line Supervisors of Non-Retail Sales Workers,7.5,0.075,First-Line Supervisors of Non-Retail Sales Workers,direct
+41-2011.00,41-2011,Cashiers,97.0,0.97,Cashiers,direct
+41-2012.00,41-2012,Gambling Change Persons and Booth Cashiers,83.0,0.83,Gaming Change Persons and Booth Cashiers,direct
+41-2021.00,41-2021,Counter and Rental Clerks,97.0,0.97,Counter and Rental Clerks,direct
+41-2022.00,41-2022,Parts Salespersons,98.0,0.98,Parts Salespersons,direct
+41-2031.00,41-2031,Retail Salespersons,92.0,0.92,Retail Salespersons,direct
+41-3011.00,41-3011,Advertising Sales Agents,54.0,0.54,Advertising Sales Agents,direct
+41-3021.00,41-3021,Insurance Sales Agents,92.0,0.92,Insurance Sales Agents,direct
+41-3031.00,41-3031,"Securities, Commodities, and Financial Services Sales Agents",1.6,0.016,Securities; Commodities; and Financial Services Sales Agents,direct
+41-3041.00,41-3041,Travel Agents,9.9,0.099,Travel Agents,direct
+41-3091.00,41-3091,"Sales Representatives of Services, Except Advertising, Insurance, Financial Services, and Travel",39.375,0.39375,[Group avg: 41-30],group_avg
+41-4011.00,41-4011,"Sales Representatives, Wholesale and Manufacturing, Technical and Scientific Products",25.0,0.25,Sales Representatives; Wholesale and Manufacturing; Technical and Scientific Products,direct
+41-4011.07,41-4011,Solar Sales Representatives and Assessors,25.0,0.25,Sales Representatives; Wholesale and Manufacturing; Technical and Scientific Products,direct
+41-4012.00,41-4012,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",85.0,0.85,Sales Representatives; Wholesale and Manufacturing; Except Technical and Scientific Products,direct
+41-9011.00,41-9011,Demonstrators and Product Promoters,51.0,0.51,Demonstrators and Product Promoters,direct
+41-9012.00,41-9012,Models,98.0,0.98,Models,direct
+41-9021.00,41-9021,Real Estate Brokers,97.0,0.97,Real Estate Brokers,direct
+41-9022.00,41-9022,Real Estate Sales Agents,86.0,0.86,Real Estate Sales Agents,direct
+41-9031.00,41-9031,Sales Engineers,0.41,0.0041,Sales Engineers,direct
+41-9041.00,41-9041,Telemarketers,99.0,0.99,Telemarketers,direct
+41-9091.00,41-9091,"Door-to-Door Sales Workers, News and Street Vendors, and Related Workers",94.0,0.94,Door-to-Door Sales Workers; News and Street Vendors; and Related Workers,direct
+41-9099.00,41-9099,"Sales and Related Workers, All Other",75.05857142857144,0.7505857142857144,[Group avg: 41-90],group_avg
+43-1011.00,43-1011,First-Line Supervisors of Office and Administrative Support Workers,1.4,0.014,First-Line Supervisors of Office and Administrative Support Workers,direct
+43-2011.00,43-2011,"Switchboard Operators, Including Answering Service",96.0,0.96,Switchboard Operators; Including Answering Service,direct
+43-2021.00,43-2021,Telephone Operators,97.0,0.97,Telephone Operators,direct
+43-2099.00,43-2099,"Communications Equipment Operators, All Other",96.5,0.965,[Group avg: 43-20],group_avg
+43-3011.00,43-3011,Bill and Account Collectors,95.0,0.95,Bill and Account Collectors,direct
+43-3021.00,43-3021,Billing and Posting Clerks,96.0,0.96,Billing and Posting Clerks,direct
+43-3031.00,43-3031,"Bookkeeping, Accounting, and Auditing Clerks",98.0,0.98,Bookkeeping; Accounting; and Auditing Clerks,direct
+43-3041.00,43-3041,Gambling Cage Workers,39.0,0.39,Gaming Cage Workers,direct
+43-3051.00,43-3051,Payroll and Timekeeping Clerks,97.0,0.97,Payroll and Timekeeping Clerks,direct
+43-3061.00,43-3061,Procurement Clerks,98.0,0.98,Procurement Clerks,direct
+43-3071.00,43-3071,Tellers,98.0,0.98,Tellers,direct
+43-3099.00,43-3099,"Financial Clerks, All Other",88.71428571428571,0.8871428571428571,[Group avg: 43-30],group_avg
+43-4011.00,43-4011,Brokerage Clerks,98.0,0.98,Brokerage Clerks,direct
+43-4021.00,43-4021,Correspondence Clerks,86.0,0.86,Correspondence Clerks,direct
+43-4031.00,43-4031,"Court, Municipal, and License Clerks",46.0,0.46,Court; Municipal; and License Clerks,direct
+43-4041.00,43-4041,"Credit Authorizers, Checkers, and Clerks",97.0,0.97,Credit Authorizers; Checkers; and Clerks,direct
+43-4051.00,43-4051,Customer Service Representatives,55.0,0.55,Customer Service Representatives,direct
+43-4061.00,43-4061,"Eligibility Interviewers, Government Programs",70.0,0.7,Eligibility Interviewers; Government Programs,direct
+43-4071.00,43-4071,File Clerks,97.0,0.97,File Clerks,direct
+43-4081.00,43-4081,"Hotel, Motel, and Resort Desk Clerks",94.0,0.94,Hotel; Motel; and Resort Desk Clerks,direct
+43-4111.00,43-4111,"Interviewers, Except Eligibility and Loan",94.0,0.94,Interviewers; Except Eligibility and Loan,direct
+43-4121.00,43-4121,"Library Assistants, Clerical",95.0,0.95,Library Assistants; Clerical,direct
+43-4131.00,43-4131,Loan Interviewers and Clerks,92.0,0.92,Loan Interviewers and Clerks,direct
+43-4141.00,43-4141,New Accounts Clerks,99.0,0.99,New Accounts Clerks,direct
+43-4151.00,43-4151,Order Clerks,98.0,0.98,Order Clerks,direct
+43-4161.00,43-4161,"Human Resources Assistants, Except Payroll and Timekeeping",90.0,0.9,Human Resources Assistants; Except Payroll and Timekeeping,direct
+43-4171.00,43-4171,Receptionists and Information Clerks,96.0,0.96,Receptionists and Information Clerks,direct
+43-4181.00,43-4181,Reservation and Transportation Ticket Agents and Travel Clerks,61.0,0.61,Reservation and Transportation Ticket Agents and Travel Clerks,direct
+43-4199.00,43-4199,"Information and Record Clerks, All Other",90.625,0.90625,[Group avg: 43-41],group_avg
+43-5011.00,43-5011,Cargo and Freight Agents,99.0,0.99,Cargo and Freight Agents,direct
+43-5011.01,43-5011,Freight Forwarders,99.0,0.99,Cargo and Freight Agents,direct
+43-5021.00,43-5021,Couriers and Messengers,94.0,0.94,Couriers and Messengers,direct
+43-5031.00,43-5031,Public Safety Telecommunicators,49.0,0.49,Police; Fire; and Ambulance Dispatchers,direct
+43-5032.00,43-5032,"Dispatchers, Except Police, Fire, and Ambulance",96.0,0.96,Dispatchers; Except Police; Fire; and Ambulance,direct
+43-5041.00,43-5041,"Meter Readers, Utilities",85.0,0.85,Meter Readers; Utilities,direct
+43-5051.00,43-5051,Postal Service Clerks,95.0,0.95,Postal Service Clerks,direct
+43-5052.00,43-5052,Postal Service Mail Carriers,68.0,0.68,Postal Service Mail Carriers,direct
+43-5053.00,43-5053,"Postal Service Mail Sorters, Processors, and Processing Machine Operators",79.0,0.79,Postal Service Mail Sorters; Processors; and Processing Machine Operators,direct
+43-5061.00,43-5061,"Production, Planning, and Expediting Clerks",88.0,0.88,Production; Planning; and Expediting Clerks,direct
+43-5071.00,43-5071,"Shipping, Receiving, and Inventory Clerks",98.0,0.98,Shipping; Receiving; and Traffic Clerks,direct
+43-5111.00,43-5111,"Weighers, Measurers, Checkers, and Samplers, Recordkeeping",95.0,0.95,Weighers; Measurers; Checkers; and Samplers; Recordkeeping,direct
+43-6011.00,43-6011,Executive Secretaries and Executive Administrative Assistants,86.0,0.86,Executive Secretaries and Executive Administrative Assistants,direct
+43-6012.00,43-6012,Legal Secretaries and Administrative Assistants,98.0,0.98,Legal Secretaries,direct
+43-6013.00,43-6013,Medical Secretaries and Administrative Assistants,81.0,0.81,Medical Secretaries,direct
+43-6014.00,43-6014,"Secretaries and Administrative Assistants, Except Legal, Medical, and Executive",96.0,0.96,Secretaries and Administrative Assistants; Except Legal; Medical; and Executive,direct
+43-9021.00,43-9021,Data Entry Keyers,99.0,0.99,Data Entry Keyers,direct
+43-9022.00,43-9022,Word Processors and Typists,81.0,0.81,Word Processors and Typists,direct
+43-9031.00,43-9031,Desktop Publishers,16.0,0.16,Desktop Publishers,direct
+43-9041.00,43-9041,Insurance Claims and Policy Processing Clerks,98.0,0.98,Insurance Claims and Policy Processing Clerks,direct
+43-9051.00,43-9051,"Mail Clerks and Mail Machine Operators, Except Postal Service",94.0,0.94,Mail Clerks and Mail Machine Operators; Except Postal Service,direct
+43-9061.00,43-9061,"Office Clerks, General",96.0,0.96,Office Clerks; General,direct
+43-9071.00,43-9071,"Office Machine Operators, Except Computer",92.0,0.92,Office Machine Operators; Except Computer,direct
+43-9081.00,43-9081,Proofreaders and Copy Markers,84.0,0.84,Proofreaders and Copy Markers,direct
+43-9111.00,43-9111,Statistical Assistants,66.0,0.66,Statistical Assistants,direct
+43-9199.00,43-9199,"Office and Administrative Support Workers, All Other",66.0,0.66,[Group avg: 43-91],group_avg
+45-1011.00,45-1011,"First-Line Supervisors of Farming, Fishing, and Forestry Workers",57.0,0.57,First-Line Supervisors of Farming; Fishing; and Forestry Workers,direct
+45-2011.00,45-2011,Agricultural Inspectors,94.0,0.94,Agricultural Inspectors,direct
+45-2021.00,45-2021,Animal Breeders,95.0,0.95,Animal Breeders,direct
+45-2041.00,45-2041,"Graders and Sorters, Agricultural Products",41.0,0.41,Graders and Sorters; Agricultural Products,direct
+45-2091.00,45-2091,Agricultural Equipment Operators,79.25,0.7925,[Group avg: 45-20],group_avg
+45-2092.00,45-2092,"Farmworkers and Laborers, Crop, Nursery, and Greenhouse",79.25,0.7925,[Group avg: 45-20],group_avg
+45-2093.00,45-2093,"Farmworkers, Farm, Ranch, and Aquacultural Animals",79.25,0.7925,[Group avg: 45-20],group_avg
+45-2099.00,45-2099,"Agricultural Workers, All Other",79.25,0.7925,[Group avg: 45-20],group_avg
+45-3031.00,45-3031,Fishing and Hunting Workers,80.0,0.8,[Group avg: 45-30],group_avg
+45-4011.00,45-4011,Forest and Conservation Workers,87.0,0.87,Forest and Conservation Workers,direct
+45-4021.00,45-4021,Fallers,76.0,0.76,Fallers,direct
+45-4022.00,45-4022,Logging Equipment Operators,79.0,0.79,Logging Equipment Operators,direct
+45-4023.00,45-4023,Log Graders and Scalers,97.0,0.97,Log Graders and Scalers,direct
+45-4029.00,45-4029,"Logging Workers, All Other",84.75,0.8475,[Group avg: 45-40],group_avg
+47-1011.00,47-1011,First-Line Supervisors of Construction Trades and Extraction Workers,17.0,0.17,First-Line Supervisors of Construction Trades and Extraction Workers,direct
+47-1011.03,47-1011,Solar Energy Installation Managers,17.0,0.17,First-Line Supervisors of Construction Trades and Extraction Workers,direct
+47-2011.00,47-2011,Boilermakers,68.0,0.68,Boilermakers,direct
+47-2021.00,47-2021,Brickmasons and Blockmasons,82.0,0.82,Brickmasons and Blockmasons,direct
+47-2022.00,47-2022,Stonemasons,89.0,0.89,Stonemasons,direct
+47-2031.00,47-2031,Carpenters,72.0,0.72,Carpenters,direct
+47-2041.00,47-2041,Carpet Installers,87.0,0.87,Carpet Installers,direct
+47-2042.00,47-2042,"Floor Layers, Except Carpet, Wood, and Hard Tiles",79.0,0.79,Floor Layers; Except Carpet; Wood; and Hard Tiles,direct
+47-2043.00,47-2043,Floor Sanders and Finishers,87.0,0.87,Floor Sanders and Finishers,direct
+47-2044.00,47-2044,Tile and Stone Setters,75.0,0.75,Tile and Marble Setters,direct
+47-2051.00,47-2051,Cement Masons and Concrete Finishers,94.0,0.94,Cement Masons and Concrete Finishers,direct
+47-2053.00,47-2053,Terrazzo Workers and Finishers,88.0,0.88,Terrazzo Workers and Finishers,direct
+47-2061.00,47-2061,Construction Laborers,88.0,0.88,Construction Laborers,direct
+47-2071.00,47-2071,"Paving, Surfacing, and Tamping Equipment Operators",83.0,0.83,Paving; Surfacing; and Tamping Equipment Operators,direct
+47-2072.00,47-2072,Pile Driver Operators,82.0,0.82,Pile-Driver Operators,direct
+47-2073.00,47-2073,Operating Engineers and Other Construction Equipment Operators,95.0,0.95,Operating Engineers and Other Construction Equipment Operators,direct
+47-2081.00,47-2081,Drywall and Ceiling Tile Installers,79.0,0.79,Drywall and Ceiling Tile Installers,direct
+47-2082.00,47-2082,Tapers,62.0,0.62,Tapers,direct
+47-2111.00,47-2111,Electricians,15.0,0.15,Electricians,direct
+47-2121.00,47-2121,Glaziers,73.0,0.73,Glaziers,direct
+47-2131.00,47-2131,"Insulation Workers, Floor, Ceiling, and Wall",83.0,0.83,Insulation Workers; Floor; Ceiling; and Wall,direct
+47-2132.00,47-2132,"Insulation Workers, Mechanical",64.0,0.64,Insulation Workers; Mechanical,direct
+47-2141.00,47-2141,"Painters, Construction and Maintenance",75.0,0.75,Painters; Construction and Maintenance,direct
+47-2142.00,47-2142,Paperhangers,87.0,0.87,Paperhangers,direct
+47-2151.00,47-2151,Pipelayers,62.0,0.62,Pipelayers,direct
+47-2152.00,47-2152,"Plumbers, Pipefitters, and Steamfitters",35.0,0.35,Plumbers; Pipefitters; and Steamfitters,direct
+47-2152.04,47-2152,Solar Thermal Installers and Technicians,35.0,0.35,Plumbers; Pipefitters; and Steamfitters,direct
+47-2161.00,47-2161,Plasterers and Stucco Masons,84.0,0.84,Plasterers and Stucco Masons,direct
+47-2171.00,47-2171,Reinforcing Iron and Rebar Workers,90.0,0.9,Reinforcing Iron and Rebar Workers,direct
+47-2181.00,47-2181,Roofers,90.0,0.9,Roofers,direct
+47-2211.00,47-2211,Sheet Metal Workers,82.0,0.82,Sheet Metal Workers,direct
+47-2221.00,47-2221,Structural Iron and Steel Workers,83.0,0.83,Structural Iron and Steel Workers,direct
+47-2231.00,47-2231,Solar Photovoltaic Installers,82.5,0.825,[Group avg: 47-22],group_avg
+47-3011.00,47-3011,"Helpers--Brickmasons, Blockmasons, Stonemasons, and Tile and Marble Setters",83.0,0.83,HelpersBrickmasons; Blockmasons; Stonemasons; and Tile and Marble Setters,direct
+47-3012.00,47-3012,Helpers--Carpenters,92.0,0.92,HelpersCarpenters,direct
+47-3013.00,47-3013,Helpers--Electricians,74.0,0.74,HelpersElectricians,direct
+47-3014.00,47-3014,"Helpers--Painters, Paperhangers, Plasterers, and Stucco Masons",94.0,0.94,HelpersPainters; Paperhangers; Plasterers; and Stucco Masons,direct
+47-3015.00,47-3015,"Helpers--Pipelayers, Plumbers, Pipefitters, and Steamfitters",57.0,0.57,HelpersPipelayers; Plumbers; Pipefitters; and Steamfitters,direct
+47-3016.00,47-3016,Helpers--Roofers,72.0,0.72,HelpersRoofers,direct
+47-3019.00,47-3019,"Helpers, Construction Trades, All Other",78.66666666666667,0.7866666666666667,[Group avg: 47-30],group_avg
+47-4011.00,47-4011,Construction and Building Inspectors,63.0,0.63,Construction and Building Inspectors,direct
+47-4011.01,47-4011,Energy Auditors,63.0,0.63,Construction and Building Inspectors,direct
+47-4021.00,47-4021,Elevator and Escalator Installers and Repairers,39.0,0.39,Elevator Installers and Repairers,direct
+47-4031.00,47-4031,Fence Erectors,92.0,0.92,Fence Erectors,direct
+47-4041.00,47-4041,Hazardous Materials Removal Workers,53.0,0.53,Hazardous Materials Removal Workers,direct
+47-4051.00,47-4051,Highway Maintenance Workers,87.0,0.87,Highway Maintenance Workers,direct
+47-4061.00,47-4061,Rail-Track Laying and Maintenance Equipment Operators,89.0,0.89,Rail-Track Laying and Maintenance Equipment Operators,direct
+47-4071.00,47-4071,Septic Tank Servicers and Sewer Pipe Cleaners,83.0,0.83,Septic Tank Servicers and Sewer Pipe Cleaners,direct
+47-4091.00,47-4091,Segmental Pavers,83.0,0.83,Segmental Pavers,direct
+47-4099.00,47-4099,"Construction and Related Workers, All Other",73.625,0.73625,[Group avg: 47-40],group_avg
+47-4099.03,47-4099,Weatherization Installers and Technicians,73.625,0.73625,[Group avg: 47-40],group_avg
+47-5011.00,47-5011,"Derrick Operators, Oil and Gas",80.0,0.8,Derrick Operators; Oil and Gas,direct
+47-5012.00,47-5012,"Rotary Drill Operators, Oil and Gas",53.0,0.53,Rotary Drill Operators; Oil and Gas,direct
+47-5013.00,47-5013,"Service Unit Operators, Oil and Gas",93.0,0.93,Service Unit Operators; Oil; Gas; and Mining,direct
+47-5022.00,47-5022,"Excavating and Loading Machine and Dragline Operators, Surface Mining",65.63636363636364,0.6563636363636364,[Group avg: 47-50],group_avg
+47-5023.00,47-5023,"Earth Drillers, Except Oil and Gas",65.63636363636364,0.6563636363636364,[Group avg: 47-50],group_avg
+47-5032.00,47-5032,"Explosives Workers, Ordnance Handling Experts, and Blasters",65.63636363636364,0.6563636363636364,[Group avg: 47-50],group_avg
+47-5041.00,47-5041,Continuous Mining Machine Operators,54.0,0.54,Continuous Mining Machine Operators,direct
+47-5043.00,47-5043,"Roof Bolters, Mining",65.63636363636364,0.6563636363636364,[Group avg: 47-50],group_avg
+47-5044.00,47-5044,"Loading and Moving Machine Operators, Underground Mining",65.63636363636364,0.6563636363636364,[Group avg: 47-50],group_avg
+47-5049.00,47-5049,"Underground Mining Machine Operators, All Other",65.63636363636364,0.6563636363636364,[Group avg: 47-50],group_avg
+47-5051.00,47-5051,"Rock Splitters, Quarry",96.0,0.96,Rock Splitters; Quarry,direct
+47-5071.00,47-5071,"Roustabouts, Oil and Gas",68.0,0.68,Roustabouts; Oil and Gas,direct
+47-5081.00,47-5081,Helpers--Extraction Workers,37.0,0.37,HelpersExtraction Workers,direct
+47-5099.00,47-5099,"Extraction Workers, All Other",65.63636363636364,0.6563636363636364,[Group avg: 47-50],group_avg
+49-1011.00,49-1011,"First-Line Supervisors of Mechanics, Installers, and Repairers",0.3,0.003,First-Line Supervisors of Mechanics; Installers; and Repairers,direct
+49-2011.00,49-2011,"Computer, Automated Teller, and Office Machine Repairers",74.0,0.74,Computer; Automated Teller; and Office Machine Repairers,direct
+49-2021.00,49-2021,"Radio, Cellular, and Tower Equipment Installers and Repairers",93.0,0.93,Radio; Cellular; and Tower Equipment Installers and Repairs,direct
+49-2022.00,49-2022,"Telecommunications Equipment Installers and Repairers, Except Line Installers",36.0,0.36,Telecommunications Equipment Installers and Repairers; Except Line Installers,direct
+49-2091.00,49-2091,Avionics Technicians,70.0,0.7,Avionics Technicians,direct
+49-2092.00,49-2092,"Electric Motor, Power Tool, and Related Repairers",76.0,0.76,Electric Motor; Power Tool; and Related Repairers,direct
+49-2093.00,49-2093,"Electrical and Electronics Installers and Repairers, Transportation Equipment",91.0,0.91,Electrical and Electronics Installers and Repairers; Transportation Equipment,direct
+49-2094.00,49-2094,"Electrical and Electronics Repairers, Commercial and Industrial Equipment",41.0,0.41,Electrical and Electronics Repairers; Commercial and Industrial Equipment,direct
+49-2095.00,49-2095,"Electrical and Electronics Repairers, Powerhouse, Substation, and Relay",38.0,0.38,Electrical and Electronics Repairers; Powerhouse; Substation; and Relay,direct
+49-2096.00,49-2096,"Electronic Equipment Installers and Repairers, Motor Vehicles",61.0,0.61,Electronic Equipment Installers and Repairers; Motor Vehicles,direct
+49-2097.00,49-2097,Audiovisual Equipment Installers and Repairers,65.0,0.65,Electronic Home Entertainment Equipment Installers and Repairers,direct
+49-2098.00,49-2098,Security and Fire Alarm Systems Installers,82.0,0.82,Security and Fire Alarm Systems Installers,direct
+49-3011.00,49-3011,Aircraft Mechanics and Service Technicians,71.0,0.71,Aircraft Mechanics and Service Technicians,direct
+49-3021.00,49-3021,Automotive Body and Related Repairers,91.0,0.91,Automotive Body and Related Repairers,direct
+49-3022.00,49-3022,Automotive Glass Installers and Repairers,55.0,0.55,Automotive Glass Installers and Repairers,direct
+49-3023.00,49-3023,Automotive Service Technicians and Mechanics,59.0,0.59,Automotive Service Technicians and Mechanics,direct
+49-3031.00,49-3031,Bus and Truck Mechanics and Diesel Engine Specialists,73.0,0.73,Bus and Truck Mechanics and Diesel Engine Specialists,direct
+49-3041.00,49-3041,Farm Equipment Mechanics and Service Technicians,75.0,0.75,Farm Equipment Mechanics and Service Technicians,direct
+49-3042.00,49-3042,"Mobile Heavy Equipment Mechanics, Except Engines",40.0,0.4,Mobile Heavy Equipment Mechanics; Except Engines,direct
+49-3043.00,49-3043,Rail Car Repairers,88.0,0.88,Rail Car Repairers,direct
+49-3051.00,49-3051,Motorboat Mechanics and Service Technicians,66.0,0.66,Motorboat Mechanics and Service Technicians,direct
+49-3052.00,49-3052,Motorcycle Mechanics,79.0,0.79,Motorcycle Mechanics,direct
+49-3053.00,49-3053,Outdoor Power Equipment and Other Small Engine Mechanics,93.0,0.93,Outdoor Power Equipment and Other Small Engine Mechanics,direct
+49-3091.00,49-3091,Bicycle Repairers,94.0,0.94,Bicycle Repairers,direct
+49-3092.00,49-3092,Recreational Vehicle Service Technicians,59.0,0.59,Recreational Vehicle Service Technicians,direct
+49-3093.00,49-3093,Tire Repairers and Changers,70.0,0.7,Tire Repairers and Changers,direct
+49-9011.00,49-9011,Mechanical Door Repairers,91.0,0.91,Mechanical Door Repairers,direct
+49-9012.00,49-9012,"Control and Valve Installers and Repairers, Except Mechanical Door",63.0,0.63,Control and Valve Installers and Repairers; Except Mechanical Door,direct
+49-9021.00,49-9021,"Heating, Air Conditioning, and Refrigeration Mechanics and Installers",65.0,0.65,Heating; Air Conditioning; and Refrigeration Mechanics and Installers,direct
+49-9031.00,49-9031,Home Appliance Repairers,72.0,0.72,Home Appliance Repairers,direct
+49-9041.00,49-9041,Industrial Machinery Mechanics,67.0,0.67,Industrial Machinery Mechanics,direct
+49-9043.00,49-9043,"Maintenance Workers, Machinery",86.0,0.86,Maintenance Workers; Machinery,direct
+49-9044.00,49-9044,Millwrights,59.0,0.59,Millwrights,direct
+49-9045.00,49-9045,"Refractory Materials Repairers, Except Brickmasons",82.0,0.82,Refractory Materials Repairers; Except Brickmasons,direct
+49-9051.00,49-9051,Electrical Power-Line Installers and Repairers,9.7,0.097,Electrical Power-Line Installers and Repairers,direct
+49-9052.00,49-9052,Telecommunications Line Installers and Repairers,49.0,0.49,Telecommunications Line Installers and Repairers,direct
+49-9061.00,49-9061,Camera and Photographic Equipment Repairers,97.0,0.97,Camera and Photographic Equipment Repairers,direct
+49-9062.00,49-9062,Medical Equipment Repairers,27.0,0.27,Medical Equipment Repairers,direct
+49-9063.00,49-9063,Musical Instrument Repairers and Tuners,91.0,0.91,Musical Instrument Repairers and Tuners,direct
+49-9064.00,49-9064,Watch and Clock Repairers,99.0,0.99,Watch Repairers,direct
+49-9069.00,49-9069,"Precision Instrument and Equipment Repairers, All Other",68.81304347826087,0.6881304347826087,[Group avg: 49-90],group_avg
+49-9071.00,49-9071,"Maintenance and Repair Workers, General",64.0,0.64,Maintenance and Repair Workers; General,direct
+49-9081.00,49-9081,Wind Turbine Service Technicians,68.81304347826087,0.6881304347826087,[Group avg: 49-90],group_avg
+49-9091.00,49-9091,"Coin, Vending, and Amusement Machine Servicers and Repairers",94.0,0.94,Coin; Vending; and Amusement Machine Servicers and Repairers,direct
+49-9092.00,49-9092,Commercial Divers,18.0,0.18,Commercial Divers,direct
+49-9094.00,49-9094,Locksmiths and Safe Repairers,77.0,0.77,Locksmiths and Safe Repairers,direct
+49-9095.00,49-9095,Manufactured Building and Mobile Home Installers,18.0,0.18,Manufactured Building and Mobile Home Installers,direct
+49-9096.00,49-9096,Riggers,89.0,0.89,Riggers,direct
+49-9097.00,49-9097,Signal and Track Switch Repairers,90.0,0.9,Signal and Track Switch Repairers,direct
+49-9098.00,49-9098,"Helpers--Installation, Maintenance, and Repair Workers",79.0,0.79,HelpersInstallation; Maintenance; and Repair Workers,direct
+49-9099.00,49-9099,"Installation, Maintenance, and Repair Workers, All Other",68.81304347826087,0.6881304347826087,[Group avg: 49-90],group_avg
+49-9099.01,49-9099,Geothermal Technicians,68.81304347826087,0.6881304347826087,[Group avg: 49-90],group_avg
+51-1011.00,51-1011,First-Line Supervisors of Production and Operating Workers,1.6,0.016,First-Line Supervisors of Production and Operating Workers,direct
+51-2011.00,51-2011,"Aircraft Structure, Surfaces, Rigging, and Systems Assemblers",79.0,0.79,Aircraft Structure; Surfaces; Rigging; and Systems Assemblers,direct
+51-2021.00,51-2021,"Coil Winders, Tapers, and Finishers",73.0,0.73,Coil Winders; Tapers; and Finishers,direct
+51-2022.00,51-2022,Electrical and Electronic Equipment Assemblers,95.0,0.95,Electrical and Electronic Equipment Assemblers,direct
+51-2023.00,51-2023,Electromechanical Equipment Assemblers,97.0,0.97,Electromechanical Equipment Assemblers,direct
+51-2031.00,51-2031,Engine and Other Machine Assemblers,82.0,0.82,Engine and Other Machine Assemblers,direct
+51-2041.00,51-2041,Structural Metal Fabricators and Fitters,41.0,0.41,Structural Metal Fabricators and Fitters,direct
+51-2051.00,51-2051,Fiberglass Laminators and Fabricators,83.88888888888889,0.8388888888888889,[Group avg: 51-20],group_avg
+51-2061.00,51-2061,Timing Device Assemblers and Adjusters,83.88888888888889,0.8388888888888889,[Group avg: 51-20],group_avg
+51-2092.00,51-2092,Team Assemblers,97.0,0.97,Team Assemblers,direct
+51-2099.00,51-2099,"Assemblers and Fabricators, All Other",83.88888888888889,0.8388888888888889,[Group avg: 51-20],group_avg
+51-3011.00,51-3011,Bakers,89.0,0.89,Bakers,direct
+51-3021.00,51-3021,Butchers and Meat Cutters,93.0,0.93,Butchers and Meat Cutters,direct
+51-3022.00,51-3022,"Meat, Poultry, and Fish Cutters and Trimmers",94.0,0.94,Meat; Poultry; and Fish Cutters and Trimmers,direct
+51-3023.00,51-3023,Slaughterers and Meat Packers,60.0,0.6,Slaughterers and Meat Packers,direct
+51-3091.00,51-3091,"Food and Tobacco Roasting, Baking, and Drying Machine Operators and Tenders",91.0,0.91,Food and Tobacco Roasting; Baking; and Drying Machine Operators and Tenders,direct
+51-3092.00,51-3092,Food Batchmakers,70.0,0.7,Food Batchmakers,direct
+51-3093.00,51-3093,Food Cooking Machine Operators and Tenders,61.0,0.61,Food Cooking Machine Operators and Tenders,direct
+51-3099.00,51-3099,"Food Processing Workers, All Other",79.71428571428571,0.797142857142857,[Group avg: 51-30],group_avg
+51-4021.00,51-4021,"Extruding and Drawing Machine Setters, Operators, and Tenders, Metal and Plastic",91.0,0.91,Extruding and Drawing Machine Setters; Operators; and Tenders; Metal and Plastic,direct
+51-4022.00,51-4022,"Forging Machine Setters, Operators, and Tenders, Metal and Plastic",93.0,0.93,Forging Machine Setters; Operators; and Tenders; Metal and Plastic,direct
+51-4023.00,51-4023,"Rolling Machine Setters, Operators, and Tenders, Metal and Plastic",83.0,0.83,Rolling Machine Setters; Operators; and Tenders; Metal and Plastic,direct
+51-4031.00,51-4031,"Cutting, Punching, and Press Machine Setters, Operators, and Tenders, Metal and Plastic",78.0,0.78,Cutting; Punching; and Press Machine Setters; Operators; and Tenders; Metal and Plastic,direct
+51-4032.00,51-4032,"Drilling and Boring Machine Tool Setters, Operators, and Tenders, Metal and Plastic",94.0,0.94,Drilling and Boring Machine Tool Setters; Operators; and Tenders; Metal and Plastic,direct
+51-4033.00,51-4033,"Grinding, Lapping, Polishing, and Buffing Machine Tool Setters, Operators, and Tenders, Metal and Plastic",95.0,0.95,Grinding; Lapping; Polishing; and Buffing Machine Tool Setters; Operators; and Tenders; Metal and Plastic,direct
+51-4034.00,51-4034,"Lathe and Turning Machine Tool Setters, Operators, and Tenders, Metal and Plastic",84.0,0.84,Lathe and Turning Machine Tool Setters; Operators; and Tenders; Metal and Plastic,direct
+51-4035.00,51-4035,"Milling and Planing Machine Setters, Operators, and Tenders, Metal and Plastic",98.0,0.98,Milling and Planing Machine Setters; Operators; and Tenders; Metal and Plastic,direct
+51-4041.00,51-4041,Machinists,65.0,0.65,Machinists,direct
+51-4051.00,51-4051,Metal-Refining Furnace Operators and Tenders,88.0,0.88,Metal-Refining Furnace Operators and Tenders,direct
+51-4052.00,51-4052,"Pourers and Casters, Metal",87.0,0.87,Pourers and Casters; Metal,direct
+51-4061.00,51-4061,"Model Makers, Metal and Plastic",93.0,0.93,Model Makers; Metal and Plastic,direct
+51-4062.00,51-4062,"Patternmakers, Metal and Plastic",90.0,0.9,Patternmakers; Metal and Plastic,direct
+51-4071.00,51-4071,Foundry Mold and Coremakers,67.0,0.67,Foundry Mold and Coremakers,direct
+51-4072.00,51-4072,"Molding, Coremaking, and Casting Machine Setters, Operators, and Tenders, Metal and Plastic",95.0,0.95,Molding; Coremaking; and Casting Machine Setters; Operators; and Tenders; Metal and Plastic,direct
+51-4081.00,51-4081,"Multiple Machine Tool Setters, Operators, and Tenders, Metal and Plastic",91.0,0.91,Multiple Machine Tool Setters; Operators; and Tenders; Metal and Plastic,direct
+51-4111.00,51-4111,Tool and Die Makers,84.0,0.84,Tool and Die Makers,direct
+51-4121.00,51-4121,"Welders, Cutters, Solderers, and Brazers",94.0,0.94,Welders; Cutters; Solderers; and Brazers,direct
+51-4122.00,51-4122,"Welding, Soldering, and Brazing Machine Setters, Operators, and Tenders",61.0,0.61,Welding; Soldering; and Brazing Machine Setters; Operators; and Tenders,direct
+51-4191.00,51-4191,"Heat Treating Equipment Setters, Operators, and Tenders, Metal and Plastic",91.0,0.91,Heat Treating Equipment Setters; Operators; and Tenders; Metal and Plastic,direct
+51-4192.00,51-4192,"Layout Workers, Metal and Plastic",84.0,0.84,Layout Workers; Metal and Plastic,direct
+51-4193.00,51-4193,"Plating Machine Setters, Operators, and Tenders, Metal and Plastic",92.0,0.92,Plating and Coating Machine Setters; Operators; and Tenders; Metal and Plastic,direct
+51-4194.00,51-4194,"Tool Grinders, Filers, and Sharpeners",88.0,0.88,Tool Grinders; Filers; and Sharpeners,direct
+51-4199.00,51-4199,"Metal Workers and Plastic Workers, All Other",84.85714285714286,0.8485714285714286,[Group avg: 51-41],group_avg
+51-5111.00,51-5111,Prepress Technicians and Workers,97.0,0.97,Prepress Technicians and Workers,direct
+51-5112.00,51-5112,Printing Press Operators,83.0,0.83,Printing Press Operators,direct
+51-5113.00,51-5113,Print Binding and Finishing Workers,95.0,0.95,Print Binding and Finishing Workers,direct
+51-6011.00,51-6011,Laundry and Dry-Cleaning Workers,71.0,0.71,Laundry and Dry-Cleaning Workers,direct
+51-6021.00,51-6021,"Pressers, Textile, Garment, and Related Materials",81.0,0.81,Pressers; Textile; Garment; and Related Materials,direct
+51-6031.00,51-6031,Sewing Machine Operators,89.0,0.89,Sewing Machine Operators,direct
+51-6041.00,51-6041,Shoe and Leather Workers and Repairers,52.0,0.52,Shoe and Leather Workers and Repairers,direct
+51-6042.00,51-6042,Shoe Machine Operators and Tenders,97.0,0.97,Shoe Machine Operators and Tenders,direct
+51-6051.00,51-6051,"Sewers, Hand",99.0,0.99,Sewers; Hand,direct
+51-6052.00,51-6052,"Tailors, Dressmakers, and Custom Sewers",84.0,0.84,Tailors; Dressmakers; and Custom Sewers,direct
+51-6061.00,51-6061,Textile Bleaching and Dyeing Machine Operators and Tenders,97.0,0.97,Textile Bleaching and Dyeing Machine Operators and Tenders,direct
+51-6062.00,51-6062,"Textile Cutting Machine Setters, Operators, and Tenders",95.0,0.95,Textile Cutting Machine Setters; Operators; and Tenders,direct
+51-6063.00,51-6063,"Textile Knitting and Weaving Machine Setters, Operators, and Tenders",73.0,0.73,Textile Knitting and Weaving Machine Setters; Operators; and Tenders,direct
+51-6064.00,51-6064,"Textile Winding, Twisting, and Drawing Out Machine Setters, Operators, and Tenders",96.0,0.96,Textile Winding; Twisting; and Drawing Out Machine Setters; Operators; and Tenders,direct
+51-6091.00,51-6091,"Extruding and Forming Machine Setters, Operators, and Tenders, Synthetic and Glass Fibers",88.0,0.88,Extruding and Forming Machine Setters; Operators; and Tenders; Synthetic and Glass Fibers,direct
+51-6092.00,51-6092,Fabric and Apparel Patternmakers,0.49,0.0049,Fabric and Apparel Patternmakers,direct
+51-6093.00,51-6093,Upholsterers,39.0,0.39,Upholsterers,direct
+51-6099.00,51-6099,"Textile, Apparel, and Furnishings Workers, All Other",75.82071428571429,0.7582071428571429,[Group avg: 51-60],group_avg
+51-7011.00,51-7011,Cabinetmakers and Bench Carpenters,92.0,0.92,Cabinetmakers and Bench Carpenters,direct
+51-7021.00,51-7021,Furniture Finishers,87.0,0.87,Furniture Finishers,direct
+51-7031.00,51-7031,"Model Makers, Wood",96.0,0.96,Model Makers; Wood,direct
+51-7032.00,51-7032,"Patternmakers, Wood",91.0,0.91,Patternmakers; Wood,direct
+51-7041.00,51-7041,"Sawing Machine Setters, Operators, and Tenders, Wood",86.0,0.86,Sawing Machine Setters; Operators; and Tenders; Wood,direct
+51-7042.00,51-7042,"Woodworking Machine Setters, Operators, and Tenders, Except Sawing",97.0,0.97,Woodworking Machine Setters; Operators; and Tenders; Except Sawing,direct
+51-7099.00,51-7099,"Woodworkers, All Other",91.5,0.915,[Group avg: 51-70],group_avg
+51-8011.00,51-8011,Nuclear Power Reactor Operators,95.0,0.95,Nuclear Power Reactor Operators,direct
+51-8012.00,51-8012,Power Distributors and Dispatchers,64.0,0.64,Power Distributors and Dispatchers,direct
+51-8013.00,51-8013,Power Plant Operators,85.0,0.85,Power Plant Operators,direct
+51-8013.03,51-8013,Biomass Plant Technicians,85.0,0.85,Power Plant Operators,direct
+51-8013.04,51-8013,Hydroelectric Plant Technicians,85.0,0.85,Power Plant Operators,direct
+51-8021.00,51-8021,Stationary Engineers and Boiler Operators,89.0,0.89,Stationary Engineers and Boiler Operators,direct
+51-8031.00,51-8031,Water and Wastewater Treatment Plant and System Operators,61.0,0.61,Water and Wastewater Treatment Plant and System Operators,direct
+51-8091.00,51-8091,Chemical Plant and System Operators,85.0,0.85,Chemical Plant and System Operators,direct
+51-8092.00,51-8092,Gas Plant Operators,78.0,0.78,Gas Plant Operators,direct
+51-8093.00,51-8093,"Petroleum Pump System Operators, Refinery Operators, and Gaugers",71.0,0.71,Petroleum Pump System Operators; Refinery Operators; and Gaugers,direct
+51-8099.00,51-8099,"Plant and System Operators, All Other",86.0,0.86,Plant and System Operators; All Other,direct
+51-8099.01,51-8099,Biofuels Processing Technicians,86.0,0.86,Plant and System Operators; All Other,direct
+51-9011.00,51-9011,Chemical Equipment Operators and Tenders,76.0,0.76,Chemical Equipment Operators and Tenders,direct
+51-9012.00,51-9012,"Separating, Filtering, Clarifying, Precipitating, and Still Machine Setters, Operators, and Tenders",88.0,0.88,Separating; Filtering; Clarifying; Precipitating; and Still Machine Setters; Operators; and Tenders,direct
+51-9021.00,51-9021,"Crushing, Grinding, and Polishing Machine Setters, Operators, and Tenders",97.0,0.97,Crushing; Grinding; and Polishing Machine Setters; Operators; and Tenders,direct
+51-9022.00,51-9022,"Grinding and Polishing Workers, Hand",97.0,0.97,Grinding and Polishing Workers; Hand,direct
+51-9023.00,51-9023,"Mixing and Blending Machine Setters, Operators, and Tenders",83.0,0.83,Mixing and Blending Machine Setters; Operators; and Tenders,direct
+51-9031.00,51-9031,"Cutters and Trimmers, Hand",64.0,0.64,Cutters and Trimmers; Hand,direct
+51-9032.00,51-9032,"Cutting and Slicing Machine Setters, Operators, and Tenders",86.0,0.86,Cutting and Slicing Machine Setters; Operators; and Tenders,direct
+51-9041.00,51-9041,"Extruding, Forming, Pressing, and Compacting Machine Setters, Operators, and Tenders",93.0,0.93,Extruding; Forming; Pressing; and Compacting Machine Setters; Operators; and Tenders,direct
+51-9051.00,51-9051,"Furnace, Kiln, Oven, Drier, and Kettle Operators and Tenders",37.0,0.37,Furnace; Kiln; Oven; Drier; and Kettle Operators and Tenders,direct
+51-9061.00,51-9061,"Inspectors, Testers, Sorters, Samplers, and Weighers",98.0,0.98,Inspectors; Testers; Sorters; Samplers; and Weighers,direct
+51-9071.00,51-9071,Jewelers and Precious Stone and Metal Workers,95.0,0.95,Jewelers and Precious Stone and Metal Workers,direct
+51-9071.06,51-9071,Gem and Diamond Workers,95.0,0.95,Jewelers and Precious Stone and Metal Workers,direct
+51-9081.00,51-9081,Dental Laboratory Technicians,97.0,0.97,Dental Laboratory Technicians,direct
+51-9082.00,51-9082,Medical Appliance Technicians,45.0,0.45,Medical Appliance Technicians,direct
+51-9083.00,51-9083,Ophthalmic Laboratory Technicians,97.0,0.97,Ophthalmic Laboratory Technicians,direct
+51-9111.00,51-9111,Packaging and Filling Machine Operators and Tenders,98.0,0.98,Packaging and Filling Machine Operators and Tenders,direct
+51-9123.00,51-9123,"Painting, Coating, and Decorating Workers",92.0,0.92,Painting; Coating; and Decorating Workers,direct
+51-9124.00,51-9124,"Coating, Painting, and Spraying Machine Setters, Operators, and Tenders",87.21428571428571,0.8721428571428571,[Group avg: 51-91],group_avg
+51-9141.00,51-9141,Semiconductor Processing Technicians,88.0,0.88,Semiconductor Processors,direct
+51-9151.00,51-9151,Photographic Process Workers and Processing Machine Operators,99.0,0.99,Photographic Process Workers and Processing Machine Operators,direct
+51-9161.00,51-9161,Computer Numerically Controlled Tool Operators,87.21428571428571,0.8721428571428571,[Group avg: 51-91],group_avg
+51-9162.00,51-9162,Computer Numerically Controlled Tool Programmers,87.21428571428571,0.8721428571428571,[Group avg: 51-91],group_avg
+51-9191.00,51-9191,Adhesive Bonding Machine Operators and Tenders,95.0,0.95,Adhesive Bonding Machine Operators and Tenders,direct
+51-9192.00,51-9192,"Cleaning, Washing, and Metal Pickling Equipment Operators and Tenders",81.0,0.81,Cleaning; Washing; and Metal Pickling Equipment Operators and Tenders,direct
+51-9193.00,51-9193,Cooling and Freezing Equipment Operators and Tenders,93.0,0.93,Cooling and Freezing Equipment Operators and Tenders,direct
+51-9194.00,51-9194,Etchers and Engravers,98.0,0.98,Etchers and Engravers,direct
+51-9195.00,51-9195,"Molders, Shapers, and Casters, Except Metal and Plastic",90.0,0.9,Molders; Shapers; and Casters; Except Metal and Plastic,direct
+51-9195.03,51-9195,"Stone Cutters and Carvers, Manufacturing",90.0,0.9,Molders; Shapers; and Casters; Except Metal and Plastic,direct
+51-9195.04,51-9195,"Glass Blowers, Molders, Benders, and Finishers",90.0,0.9,Molders; Shapers; and Casters; Except Metal and Plastic,direct
+51-9195.05,51-9195,"Potters, Manufacturing",90.0,0.9,Molders; Shapers; and Casters; Except Metal and Plastic,direct
+51-9196.00,51-9196,"Paper Goods Machine Setters, Operators, and Tenders",67.0,0.67,Paper Goods Machine Setters; Operators; and Tenders,direct
+51-9197.00,51-9197,Tire Builders,94.0,0.94,Tire Builders,direct
+51-9198.00,51-9198,Helpers--Production Workers,66.0,0.66,HelpersProduction Workers,direct
+51-9199.00,51-9199,"Production Workers, All Other",87.21428571428571,0.8721428571428571,[Group avg: 51-91],group_avg
+53-1041.00,53-1041,Aircraft Cargo Handling Supervisors,17.166666666666668,0.1716666666666667,[Group avg: 53-10],group_avg
+53-1042.00,53-1042,"First-Line Supervisors of Helpers, Laborers, and Material Movers, Hand",17.166666666666668,0.1716666666666667,[Group avg: 53-10],group_avg
+53-1042.01,53-1042,Recycling Coordinators,17.166666666666668,0.1716666666666667,[Group avg: 53-10],group_avg
+53-1043.00,53-1043,First-Line Supervisors of Material-Moving Machine and Vehicle Operators,17.166666666666668,0.1716666666666667,[Group avg: 53-10],group_avg
+53-1044.00,53-1044,First-Line Supervisors of Passenger Attendants,17.166666666666668,0.1716666666666667,[Group avg: 53-10],group_avg
+53-1049.00,53-1049,"First-Line Supervisors of Transportation Workers, All Other",17.166666666666668,0.1716666666666667,[Group avg: 53-10],group_avg
+53-2011.00,53-2011,"Airline Pilots, Copilots, and Flight Engineers",18.0,0.18,Airline Pilots; Copilots; and Flight Engineers,direct
+53-2012.00,53-2012,Commercial Pilots,55.0,0.55,Commercial Pilots,direct
+53-2021.00,53-2021,Air Traffic Controllers,11.0,0.11,Air Traffic Controllers,direct
+53-2022.00,53-2022,Airfield Operations Specialists,71.0,0.71,Airfield Operations Specialists,direct
+53-2031.00,53-2031,Flight Attendants,35.0,0.35,Flight Attendants,direct
+53-3011.00,53-3011,"Ambulance Drivers and Attendants, Except Emergency Medical Technicians",25.0,0.25,Ambulance Drivers and Attendants; Except Emergency Medical Technicians,direct
+53-3031.00,53-3031,Driver/Sales Workers,98.0,0.98,Driver/Sales Workers,direct
+53-3032.00,53-3032,Heavy and Tractor-Trailer Truck Drivers,79.0,0.79,Heavy and Tractor-Trailer Truck Drivers,direct
+53-3033.00,53-3033,Light Truck Drivers,69.0,0.69,Light Truck or Delivery Services Drivers,direct
+53-3051.00,53-3051,"Bus Drivers, School",73.71428571428571,0.7371428571428571,[Group avg: 53-30],group_avg
+53-3052.00,53-3052,"Bus Drivers, Transit and Intercity",73.71428571428571,0.7371428571428571,[Group avg: 53-30],group_avg
+53-3053.00,53-3053,Shuttle Drivers and Chauffeurs,73.71428571428571,0.7371428571428571,[Group avg: 53-30],group_avg
+53-3054.00,53-3054,Taxi Drivers,73.71428571428571,0.7371428571428571,[Group avg: 53-30],group_avg
+53-3099.00,53-3099,"Motor Vehicle Operators, All Other",73.71428571428571,0.7371428571428571,[Group avg: 53-30],group_avg
+53-4011.00,53-4011,Locomotive Engineers,96.0,0.96,Locomotive Engineers,direct
+53-4013.00,53-4013,"Rail Yard Engineers, Dinkey Operators, and Hostlers",91.0,0.91,Rail Yard Engineers; Dinkey Operators; and Hostlers,direct
+53-4022.00,53-4022,"Railroad Brake, Signal, and Switch Operators and Locomotive Firers",88.66666666666667,0.8866666666666667,[Group avg: 53-40],group_avg
+53-4031.00,53-4031,Railroad Conductors and Yardmasters,83.0,0.83,Railroad Conductors and Yardmasters,direct
+53-4041.00,53-4041,Subway and Streetcar Operators,86.0,0.86,Subway and Streetcar Operators,direct
+53-4099.00,53-4099,"Rail Transportation Workers, All Other",88.66666666666667,0.8866666666666667,[Group avg: 53-40],group_avg
+53-5011.00,53-5011,Sailors and Marine Oilers,83.0,0.83,Sailors and Marine Oilers,direct
+53-5021.00,53-5021,"Captains, Mates, and Pilots of Water Vessels",27.0,0.27,Captains; Mates; and Pilots of Water Vessels,direct
+53-5022.00,53-5022,Motorboat Operators,62.0,0.62,Motorboat Operators,direct
+53-5031.00,53-5031,Ship Engineers,4.1,0.041,Ship Engineers,direct
+53-6011.00,53-6011,Bridge and Lock Tenders,97.0,0.97,Bridge and Lock Tenders,direct
+53-6021.00,53-6021,Parking Attendants,87.0,0.87,Parking Lot Attendants,direct
+53-6031.00,53-6031,Automotive and Watercraft Service Attendants,83.0,0.83,Automotive and Watercraft Service Attendants,direct
+53-6032.00,53-6032,Aircraft Service Attendants,87.0,0.87,[Group avg: 53-60],group_avg
+53-6041.00,53-6041,Traffic Technicians,90.0,0.9,Traffic Technicians,direct
+53-6051.00,53-6051,Transportation Inspectors,90.0,0.9,Transportation Inspectors,direct
+53-6051.01,53-6051,Aviation Inspectors,90.0,0.9,Transportation Inspectors,direct
+53-6051.07,53-6051,"Transportation Vehicle, Equipment and Systems Inspectors, Except Aviation",90.0,0.9,Transportation Inspectors,direct
+53-6061.00,53-6061,Passenger Attendants,75.0,0.75,Transportation Attendants; Except Flight Attendants,direct
+53-6099.00,53-6099,"Transportation Workers, All Other",87.0,0.87,[Group avg: 53-60],group_avg
+53-7011.00,53-7011,Conveyor Operators and Tenders,93.0,0.93,Conveyor Operators and Tenders,direct
+53-7021.00,53-7021,Crane and Tower Operators,90.0,0.9,Crane and Tower Operators,direct
+53-7031.00,53-7031,Dredge Operators,92.0,0.92,Dredge Operators,direct
+53-7041.00,53-7041,Hoist and Winch Operators,65.0,0.65,Hoist and Winch Operators,direct
+53-7051.00,53-7051,Industrial Truck and Tractor Operators,93.0,0.93,Industrial Truck and Tractor Operators,direct
+53-7061.00,53-7061,Cleaners of Vehicles and Equipment,37.0,0.37,Cleaners of Vehicles and Equipment,direct
+53-7062.00,53-7062,"Laborers and Freight, Stock, and Material Movers, Hand",85.0,0.85,Laborers and Freight; Stock; and Material Movers; Hand,direct
+53-7062.04,53-7062,Recycling and Reclamation Workers,85.0,0.85,Laborers and Freight; Stock; and Material Movers; Hand,direct
+53-7063.00,53-7063,Machine Feeders and Offbearers,93.0,0.93,Machine Feeders and Offbearers,direct
+53-7064.00,53-7064,"Packers and Packagers, Hand",38.0,0.38,Packers and Packagers; Hand,direct
+53-7065.00,53-7065,Stockers and Order Fillers,79.2,0.792,[Group avg: 53-70],group_avg
+53-7071.00,53-7071,Gas Compressor and Gas Pumping Station Operators,91.0,0.91,Gas Compressor and Gas Pumping Station Operators,direct
+53-7072.00,53-7072,"Pump Operators, Except Wellhead Pumpers",90.0,0.9,Pump Operators; Except Wellhead Pumpers,direct
+53-7073.00,53-7073,Wellhead Pumpers,84.0,0.84,Wellhead Pumpers,direct
+53-7081.00,53-7081,Refuse and Recyclable Material Collectors,93.0,0.93,Refuse and Recyclable Material Collectors,direct
+53-7121.00,53-7121,"Tank Car, Truck, and Ship Loaders",72.0,0.72,Tank Car; Truck; and Ship Loaders,direct
+53-7199.00,53-7199,"Material Moving Workers, All Other",54.5,0.545,[Group avg: 53-71],group_avg
+55-1011.00,55-1011,Air Crew Officers,,,[Unmapped],unmapped
+55-1012.00,55-1012,Aircraft Launch and Recovery Officers,,,[Unmapped],unmapped
+55-1013.00,55-1013,Armored Assault Vehicle Officers,,,[Unmapped],unmapped
+55-1014.00,55-1014,Artillery and Missile Officers,,,[Unmapped],unmapped
+55-1015.00,55-1015,Command and Control Center Officers,,,[Unmapped],unmapped
+55-1016.00,55-1016,Infantry Officers,,,[Unmapped],unmapped
+55-1017.00,55-1017,Special Forces Officers,,,[Unmapped],unmapped
+55-1019.00,55-1019,"Military Officer Special and Tactical Operations Leaders, All Other",,,[Unmapped],unmapped
+55-2011.00,55-2011,First-Line Supervisors of Air Crew Members,,,[Unmapped],unmapped
+55-2012.00,55-2012,First-Line Supervisors of Weapons Specialists/Crew Members,,,[Unmapped],unmapped
+55-2013.00,55-2013,First-Line Supervisors of All Other Tactical Operations Specialists,,,[Unmapped],unmapped
+55-3011.00,55-3011,Air Crew Members,,,[Unmapped],unmapped
+55-3012.00,55-3012,Aircraft Launch and Recovery Specialists,,,[Unmapped],unmapped
+55-3013.00,55-3013,Armored Assault Vehicle Crew Members,,,[Unmapped],unmapped
+55-3014.00,55-3014,Artillery and Missile Crew Members,,,[Unmapped],unmapped
+55-3015.00,55-3015,Command and Control Center Specialists,,,[Unmapped],unmapped
+55-3016.00,55-3016,Infantry,,,[Unmapped],unmapped
+55-3018.00,55-3018,Special Forces,,,[Unmapped],unmapped
+55-3019.00,55-3019,"Military Enlisted Tactical Operations and Air/Weapons Specialists and Crew Members, All Other",,,[Unmapped],unmapped
