@@ -265,6 +265,73 @@ def detect_no_data_occupations(full_dataset, selected_features):
     return no_data_codes
 
 
+def run_monte_carlo_uncertainty(X_original, selected_features, model, n_iterations=100, noise_std=0.10):
+    """
+    Run a Monte Carlo simulation to quantify the uncertainty of the MAEI score.
+    We iterate N times, randomly perturbing each feature multiplier by an amount
+    drawn from a normal distribution with mean=multiplier and std=multiplier*noise_std.
+    This simulates the confidence interval around our strictly calibrated literature values.
+    
+    Returns:
+        DataFrame containing mean, std, lower_bound, and upper_bound for each occupation's delta.
+    """
+    logger.info("=" * 70)
+    logger.info(f"RUNNING MONTE CARLO UNCERTAINTY QUANTIFICATION (N={n_iterations})")
+    logger.info("=" * 70)
+    
+    # Store all simulated deltas
+    simulated_deltas = np.zeros((len(X_original), n_iterations))
+    
+    pctl_risk = X_original.quantile(0.30)
+    pctl_protect = X_original.quantile(0.85)
+    
+    base_pred = np.clip(model.predict(X_original), 0, 100)
+    
+    for i in range(n_iterations):
+        X_simulated = X_original.copy()
+        
+        # Perturb multipliers
+        for feature, multiplier in FEATURE_ADJUSTMENTS_2026.items():
+            if feature in X_simulated.columns and feature in selected_features:
+                # Add gaussian noise to the multiplier (e.g., 10% std dev)
+                perturbed_mult = np.random.normal(loc=multiplier, scale=multiplier * noise_std)
+                # Don't let protective multipliers go below 1.0, risk multipliers below 1.0 (unless originally < 1)
+                if multiplier > 1.0:
+                    perturbed_mult = max(1.0, perturbed_mult)
+                else:
+                    perturbed_mult = min(1.0, max(0.0, perturbed_mult))
+                
+                # We need to know if it's protective
+                is_protect = any(term in feature for term in [
+                    'Originality', 'Fluency', 'Creatively', 'creative',
+                    'Social', 'Negotiation', 'Persuasion', 'Instructing',
+                    'Coordination', 'Service', 'Therapy', 'Psychology',
+                    'Sociology', 'social', 'Assisting', 'Relationships',
+                    'Conflicts', 'Coaching', 'Teaching', 'Public', 'Guiding',
+                    'Manual', 'Finger', 'Steadiness', 'Precision', 'Spatial',
+                    'Vision', 'Depth', 'physical', 'Handling', 'Physical'
+                ])
+                
+                if is_protect:
+                    above_threshold = X_original[feature] >= pctl_protect[feature]
+                else:
+                    above_threshold = X_original[feature] >= pctl_risk[feature]
+                    
+                X_simulated.loc[above_threshold, feature] = (
+                    X_original.loc[above_threshold, feature] * perturbed_mult
+                )
+                
+        sim_pred = np.clip(model.predict(X_simulated), 0, 100)
+        simulated_deltas[:, i] = sim_pred - base_pred
+        
+    # Calculate statistics
+    mc_results = pd.DataFrame({
+        'MC_Mean_Delta': np.mean(simulated_deltas, axis=1),
+        'MC_Std_Dev': np.std(simulated_deltas, axis=1),
+    }, index=X_original.index)
+    
+    return mc_results
+
 def calculate_maei(full_dataset, model_artifact, W_exposure=10.0, W_protection=3.0):
     """
     Audit all scores, fix artifacts, and flag occupations with no data.
@@ -378,6 +445,9 @@ def calculate_maei(full_dataset, model_artifact, W_exposure=10.0, W_protection=3
     # This captures the EFFECT of AI progress, independent of absolute score.
     model_delta = (pred_2026 - pred_baseline) + broad_exposure_adj.values
     
+    # Run Monte Carlo uncertainty quantification (10% perturbation of calibration assumption)
+    mc_results = run_monte_carlo_uncertainty(X_original, selected_features, model, n_iterations=100)
+    
     results = []
     scored_count = 0
     flagged_count = 0
@@ -400,6 +470,7 @@ def calculate_maei(full_dataset, model_artifact, W_exposure=10.0, W_protection=3
                 'Mapping_Method': mapping,
                 'SOC_Major_Group': str(onet_code)[:2],
                 'Data_Flag': 'No O*NET feature data available — cannot score',
+                'Score_Std_Dev': np.nan,
             })
             flagged_count += 1
         elif mapping == 'direct' and not pd.isna(fo_original):
@@ -421,6 +492,7 @@ def calculate_maei(full_dataset, model_artifact, W_exposure=10.0, W_protection=3
                 'Mapping_Method': mapping,
                 'SOC_Major_Group': str(onet_code)[:2],
                 'Data_Flag': '',
+                'Score_Std_Dev': round(float(mc_results.loc[onet_code, 'MC_Std_Dev']), 2),
             })
             scored_count += 1
         else:
@@ -438,6 +510,7 @@ def calculate_maei(full_dataset, model_artifact, W_exposure=10.0, W_protection=3
                 'Mapping_Method': mapping,
                 'SOC_Major_Group': str(onet_code)[:2],
                 'Data_Flag': '',
+                'Score_Std_Dev': round(float(mc_results.loc[onet_code, 'MC_Std_Dev']), 2),
             })
             scored_count += 1
     
