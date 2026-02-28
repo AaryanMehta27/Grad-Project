@@ -75,7 +75,13 @@ These traits successfully protect occupations from AI automation (they are physi
 *Comparing the latent O\*NET capability vectors (130+ dimensions of human skills, abilities, and knowledge) via Cosine Similarity to find efficient transition pathways from Highly Exposed to Protected occupations.*
 
 ### Example Displacements and Optimal Transitions
-*   **Automotive Body and Related Repairers** (MAEI: 89.7): The algorithmic lifeboat recommendation is **Plumbers, Pipefitters, and Steamfitters** (Similarity: 0.46, Wage Shift: +26.3%).
+*   **Paralegals and Legal Assistants** (MAEI: 86.8): The algorithmic lifeboat recommendation is **Plumbers, Pipefitters, and Steamfitters** (Similarity: 0.46, Wage Shift: +26.3%).
 *   **Compensation and Benefits Managers** (MAEI: 100.0): The algorithmic lifeboat recommendation is **Human Resources Managers** (Similarity: 0.72, Wage Shift: -0.0%).
 *   **Tax Preparers** (MAEI: 100.0): The algorithmic lifeboat recommendation is **Credit Counselors** (Similarity: 0.48, Wage Shift: -0.9%).
 *   **Occupational Health and Safety Technicians** (MAEI: 40.7): The algorithmic lifeboat recommendation is **Occupational Health and Safety Specialists** (Similarity: 0.59, Wage Shift: +40.1%).
+
+### Limitation: The Cognitive Trap and Domain Weighting
+While the algorithm mathematically identifies latent capability overlap, it currently weights all 130+ O\*NET features equally. This produces mathematically sound but practically absurd transitions (e.g., *Paralegal $\rightarrow$ Plumber*). 
+*   **The Mathematical Reason:** Both roles require high abstract cognitive overlap (e.g., *System Diagnosis*, *Deductive Reasoning* to fix a contract vs. a pipe network).
+*   **The Practical Failure:** The algorithm does not heavily penalize a Paralegal for lacking "Dynamic Strength" or "Manual Dexterity." 
+*   **The Critical Insight:** This limitation perfectly illustrates **The Cognitive Trap**. If a highly-trained cognitive worker is displaced by AI, they cannot easily transition to another cognitive role because *those lifeboats are also sinking*. Their only safe lifeboats are physical/manual roles, but the friction to retrain an office worker into a master pipefitter is incredibly high. The absurdity of the recommendation is exactly the economic crisis the MAEI index warns about.
