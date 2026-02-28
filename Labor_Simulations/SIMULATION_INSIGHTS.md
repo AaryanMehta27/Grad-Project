@@ -69,3 +69,13 @@ These traits successfully protect occupations from AI automation (they are physi
 *   **Social Perceptiveness:** +2.0% shift (Not Significant)
 *   **Negotiation:** +2.3% shift (Not Significant)
 *   *Insight:* These traits are often required baselines for employment rather than specialized skills that command exponential wage growth independently.
+
+
+## 4. Algorithmic Reskilling Networks ('Lifeboats')
+*Comparing the latent O\*NET capability vectors (130+ dimensions of human skills, abilities, and knowledge) via Cosine Similarity to find efficient transition pathways from Highly Exposed to Protected occupations.*
+
+### Example Displacements and Optimal Transitions
+*   **Automotive Body and Related Repairers** (MAEI: 89.7): The algorithmic lifeboat recommendation is **Plumbers, Pipefitters, and Steamfitters** (Similarity: 0.46, Wage Shift: +26.3%).
+*   **Compensation and Benefits Managers** (MAEI: 100.0): The algorithmic lifeboat recommendation is **Human Resources Managers** (Similarity: 0.72, Wage Shift: -0.0%).
+*   **Tax Preparers** (MAEI: 100.0): The algorithmic lifeboat recommendation is **Credit Counselors** (Similarity: 0.48, Wage Shift: -0.9%).
+*   **Occupational Health and Safety Technicians** (MAEI: 40.7): The algorithmic lifeboat recommendation is **Occupational Health and Safety Specialists** (Similarity: 0.59, Wage Shift: +40.1%).
