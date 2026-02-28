@@ -56,19 +56,26 @@ def main():
     plt.grid(True, alpha=0.3)
     
     # Annotate some top occupations
+    texts = []
+    
+    # Highest Exposure
     top_exposed = df.nlargest(5, 'MAEI_2026_Score')
     for idx, row in top_exposed.iterrows():
-        plt.annotate(row['Occupation'][:30], 
-                     (row['A_MEDIAN'], row['MAEI_2026_Score']),
-                     xytext=(5, 5), textcoords='offset points',
-                     fontsize=9, alpha=0.8, weight='bold')
+        texts.append(plt.text(row['A_MEDIAN'], row['MAEI_2026_Score'], row['Occupation'][:35], fontsize=9, alpha=0.9, weight='bold'))
                      
-    top_jobs = df.nlargest(3, 'TOT_EMP')
+    # Highest Employment
+    top_jobs = df.nlargest(5, 'TOT_EMP')
     for idx, row in top_jobs.iterrows():
-        plt.annotate(row['Occupation'][:30], 
-                     (row['A_MEDIAN'], row['MAEI_2026_Score']),
-                     xytext=(5, -15), textcoords='offset points',
-                     fontsize=9, alpha=0.9, color='darkblue', weight='bold')
+        texts.append(plt.text(row['A_MEDIAN'], row['MAEI_2026_Score'], row['Occupation'][:35], fontsize=9, alpha=0.9, color='darkblue', weight='bold'))
+        
+    # Highest Wage (To show the far right of the plot)
+    top_wage = df.nlargest(5, 'A_MEDIAN')
+    for idx, row in top_wage.iterrows():
+        texts.append(plt.text(row['A_MEDIAN'], row['MAEI_2026_Score'], row['Occupation'][:35], fontsize=9, alpha=0.9, color='darkred', weight='bold'))
+
+    # Safely adjust text to prevent overlaps
+    from adjustText import adjust_text
+    adjust_text(texts, arrowprops=dict(arrowstyle='->', color='gray', lw=0.5))
 
     plt.tight_layout()
     output_path = os.path.join(OUTPUT_DIR, "wage_vs_exposure_scatter.png")
