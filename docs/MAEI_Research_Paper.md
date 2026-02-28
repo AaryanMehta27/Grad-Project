@@ -173,3 +173,21 @@ No model is without vulnerability. While the MAEI is rigorously constructed, it 
 The Modern AI Exposure Index bridges the analytical gap between the robotics-heavy anxiety of the 2010s and the cognitive-heavy reality of the 2020s. By leveraging machine learning to reverse engineer historical automation logic, employing Natural Language Processing to extract latent human tasks, forcing capability multipliers, and securing the findings with Monte Carlo uncertainty bounds, the MAEI provides a transparent, parameter-bounded map of technological exposure. 
 
 It conclusively and empirically demonstrates that the target of automation has inverted across the educational and wage spectrum, pivoting away from physical routine and aiming squarely at cognitive, analytical processing. The accompanying Python codebase ensures this index remains entirely reproducible, interpretable at the feature level, and mathematically grounded for future policy analysis.
+
+---
+
+## 10. Future Directions: Labor Reallocation and The "Human Premium"
+
+While the MAEI successfully measures the *structural capability overlap* between occupations and Generative AI, the ultimate goal of labor economics is understanding the downstream effects of that overlap. The natural extension of this research involves translating the MAEI from a static index of exposure into a dynamic simulation of labor market transitions and wage reallocations. 
+
+Three primary avenues of future research emerge directly from the MAEI dataset:
+
+### 10.1 Mapping the "Human Premium"
+As the cognitive cost of content generation, data analysis, and coding approaches zero due to LLM efficiency, classic economic theory dictates that the relative value of non-automatable, distinctly human skills will skyrocket. We are already observing this phenomenologically through the meteoric rise of the creator economy, where authenticity, parasocial relationships, and bespoke human artistry command massive wage premiums. 
+Future research will segment the MAEI to isolate occupations with high absolute protection metrics (e.g., highly weighted in *Originality*, *Therapy and Counseling*, or *Social Perceptiveness*). By regressing these "Human Premium" scores against longitudinal wage data from the Bureau of Labor Statistics (BLS), researchers can empirically simulate the wage divergence between easily generated cognitive tasks and scarce human authenticity.
+
+### 10.2 Wage Shock Simulations
+The MAEI can be directly joined with BLS Occupational Employment and Wage Statistics (OEWS). By identifying the total employment volume and median wages of the uppermost quartile of the MAEI distribution, we can calculate the total gross wage volume mathematically "exposed" to AI capability. Rather than predicting absolute job loss, future simulations can model wage-compression scenarios: If GenAI increases productivity in high-MAEI roles by 30%, how does the subsequent supply-shock of cognitive labor depress the median wage in those specific sectors? 
+
+### 10.3 Adjacency and Labor Reallocation Networks
+If an occupation like "Paralegal" experiences a high MAEI score and subsequent wage compression, where do those workers go? Future extensions of this project could utilize the underlying O*NET feature matrix (the $X$ dataset) to calculate cosine similarity between highly exposed jobs and highly protected jobs. This would allow for the construction of algorithmic "Lifeboats"—identifying the most efficient reskilling pathways for displaced workers to transition from a high-MAEI cognitive role into a low-MAEI, high-human-premium role requiring similar baseline abilities.
