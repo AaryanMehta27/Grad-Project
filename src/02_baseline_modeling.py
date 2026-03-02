@@ -25,7 +25,7 @@ import joblib
 from pathlib import Path
 from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
 from sklearn.linear_model import Ridge, Lasso
-from sklearn.model_selection import cross_val_score
+from sklearn.model_selection import cross_val_score, RandomizedSearchCV, KFold
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 from sklearn.preprocessing import StandardScaler
 from sklearn.feature_selection import mutual_info_regression
@@ -364,21 +364,38 @@ def train_models(train_df, val_df, selected_features):
     models = {}
     results = {}
     
-    # --- 1. Random Forest ---
-    logger.info("\n  Training Random Forest...")
-    rf = RandomForestRegressor(
-        n_estimators=300,
-        max_depth=15,
-        min_samples_split=5,
-        min_samples_leaf=3,
-        max_features='sqrt',
+    # --- 1. Random Forest (with Hyperparameter Tuning) ---
+    logger.info("\n  Tuning Random Forest...")
+    rf_base = RandomForestRegressor(random_state=42, n_jobs=-1)
+    
+    rf_param_grid = {
+        'n_estimators': [200, 300, 500],
+        'max_depth': [10, 15, 20, None],
+        'min_samples_split': [2, 5, 10],
+        'min_samples_leaf': [1, 2, 4],
+        'max_features': ['sqrt', 'log2', 1.0]
+    }
+    
+    kf = KFold(n_splits=5, shuffle=True, random_state=42)
+    
+    rf_search = RandomizedSearchCV(
+        estimator=rf_base,
+        param_distributions=rf_param_grid,
+        n_iter=15,
+        cv=kf,
+        scoring='r2',
         random_state=42,
-        n_jobs=-1
+        n_jobs=-1,
+        verbose=1
     )
-    rf.fit(X_train, y_train)
+    
+    rf_search.fit(X_train, y_train)
+    rf = rf_search.best_estimator_
+    
+    logger.info(f"    Best RF Params: {rf_search.best_params_}")
     
     # Cross-validation
-    rf_cv = cross_val_score(rf, X_train, y_train, cv=5, scoring='r2')
+    rf_cv = cross_val_score(rf, X_train, y_train, cv=kf, scoring='r2')
     rf_pred_val = rf.predict(X_val)
     
     results['Random Forest'] = {
@@ -395,29 +412,46 @@ def train_models(train_df, val_df, selected_features):
     logger.info(f"    Val RMSE: {results['Random Forest']['val_rmse']:.2f}")
     logger.info(f"    Val MAE: {results['Random Forest']['val_mae']:.2f}")
     
-    # --- 2. XGBoost (improved hyperparameters) ---
-    logger.info("\n  Training XGBoost (tuned)...")
-    xgb_model = xgb.XGBRegressor(
-        n_estimators=500,
-        max_depth=5,
-        learning_rate=0.03,
-        subsample=0.8,
-        colsample_bytree=0.7,
-        min_child_weight=5,
-        gamma=0.1,
-        reg_alpha=0.5,
-        reg_lambda=2.0,
+    # --- 2. XGBoost (with Hyperparameter Tuning) ---
+    logger.info("\n  Tuning XGBoost...")
+    xgb_base = xgb.XGBRegressor(random_state=42, n_jobs=-1, verbosity=0)
+    
+    xgb_param_grid = {
+        'n_estimators': [300, 500, 800],
+        'max_depth': [3, 5, 7],
+        'learning_rate': [0.01, 0.03, 0.05, 0.1],
+        'subsample': [0.7, 0.8, 0.9],
+        'colsample_bytree': [0.6, 0.7, 0.8],
+        'min_child_weight': [1, 3, 5],
+        'gamma': [0, 0.1, 0.2]
+    }
+    
+    xgb_search = RandomizedSearchCV(
+        estimator=xgb_base,
+        param_distributions=xgb_param_grid,
+        n_iter=15,
+        cv=kf,
+        scoring='r2',
         random_state=42,
         n_jobs=-1,
-        verbosity=0
+        verbose=1
     )
+    
+    # Use validation set for early stopping during best-model fit
+    xgb_search.fit(X_train, y_train)
+    
+    # Refit the best parameters natively to use early stopping for the final model object
+    best_xgb_params = xgb_search.best_params_
+    logger.info(f"    Best XGB Params: {best_xgb_params}")
+    
+    xgb_model = xgb.XGBRegressor(**best_xgb_params, random_state=42, n_jobs=-1, verbosity=0)
     xgb_model.fit(
         X_train, y_train,
         eval_set=[(X_val, y_val)],
         verbose=False
     )
     
-    xgb_cv = cross_val_score(xgb_model, X_train, y_train, cv=5, scoring='r2')
+    xgb_cv = cross_val_score(xgb_model, X_train, y_train, cv=kf, scoring='r2')
     xgb_pred_val = xgb_model.predict(X_val)
     
     results['XGBoost'] = {
