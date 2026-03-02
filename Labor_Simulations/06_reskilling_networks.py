@@ -1,15 +1,25 @@
 import pandas as pd
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
+import logging
 import warnings
 
+# Configure basic logging for the script
+logging.basicConfig(level=logging.INFO, format='%(message)s')
 warnings.filterwarnings('ignore')
 
 def main():
+    """
+    Computes an algorithmic reskilling network by creating a >130-dimensional
+    latent space of all US occupations based on their human capability vectors 
+    (Abilities, Skills, Knowledge, etc.).
+    Uses Cosine Similarity to find mathematically optimal 'Lifeboat' professions 
+    for highly exposed cognitive workers. 
+    """
     WAGE_DATA_PATH = r"c:\Users\aarya\OneDrive\Desktop\Graduation_Project_Data\MAEI_Project\Grad-Project\Labor_Simulations\data\maei_with_wages.csv"
     ONET_FEATURES_PATH = r"c:\Users\aarya\OneDrive\Desktop\Graduation_Project_Data\MAEI_Project\Grad-Project\data\processed\onet_features_consolidated.csv"
     
-    print("Loading datasets...")
+    logging.info("Loading datasets...")
     # Load Master Index
     maei_df = pd.read_csv(WAGE_DATA_PATH)
     maei_df['Join_SOC'] = maei_df['ONET_SOC_Code'].astype(str).str.extract(r'(\d{2}-\d{4})')
@@ -29,7 +39,7 @@ def main():
     # Drop rows without wage or MAEI to be safe
     merged_df = merged_df.dropna(subset=['A_MEDIAN', 'MAEI_2026_Score'])
     
-    print(f"Total Occupations ready for Cosine Similarity: {len(merged_df)}")
+    logging.info(f"Total Occupations ready for Cosine Similarity: {len(merged_df)}")
     
     # Isolate the Feature Matrix (X) that defines the "Shape" of the human
     # We will exclude MAEI scores, wages, and identifiers from this matrix
@@ -45,7 +55,7 @@ def main():
     
     # Calculate pairwise cosine similarity between ALL occupations
     # Closer to 1.0 = Highly similar skill/ability profiles
-    print("Computing O*NET Capability Cosine Similarity Matrix...")
+    logging.info("Computing O*NET Capability Cosine Similarity Matrix...")
     similarity_matrix = cosine_similarity(X_scaled)
     
     # We want to identify the "Best Lifeboats" for Highly Exposed roles:
@@ -59,9 +69,9 @@ def main():
     
     high_risk_idx = merged_df.index[merged_df['MAEI_2026_Score'] >= high_risk_threshold].tolist()
     
-    print("\n" + "="*80)
-    print(" ALGORITHMIC RESKILLING: 'LIFEBOAT' PATHWAY RECOMMENDATIONS")
-    print("="*80)
+    logging.info("\n" + "="*80)
+    logging.info(" ALGORITHMIC RESKILLING: 'LIFEBOAT' PATHWAY RECOMMENDATIONS")
+    logging.info("="*80)
     
     # Let's find lifeboats for a few specific examples highly relevant to our previous findings
     example_targets = [
@@ -77,8 +87,8 @@ def main():
         try:
             target_idx = merged_df[merged_df['Occupation'].str.contains(target, case=False, na=False)].index[0]
             target_row = merged_df.iloc[target_idx]
-            print(f"\n[DISPLACED OCCUPATION]: {target_row['Occupation']}")
-            print(f"   MAEI Risk: {target_row['MAEI_2026_Score']:.1f}/100 | Current Median Wage: ${target_row['A_MEDIAN']:,.0f}")
+            logging.info(f"\n[DISPLACED OCCUPATION]: {target_row['Occupation']}")
+            logging.info(f"   MAEI Risk: {target_row['MAEI_2026_Score']:.1f}/100 | Current Median Wage: ${target_row['A_MEDIAN']:,.0f}")
             
             # Get similarities for this specific job
             sim_scores = similarity_matrix[target_idx]
@@ -96,18 +106,18 @@ def main():
             ].sort_values(by='Similarity', ascending=False)
             
             if len(lifeboats) > 0:
-                print("   [TOP RECOMMENDED LIFEBOAT TRANSITIONS] (Based on latent human capabilities):")
+                logging.info("   [TOP RECOMMENDED LIFEBOAT TRANSITIONS] (Based on latent human capabilities):")
                 # Show top 3 lifeboats
                 for i in range(min(3, len(lifeboats))):
                     lb = lifeboats.iloc[i]
                     wage_diff_pct = ((lb['A_MEDIAN'] - target_row['A_MEDIAN']) / target_row['A_MEDIAN']) * 100
-                    print(f"      {i+1}. {lb['Occupation'][:40]}")
-                    print(f"         Similarity: {lb['Similarity']:.2f} | MAEI: {lb['MAEI_2026_Score']:.1f}/100 | Wage: ${lb['A_MEDIAN']:,.0f} ({wage_diff_pct:+.1f}%)")
+                    logging.info(f"      {i+1}. {lb['Occupation'][:40]}")
+                    logging.info(f"         Similarity: {lb['Similarity']:.2f} | MAEI: {lb['MAEI_2026_Score']:.1f}/100 | Wage: ${lb['A_MEDIAN']:,.0f} ({wage_diff_pct:+.1f}%)")
                     
                     if i == 0:
                         insights.append(f"*   **{target_row['Occupation']}** (MAEI: {target_row['MAEI_2026_Score']:.1f}): The algorithmic lifeboat recommendation is **{lb['Occupation']}** (Similarity: {lb['Similarity']:.2f}, Wage Shift: {wage_diff_pct:+.1f}%).")
             else:
-                print("   [WARNING] No protected lifeboats found with high mathematical similarity.")
+                logging.info("   [WARNING] No protected lifeboats found with high mathematical similarity.")
                 
         except IndexError:
             # Job not found in exact string match
@@ -121,7 +131,7 @@ def main():
         for ins in insights:
             f.write(ins + "\n")
             
-    print("\nSaved Reskilling Insights to SIMULATION_INSIGHTS.md")
+    logging.info("\nSaved Reskilling Insights to SIMULATION_INSIGHTS.md")
 
 if __name__ == "__main__":
     main()

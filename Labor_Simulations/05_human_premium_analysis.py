@@ -1,26 +1,34 @@
 import pandas as pd
 import numpy as np
 import statsmodels.api as sm
+import logging
 
+# Configure basic logging for the script
+logging.basicConfig(level=logging.INFO, format='%(message)s')
 def main():
+    """
+    Run an Ordinary Least Squares (OLS) regression between an occupation's median 
+    annual wage and its presence of intensely human-centric traits (such as Originality, 
+    Therapy, and Persuasion). This tests the 'Human Premium' hypothesis.
+    """
     WAGE_DATA_PATH = r"c:\Users\aarya\OneDrive\Desktop\Graduation_Project_Data\MAEI_Project\Grad-Project\Labor_Simulations\data\maei_with_wages.csv"
     ONET_FEATURES_PATH = r"c:\Users\aarya\OneDrive\Desktop\Graduation_Project_Data\MAEI_Project\Grad-Project\data\processed\onet_features_consolidated.csv"
     
     # Load Wage Data
-    print("Loading Wage Data...")
+    logging.info("Loading Wage Data...")
     wage_df = pd.read_csv(WAGE_DATA_PATH)
     wage_df = wage_df.dropna(subset=['A_MEDIAN'])
     # Normalize Join_SOC 
     wage_df['Join_SOC'] = wage_df['ONET_SOC_Code'].astype(str).str.extract(r'(\d{2}-\d{4})')
     
     # Load O*NET raw features
-    print("Loading Raw O*NET Features...")
+    logging.info("Loading Raw O*NET Features...")
     onet_df = pd.read_csv(ONET_FEATURES_PATH)
     # Different O*NET sources use different SOC columns, let's grab the first one that looks like SOC
     soc_col = [c for c in onet_df.columns if 'SOC' in c][0]
     onet_df['Join_SOC'] = onet_df[soc_col].astype(str).str.extract(r'(\d{2}-\d{4})')
     
-    print("Merging Data...")
+    logging.info("Merging Data...")
     # Group by Join_SOC in ONET data (in case there are multiple detailed occupation codes for a single major code)
     # Average the numeric features first.
     numeric_cols = onet_df.select_dtypes(include=[np.number]).columns.tolist()
@@ -51,7 +59,7 @@ def main():
         elif matches:
             feature_columns.append(matches[0])
             
-    print(f"\nFound Human Premium Features: {feature_columns}")
+    logging.info(f"\nFound Human Premium Features: {feature_columns}")
     
     # Prepare Regression Data
     # Dependent Variable: log(Median Wage)
@@ -71,17 +79,17 @@ def main():
     # Drop NaNs
     reg_data = pd.concat([X_std, y], axis=1).dropna()
     
-    print("\n" + "="*80)
-    print(" THE HUMAN PREMIUM: OLS REGRESSION (Log-Wage vs. Human Traits)")
-    print("="*80)
+    logging.info("\n" + "="*80)
+    logging.info(" THE HUMAN PREMIUM: OLS REGRESSION (Log-Wage vs. Human Traits)")
+    logging.info("="*80)
     
     # Run OLS Regression
     model = sm.OLS(reg_data['Log_Wage'], reg_data.drop(columns=['Log_Wage'])).fit()
-    print(model.summary())
+    logging.info(model.summary())
     
-    print("\n" + "="*80)
-    print(" INTERPRETATION:")
-    print("="*80)
+    logging.info("\n" + "="*80)
+    logging.info(" INTERPRETATION:")
+    logging.info("="*80)
     for index, row in model.params.items():
         if index != 'const':
             p_val = model.pvalues[index]
@@ -90,7 +98,7 @@ def main():
             # Since dependent is a log, a coefficient of 0.10 means a 1 standard deviation increase in that trait 
             # is associated with approximately a 10% increase in median wage.
             pct_change = (np.exp(row) - 1) * 100
-            print(f"* {index}: a 1 Std-Dev increase is associated with a {pct_change:+.1f}% shift in median wage. ({sig})")
+            logging.info(f"* {index}: a 1 Std-Dev increase is associated with a {pct_change:+.1f}% shift in median wage. ({sig})")
 
 if __name__ == "__main__":
     main()
