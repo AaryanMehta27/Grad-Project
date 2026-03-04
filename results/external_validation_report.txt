@@ -3,10 +3,10 @@ EXTERNAL VALIDATION RESULTS (vs Felten AIOE)
 Overlapping Occupations Validated: 803
 
 1. AIOE vs. Anchored MAEI 2026:
-   Spearman Correlation: -0.394 (p-value: 3.278e-31)
+   Spearman Correlation: -0.419 (p-value: 1.629e-35)
 
 2. AIOE vs. Pure Exposure Delta (The AI Intervention):
-   Spearman Correlation: 0.585 (p-value: 6.121e-75)
+   Spearman Correlation: 0.485 (p-value: 1.293e-48)
 
 INTERPRETATION AND METHODOLOGICAL CONTEXT:
 The validation beautifully captures the Paradigm Shift in modern automation through a dual-correlation signal:
