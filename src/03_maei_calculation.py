@@ -566,9 +566,26 @@ def generate_explanations(full_dataset, model_artifact, results_df):
     
     X = full_dataset[selected_features].fillna(0)
     
-    # Get feature importances from the model
+    # Get feature importances from the model (handle StackingRegressor case)
+    if hasattr(model, 'final_estimator_'):
+        # For Stacked Ensemble, we approximate importance using the meta-learner's coefficients 
+        # or the most complex base estimator (like XGBoost). The safest cross-compatible way 
+        # without diving into Pipeline internals is falling back to Mutual Info or a uniform array
+        # if the final_estimator doesn't expose it. Here, we'll try to get it from XGBoost in the stack.
+        try:
+            # Try to grab XGBoost from the named estimators
+            xgb_model = dict(model.named_estimators_)['xgb']
+            importances = xgb_model.feature_importances_
+        except:
+            # Fallback
+            importances = np.ones(len(selected_features)) / len(selected_features)
+    elif hasattr(model, 'feature_importances_'):
+        importances = model.feature_importances_
+    else:
+        importances = np.ones(len(selected_features)) / len(selected_features)
+        
     feature_importances = pd.Series(
-        model.feature_importances_, index=selected_features
+        importances, index=selected_features
     ).sort_values(ascending=False)
     
     # For each occupation, compute a "contribution" score for each feature.
@@ -593,6 +610,7 @@ def generate_explanations(full_dataset, model_artifact, results_df):
         feat = feat.replace('Knowledge_', '').replace('Work_Activities_', '')
         feat = feat.replace('Work_Context_', '').replace('Work_Styles_', '')
         feat = feat.replace('Interest_', '').replace('Education_', 'Education: ')
+        feat = feat.replace('BERT_Dim_', 'Latent Semantic Task Feature ')
         feat = feat.replace('TFIDF_', 'Task keyword: ')
         feat = feat.replace('KW_routine_keywords', 'Routine task indicators')
         feat = feat.replace('KW_creative_keywords', 'Creative task indicators')

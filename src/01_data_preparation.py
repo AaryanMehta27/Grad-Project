@@ -19,7 +19,8 @@ import numpy as np
 import pandas as pd
 from pathlib import Path
 from typing import Tuple, Dict, List
-from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.decomposition import PCA
+from sentence_transformers import SentenceTransformer
 from sklearn.model_selection import train_test_split
 
 # Add parent directory to path for imports
@@ -380,23 +381,24 @@ def load_all_numeric_features() -> pd.DataFrame:
     return all_features
 
 
-def extract_nlp_features(max_tfidf_features: int = 200) -> pd.DataFrame:
+def extract_nlp_features(n_pca_components: int = 20) -> pd.DataFrame:
     """
-    Extract NLP features from task statements.
+    Extract NLP features from task statements using BERT.
     
     Creates:
-    1. TF-IDF features (top N terms across all task descriptions)
-    2. Keyword category counts (routine/creative/social/technical indicators)
-    3. Task statistics (count, avg importance, variety)
+    1. SentenceTransformer embeddings (all-MiniLM-L6-v2) for rich semantic meaning
+    2. PCA compression down to a denser, model-friendly feature space
+    3. Keyword category counts (routine/creative/social/technical indicators)
+    4. Task statistics (count, avg importance, variety)
     
     Args:
-        max_tfidf_features: Number of TF-IDF features to extract
+        n_pca_components: Number of latent PCA dimensions to compress the 384-d BERT vectors into
         
     Returns:
         DataFrame with O*NET-SOC Code as index, NLP features as columns
     """
     logger.info("=" * 70)
-    logger.info("EXTRACTING NLP FEATURES FROM TASK STATEMENTS")
+    logger.info(f"EXTRACTING NLP FEATURES (BERT + PCA={n_pca_components})")
     logger.info("=" * 70)
     
     # Load task statements
@@ -409,23 +411,29 @@ def extract_nlp_features(max_tfidf_features: int = 200) -> pd.DataFrame:
     )
     logger.info(f"  Occupations with tasks: {len(task_text)}")
     
-    # --- TF-IDF Features ---
-    logger.info(f"  Extracting TF-IDF features (top {max_tfidf_features} terms)...")
-    tfidf = TfidfVectorizer(
-        max_features=max_tfidf_features,
-        stop_words='english',
-        min_df=5,           # Term must appear in at least 5 occupations
-        max_df=0.95,        # Ignore terms in >95% of docs
-        ngram_range=(1, 2)  # Unigrams and bigrams
-    )
+    # --- BERT Embedding Features ---
+    logger.info("  Loading SentenceTransformer (BERT) model: 'all-MiniLM-L6-v2'...")
+    # This is a very fast, high-quality 384-dimensional dense contextual embedding model
+    model = SentenceTransformer('all-MiniLM-L6-v2')
     
-    tfidf_matrix = tfidf.fit_transform(task_text)
-    tfidf_df = pd.DataFrame(
-        tfidf_matrix.toarray(),
+    logger.info("  Generating dense embeddings for all occupation task descriptions...")
+    # Encode all documents into a (N_occupations x 384) matrix
+    embeddings = model.encode(task_text.tolist(), show_progress_bar=False)
+    
+    logger.info(f"  Applying PCA to compress 384-D embeddings into {n_pca_components} latent features...")
+    pca = PCA(n_components=n_pca_components, random_state=42)
+    pca_embeddings = pca.fit_transform(embeddings)
+    
+    # Log explained variance to see how much "signal" we kept
+    explained_variance = sum(pca.explained_variance_ratio_) * 100
+    logger.info(f"    Total variance explained by {n_pca_components} components: {explained_variance:.1f}%")
+    
+    bert_df = pd.DataFrame(
+        pca_embeddings,
         index=task_text.index,
-        columns=[f"TFIDF_{term}" for term in tfidf.get_feature_names_out()]
+        columns=[f"BERT_Dim_{i+1}" for i in range(n_pca_components)]
     )
-    logger.info(f"    TF-IDF shape: {tfidf_df.shape}")
+    logger.info(f"    BERT PCA shape: {bert_df.shape}")
     
     # --- Keyword Category Counts ---
     logger.info("  Computing keyword category counts...")
@@ -494,7 +502,7 @@ def extract_nlp_features(max_tfidf_features: int = 200) -> pd.DataFrame:
     )
     
     # Combine all NLP features
-    nlp_features = tfidf_df.join(keyword_df, how='outer')
+    nlp_features = bert_df.join(keyword_df, how='outer')
     nlp_features = nlp_features.join(task_count.to_frame(), how='outer')
     nlp_features = nlp_features.join(task_stats, how='outer')
     
@@ -826,8 +834,8 @@ if __name__ == "__main__":
     # --- Step 2: Load O*NET numeric features ---
     numeric_features = load_all_numeric_features()
     
-    # --- Step 3: Extract NLP features ---
-    nlp_features = extract_nlp_features(max_tfidf_features=200)
+    # --- Step 3: Extract NLP features (BERT -> PCA) ---
+    nlp_features = extract_nlp_features(n_pca_components=20)
     
     # --- Step 4: Load derived features ---
     derived_features = load_derived_features()

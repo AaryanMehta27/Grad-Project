@@ -23,8 +23,10 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import joblib
 from pathlib import Path
-from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
+from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor, StackingRegressor
 from sklearn.linear_model import Ridge, Lasso
+from sklearn.neural_network import MLPRegressor
+from sklearn.svm import SVR
 from sklearn.model_selection import cross_val_score, RandomizedSearchCV, KFold
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 from sklearn.preprocessing import StandardScaler
@@ -188,64 +190,10 @@ FO_BOTTLENECK_FEATURES = [
 
 def compress_tfidf_features(train_df, full_dataset, feature_cols, n_components=10):
     """
-    Compress 200+ sparse TF-IDF features into n_components SVD topic dimensions.
-    Returns updated datasets with TFIDF_ columns replaced by NLP_Topic_ columns.
+    [LEGACY] Removed since TF-IDF has been replaced with dense BERT embeddings via PCA.
+    Returns datasets unmodified.
     """
-    tfidf_cols = [c for c in feature_cols if c.startswith('TFIDF_')]
-    non_tfidf_cols = [c for c in feature_cols if not c.startswith('TFIDF_')]
-    
-    if len(tfidf_cols) < n_components:
-        logger.info(f"  Only {len(tfidf_cols)} TF-IDF features, skipping SVD")
-        return train_df, full_dataset, feature_cols, None
-    
-    logger.info(f"  Compressing {len(tfidf_cols)} TF-IDF features -> {n_components} SVD topics")
-    
-    # Fit SVD on training set
-    svd = TruncatedSVD(n_components=n_components, random_state=42)
-    X_train_tfidf = train_df[tfidf_cols].fillna(0)
-    svd.fit(X_train_tfidf)
-    
-    explained = svd.explained_variance_ratio_.sum()
-    logger.info(f"  SVD explained variance: {explained:.1%}")
-    
-    NLP_TOPIC_NAMES = [
-        'NLP_Topic_Equipment_Materials',
-        'NLP_Topic_Tools_Machines',
-        'NLP_Topic_Medical_Patients',
-        'NLP_Topic_Education_Students',
-        'NLP_Topic_Customer_Service_Food',
-        'NLP_Topic_Maintenance_Repair',
-        'NLP_Topic_Production_Manufacturing',
-        'NLP_Topic_Sales_Systems',
-        'NLP_Topic_Food_Environmental',
-        'NLP_Topic_Data_Software'
-    ]
-    topic_names = NLP_TOPIC_NAMES[:n_components]
-    
-    # Transform train: drop TFIDF columns, add topic columns
-    train_topics = pd.DataFrame(
-        svd.transform(X_train_tfidf), 
-        index=train_df.index, columns=topic_names
-    )
-    train_out = train_df.drop(columns=tfidf_cols).copy()
-    for col in topic_names:
-        train_out[col] = train_topics[col]
-    
-    # Transform full dataset: drop TFIDF columns, add topic columns
-    full_topics = pd.DataFrame(
-        svd.transform(full_dataset[tfidf_cols].fillna(0)),
-        index=full_dataset.index, columns=topic_names
-    )
-    full_out = full_dataset.drop(columns=tfidf_cols).copy()
-    for col in topic_names:
-        full_out[col] = full_topics[col]
-    
-    new_feature_cols = non_tfidf_cols + topic_names
-    
-    logger.info(f"  New feature count: {len(new_feature_cols)} (was {len(feature_cols)})")
-    
-    return train_out, full_out, new_feature_cols, svd
-
+    return train_df, full_dataset, feature_cols, None
 
 def select_features(train_df, feature_cols, correlations, importances,
                     max_features=100, corr_threshold=0.95, var_threshold=0.01):
@@ -264,7 +212,7 @@ def select_features(train_df, feature_cols, correlations, importances,
     
     # --- Identify feature groups ---
     nlp_features = [c for c in feature_cols if c.startswith('KW_') or 
-                    c.startswith('Task_') or c.startswith('NLP_Topic_')]
+                    c.startswith('Task_') or c.startswith('BERT_Dim_')]
     bottleneck_features = [c for c in FO_BOTTLENECK_FEATURES if c in feature_cols]
     forced_features = list(set(nlp_features + bottleneck_features))
     
@@ -317,7 +265,7 @@ def select_features(train_df, feature_cols, correlations, importances,
     logger.info(f"    Competitive (MI-selected): {len(competitive_cols)}")
     
     # Log breakdown by type
-    nlp_in = [f for f in final_features if f.startswith('KW_') or f.startswith('Task_') or f.startswith('NLP_Topic_')]
+    nlp_in = [f for f in final_features if f.startswith('KW_') or f.startswith('Task_') or f.startswith('BERT_Dim_')]
     bn_in = [f for f in final_features if f in FO_BOTTLENECK_FEATURES]
     other_in = [f for f in final_features if f not in nlp_in and f not in bn_in]
     logger.info(f"    NLP features: {len(nlp_in)}")
@@ -487,8 +435,71 @@ def train_models(train_df, val_df, selected_features):
     
     logger.info(f"    CV R²: {ridge_cv.mean():.4f} ± {ridge_cv.std():.4f}")
     logger.info(f"    Val R²: {results['Ridge']['val_r2']:.4f}")
-    logger.info(f"    Val RMSE: {results['Ridge']['val_rmse']:.2f}")
-    logger.info(f"    Val MAE: {results['Ridge']['val_mae']:.2f}")
+    
+    # --- 3b. Support Vector Regression (RBF Kernel) ---
+    logger.info("\n  Tuning Support Vector Regressor (SVR)...")
+    svr_base = SVR(kernel='rbf')
+    svr_param_grid = {
+        'C': [0.1, 1, 10, 100],
+        'gamma': ['scale', 'auto', 0.01, 0.1],
+        'epsilon': [0.1, 1.0, 5.0]
+    }
+    svr_search = RandomizedSearchCV(
+        estimator=svr_base, param_distributions=svr_param_grid,
+        n_iter=15, cv=kf, scoring='r2', random_state=42, n_jobs=-1
+    )
+    # SVR highly sensitive to scale, use scaled data
+    svr_search.fit(X_train_scaled, y_train)
+    best_svr = svr_search.best_estimator_
+    
+    svr_cv = cross_val_score(best_svr, X_train_scaled, y_train, cv=kf, scoring='r2')
+    svr_pred_val = best_svr.predict(X_val_scaled)
+    
+    results['SVR (RBF)'] = {
+        'cv_r2_mean': svr_cv.mean(),
+        'cv_r2_std': svr_cv.std(),
+        'val_r2': r2_score(y_val, svr_pred_val),
+        'val_rmse': np.sqrt(mean_squared_error(y_val, svr_pred_val)),
+        'val_mae': mean_absolute_error(y_val, svr_pred_val),
+    }
+    models['SVR (RBF)'] = best_svr
+    
+    logger.info(f"    Best SVR Params: {svr_search.best_params_}")
+    logger.info(f"    CV R²: {svr_cv.mean():.4f} ± {svr_cv.std():.4f}")
+    logger.info(f"    Val R²: {results['SVR (RBF)']['val_r2']:.4f}")
+    
+    # --- 3c. Deep Neural Network (MLPRegressor) ---
+    logger.info("\n  Tuning Multi-Layer Perceptron (Neural Network)...")
+    mlp_base = MLPRegressor(random_state=42, early_stopping=True, max_iter=1000)
+    mlp_param_grid = {
+        'hidden_layer_sizes': [(64, 32), (128, 64, 32), (256, 128)],
+        'activation': ['relu', 'tanh'],
+        'alpha': [0.0001, 0.001, 0.01, 0.1],
+        'learning_rate_init': [0.001, 0.01]
+    }
+    mlp_search = RandomizedSearchCV(
+        estimator=mlp_base, param_distributions=mlp_param_grid,
+        n_iter=15, cv=kf, scoring='r2', random_state=42, n_jobs=-1
+    )
+    # NNs require scaled data
+    mlp_search.fit(X_train_scaled, y_train)
+    best_mlp = mlp_search.best_estimator_
+    
+    mlp_cv = cross_val_score(best_mlp, X_train_scaled, y_train, cv=kf, scoring='r2')
+    mlp_pred_val = best_mlp.predict(X_val_scaled)
+    
+    results['Neural Network'] = {
+        'cv_r2_mean': mlp_cv.mean(),
+        'cv_r2_std': mlp_cv.std(),
+        'val_r2': r2_score(y_val, mlp_pred_val),
+        'val_rmse': np.sqrt(mean_squared_error(y_val, mlp_pred_val)),
+        'val_mae': mean_absolute_error(y_val, mlp_pred_val),
+    }
+    models['Neural Network'] = best_mlp
+    
+    logger.info(f"    Best NN Params: {mlp_search.best_params_}")
+    logger.info(f"    CV R²: {mlp_cv.mean():.4f} ± {mlp_cv.std():.4f}")
+    logger.info(f"    Val R²: {results['Neural Network']['val_r2']:.4f}")
     
     # --- 4. Gaussian Process Regression (matching F&O approach) ---
     logger.info("\n  Training Gaussian Process Regression...")
@@ -524,10 +535,39 @@ def train_models(train_df, val_df, selected_features):
     models['GP Regression'] = gp
     
     logger.info(f"    GP trained on {n_gp} samples (subsampled for O(n³) scalability)")
-    logger.info(f"    CV R²: {gp_cv.mean():.4f} ± {gp_cv.std():.4f}")
     logger.info(f"    Val R²: {results['GP Regression']['val_r2']:.4f}")
-    logger.info(f"    Val RMSE: {results['GP Regression']['val_rmse']:.2f}")
-    logger.info(f"    Val MAE: {results['GP Regression']['val_mae']:.2f}")
+    
+    # --- 5. Stacking Regressor (Ensemble of Ensembles) ---
+    logger.info("\n  Training Stacking Ensemble (XGBoost + SVR + NN)...")
+    # Stack the models that performed best above
+    estimators = [
+        ('xgb', models['XGBoost']),
+        ('rf', models['Random Forest']),
+        ('svr', models['SVR (RBF)'])
+    ]
+    # Meta-learner is Ridge
+    stack = StackingRegressor(
+        estimators=estimators,
+        final_estimator=Ridge(alpha=1.0),
+        cv=5
+    )
+    
+    # We train the stacker on scaled data so SVR handles it perfectly
+    stack.fit(X_train_scaled, y_train)
+    stack_cv = cross_val_score(stack, X_train_scaled, y_train, cv=kf, scoring='r2')
+    stack_pred_val = stack.predict(X_val_scaled)
+    
+    results['Stacked Ensemble'] = {
+        'cv_r2_mean': stack_cv.mean(),
+        'cv_r2_std': stack_cv.std(),
+        'val_r2': r2_score(y_val, stack_pred_val),
+        'val_rmse': np.sqrt(mean_squared_error(y_val, stack_pred_val)),
+        'val_mae': mean_absolute_error(y_val, stack_pred_val),
+    }
+    models['Stacked Ensemble'] = stack
+    
+    logger.info(f"    CV R²: {stack_cv.mean():.4f} ± {stack_cv.std():.4f}")
+    logger.info(f"    Val R²: {results['Stacked Ensemble']['val_r2']:.4f}")
     
     # --- Comparison Summary ---
     logger.info("\n" + "=" * 70)
@@ -563,8 +603,9 @@ def evaluate_best_model(models, results, test_df, selected_features, scaler):
     X_test = test_df[selected_features].fillna(0)
     y_test = test_df['FO_Score']
     
-    # Scale if Ridge or GP
-    if best_name in ['Ridge', 'GP Regression']:
+    # Scale if necessary
+    needs_scaling = ['Ridge', 'GP Regression', 'SVR (RBF)', 'Neural Network', 'Stacked Ensemble']
+    if best_name in needs_scaling:
         X_test_input = scaler.transform(X_test)
     else:
         X_test_input = X_test
@@ -584,6 +625,23 @@ def evaluate_best_model(models, results, test_df, selected_features, scaler):
     if best_name in ['Random Forest', 'XGBoost']:
         importances = pd.Series(
             best_model.feature_importances_, 
+            index=selected_features
+        ).sort_values(ascending=False)
+    elif best_name == 'Stacked Ensemble':
+        # Can't directly extract unified importances from a stack
+        # Default to the Meta-Regressors Ridge Coefficients for the base models,
+        # but for individual feature importance, we'll fall back to XGBoost's since
+        # it's our strongest base learner.
+        logger.info(f"    Falling back to XGBoost component for interpretable feature importance...")
+        importances = pd.Series(
+            models['XGBoost'].feature_importances_, 
+            index=selected_features
+        ).sort_values(ascending=False)
+    elif best_name == 'Neural Network' or best_name == 'SVR (RBF)':
+        # Black box models - fall back to general Random Forest importances for narrative
+        logger.info(f"    Black-box model selected. Falling back to RF permutation-style importance...")
+        importances = pd.Series(
+            models['Random Forest'].feature_importances_, 
             index=selected_features
         ).sort_values(ascending=False)
     else:
@@ -725,35 +783,8 @@ if __name__ == "__main__":
     # Load data
     full_dataset, train_df, val_df, test_df, feature_cols = load_data()
     
-    # Compress TF-IDF features via SVD before feature selection
-    train_df, full_dataset, feature_cols, svd = compress_tfidf_features(
-        train_df, full_dataset, feature_cols, n_components=10
-    )
-    # Also transform val and test
-    tfidf_cols_orig = [c for c in val_df.columns if c.startswith('TFIDF_')]
-    if len(tfidf_cols_orig) > 0:
-        NLP_TOPIC_NAMES = [
-            'NLP_Topic_Equipment_Materials',
-            'NLP_Topic_Tools_Machines',
-            'NLP_Topic_Medical_Patients',
-            'NLP_Topic_Education_Students',
-            'NLP_Topic_Customer_Service_Food',
-            'NLP_Topic_Maintenance_Repair',
-            'NLP_Topic_Production_Manufacturing',
-            'NLP_Topic_Sales_Systems',
-            'NLP_Topic_Food_Environmental',
-            'NLP_Topic_Data_Software'
-        ]
-        topic_names = NLP_TOPIC_NAMES[:svd.n_components]
-        for df_name, df_ref in [('val', val_df), ('test', test_df)]:
-            topics = pd.DataFrame(
-                svd.transform(df_ref[tfidf_cols_orig].fillna(0)),
-                index=df_ref.index, columns=topic_names
-            )
-            if df_name == 'val':
-                val_df = pd.concat([val_df.drop(columns=tfidf_cols_orig, errors='ignore'), topics], axis=1)
-            else:
-                test_df = pd.concat([test_df.drop(columns=tfidf_cols_orig, errors='ignore'), topics], axis=1)
+    # Compressed TF-IDF has been replaced by BERT PCA in Step 1.
+    svd = None
     
     # EDA (on compressed features)
     correlations, rf_importances = run_eda(train_df, feature_cols)

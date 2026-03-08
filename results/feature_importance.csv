@@ -1,101 +1,101 @@
 ,importance
-Abilities_Fluency of Ideas,0.2694506
-Abilities_Originality,0.14729467
-Skills_Instructing,0.06583027
-Skills_Active Learning,0.04123247
-Abilities_Deductive Reasoning,0.034012932
-Job Zone,0.030500012
-Knowledge_Therapy and Counseling,0.024032667
-Skills_Critical Thinking,0.018164087
-Skills_Management of Personnel Resources,0.015633235
-Skills_Learning Strategies,0.013878641
-Skills_Systems Analysis,0.01324301
-Skills_Coordination,0.01315436
-Skills_Judgment and Decision Making,0.012492089
-Abilities_Speech Recognition,0.010672238
-Skills_Time Management,0.009592145
-Abilities_Problem Sensitivity,0.008095779
-Work_Activities_Assisting and Caring for Others,0.0072805
-Abilities_Speech Clarity,0.0070809564
-Abilities_Written Comprehension,0.00679733
-Skills_Persuasion,0.0062023355
-Skills_Systems Evaluation,0.0061296746
-Skills_Active Listening,0.0056507383
-Knowledge_Sociology and Anthropology,0.005642697
-KW_creative_keywords,0.0055401744
-Work_Context_Public Speaking,0.0054871705
-Abilities_Inductive Reasoning,0.0053819637
-"Work_Context_Determine Tasks, Priorities and Goals",0.005355095
-Skills_Social Perceptiveness,0.0052925297
-Skills_Negotiation,0.005080879
-Work_Activities_Thinking Creatively,0.0050138393
-Work_Activities_Developing Objectives and Strategies,0.004986835
-NLP_Topic_Medical_Patients,0.0049042474
-NLP_Topic_Tools_Machines,0.0047217696
-NLP_Topic_Customer_Service_Food,0.004539942
-Interest_Social,0.0045100767
-Work_Activities_Handling and Moving Objects,0.004369779
-Abilities_Extent Flexibility,0.004103443
-Abilities_Oral Comprehension,0.0040686107
-Abilities_Memorization,0.0040659495
-Task_Min_Importance,0.003896873
-Skills_Speaking,0.0038084246
-Skills_Reading Comprehension,0.0037827978
-Work_Activities_Working with Computers,0.0037796826
-NLP_Topic_Sales_Systems,0.0036946146
-"Work_Context_Outdoors, Exposed to All Weather Conditions",0.00347953
-Work_Activities_Providing Consultation and Advice to Others,0.0034782663
-KW_creative_keywords_norm,0.0034585213
-Work_Activities_Performing General Physical Activities,0.0034152786
-Interest_Investigative,0.003360459
-Knowledge_Computers and Electronics,0.0032572825
-KW_routine_keywords,0.0032319135
-Interest_Enterprising,0.0032285207
-Interest_Realistic,0.003211902
-KW_routine_keywords_norm,0.0032026877
-Skills_Complex Problem Solving,0.0031958446
-NLP_Topic_Equipment_Materials,0.0031399503
-KW_social_keywords,0.0030754507
-KW_social_keywords_norm,0.0030288096
-Skills_Operations Analysis,0.0029676303
-Abilities_Written Expression,0.0028825535
-Abilities_Oral Expression,0.0028601163
-Work_Activities_Interpreting the Meaning of Information for Others,0.002787487
-Task_Std_Importance,0.002774376
-KW_physical_keywords,0.0027118053
-Work_Context_Spend Time Sitting,0.002665546
-Work_Context_Spend Time Standing,0.0026627765
-Education_8.0,0.0026400262
-Knowledge_Fine Arts,0.0025106645
-Work_Activities_Establishing and Maintaining Interpersonal Relationships,0.0024508438
-Abilities_Multilimb Coordination,0.0024034737
-Task_Count,0.0023835502
-Work_Context_Spend Time Walking or Running,0.0023359547
-Task_Avg_Importance,0.0022998555
-NLP_Topic_Maintenance_Repair,0.002255933
-Work_Context_Spend Time Bending or Twisting Your Body,0.0021335052
-KW_technical_keywords_norm,0.0021197344
-NLP_Topic_Data_Software,0.0020433122
-Education_2.0,0.0019566852
-Abilities_Dynamic Strength,0.0019564966
-"Work_Context_Spend Time Using Your Hands to Handle, Control, or Feel Objects, Tools, or Controls",0.0018870917
-Abilities_Rate Control,0.0018755804
-Abilities_Category Flexibility,0.0018522983
-Work_Context_E-Mail,0.001845281
-Task_Max_Importance,0.001813931
-Abilities_Control Precision,0.0017923008
-Abilities_Trunk Strength,0.0017920888
-Abilities_Speed of Closure,0.0017628145
-NLP_Topic_Production_Manufacturing,0.0017593534
-Abilities_Finger Dexterity,0.0017364952
-Abilities_Mathematical Reasoning,0.0017002726
-NLP_Topic_Food_Environmental,0.0015995926
-Work_Context_Exposed to Very Hot or Cold Temperatures,0.0015912104
-NLP_Topic_Education_Students,0.0015331317
-Work_Activities_Analyzing Data or Information,0.0015297544
-Work_Activities_Updating and Using Relevant Knowledge,0.0015002829
-Abilities_Manual Dexterity,0.0014653837
-Work_Context_Pace Determined by Speed of Equipment,0.0013568886
-KW_physical_keywords_norm,0.0012517957
-Skills_Monitoring,0.0012233946
-KW_technical_keywords,0.0011161
+Abilities_Fluency of Ideas,0.21765494
+Abilities_Originality,0.19191216
+Job Zone,0.05690393
+Skills_Instructing,0.04780407
+Skills_Active Learning,0.03719036
+Abilities_Deductive Reasoning,0.032618236
+Skills_Systems Analysis,0.022671519
+Abilities_Speech Recognition,0.019411774
+Skills_Critical Thinking,0.015161638
+Skills_Learning Strategies,0.013903788
+Skills_Judgment and Decision Making,0.013468058
+Skills_Time Management,0.013349633
+Skills_Management of Personnel Resources,0.010970958
+Abilities_Oral Comprehension,0.010608617
+Knowledge_Sociology and Anthropology,0.01014394
+Work_Activities_Assisting and Caring for Others,0.009921055
+Skills_Persuasion,0.009109232
+Skills_Systems Evaluation,0.008590467
+Interest_Social,0.007926149
+Skills_Complex Problem Solving,0.007428427
+KW_physical_keywords,0.006742764
+Skills_Speaking,0.006612117
+Abilities_Inductive Reasoning,0.0065933173
+Skills_Social Perceptiveness,0.0061819456
+KW_creative_keywords,0.0058310404
+Skills_Coordination,0.0056528146
+Work_Activities_Developing Objectives and Strategies,0.0052918554
+Work_Context_Public Speaking,0.005173407
+Skills_Negotiation,0.005022768
+KW_social_keywords_norm,0.00499229
+Work_Activities_Thinking Creatively,0.004970136
+BERT_Dim_1,0.0045807934
+Abilities_Written Comprehension,0.004431167
+BERT_Dim_8,0.004402798
+BERT_Dim_18,0.0043397155
+Skills_Operations Analysis,0.004308587
+Interest_Investigative,0.0043041846
+Abilities_Oral Expression,0.0042387205
+Abilities_Memorization,0.004029737
+BERT_Dim_3,0.003904573
+Work_Context_Spend Time Sitting,0.0039031834
+Abilities_Extent Flexibility,0.0038461
+Skills_Reading Comprehension,0.0038136507
+KW_routine_keywords_norm,0.0037339446
+Abilities_Dynamic Strength,0.0036293117
+BERT_Dim_14,0.0036177959
+BERT_Dim_2,0.0034846365
+"Work_Context_Determine Tasks, Priorities and Goals",0.00346882
+KW_creative_keywords_norm,0.003418273
+Task_Std_Importance,0.0033354724
+Knowledge_Fine Arts,0.0032904863
+Abilities_Written Expression,0.0032753565
+KW_physical_keywords_norm,0.003274307
+BERT_Dim_10,0.0032113895
+BERT_Dim_7,0.003121898
+Abilities_Reaction Time,0.0030713065
+Skills_Monitoring,0.0030618163
+BERT_Dim_11,0.0030124993
+Work_Context_Exposed to Very Hot or Cold Temperatures,0.0028713685
+KW_routine_keywords,0.002852245
+Abilities_Trunk Strength,0.002754794
+BERT_Dim_13,0.0026489762
+Education_8.0,0.0024721501
+Skills_Active Listening,0.002461551
+Task_Min_Importance,0.0024270362
+BERT_Dim_17,0.0023026206
+Abilities_Manual Dexterity,0.0022994832
+Education_2.0,0.0022054934
+Knowledge_Computers and Electronics,0.0021753924
+KW_technical_keywords_norm,0.0021600933
+Abilities_Mathematical Reasoning,0.002136646
+Work_Context_E-Mail,0.0021274048
+BERT_Dim_12,0.00209552
+BERT_Dim_5,0.0020706183
+Abilities_Speed of Closure,0.0019888117
+BERT_Dim_6,0.001971558
+Interest_Realistic,0.001953465
+KW_social_keywords,0.0019382575
+BERT_Dim_9,0.0019246236
+BERT_Dim_20,0.0019071478
+Work_Context_Spend Time Bending or Twisting Your Body,0.0018930219
+KW_technical_keywords,0.0018531963
+Work_Activities_Providing Consultation and Advice to Others,0.0017714471
+BERT_Dim_4,0.0017301519
+BERT_Dim_19,0.0017066601
+BERT_Dim_15,0.0016906579
+"Work_Context_Spend Time Using Your Hands to Handle, Control, or Feel Objects, Tools, or Controls",0.0016741309
+BERT_Dim_16,0.0016719792
+"Work_Context_Outdoors, Exposed to All Weather Conditions",0.0016616691
+Abilities_Control Precision,0.0015775082
+Work_Activities_Establishing and Maintaining Interpersonal Relationships,0.0014913166
+Abilities_Finger Dexterity,0.0014738763
+Work_Activities_Interpreting the Meaning of Information for Others,0.0014523191
+Task_Max_Importance,0.0013553755
+Abilities_Category Flexibility,0.0013520999
+Task_Avg_Importance,0.0013258213
+Task_Count,0.0012952314
+Abilities_Speech Clarity,0.00127603
+Work_Activities_Updating and Using Relevant Knowledge,0.0012325863
+Abilities_Multilimb Coordination,0.0008456751
