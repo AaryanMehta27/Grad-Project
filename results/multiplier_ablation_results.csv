@@ -1,0 +1,8 @@
+Scenario,Spearman_Rho,P_Value,N_Overlapping,Mean_Delta,Pct_Increased
+Baseline (Current),0.7643,9.11e-151,782,3.86,87.5
+Halved Risk Multipliers,0.7641,1.22e-150,782,3.85,87.5
+Doubled Risk Multipliers,0.7651,3.02e-151,782,3.85,87.1
+Uniform Risk (all = 2.0),0.7637,2.12e-150,782,3.81,86.6
+No Protective Multipliers,0.7636,2.40e-150,782,3.78,87.5
+Doubled Protective,0.7637,2.19e-150,782,3.93,87.5
+Random (seed=42),0.7637,2.13e-150,782,3.81,86.6

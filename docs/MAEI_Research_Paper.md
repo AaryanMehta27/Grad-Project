@@ -9,7 +9,7 @@
 
 This paper introduces the Modern AI Exposure Index (MAEI), a scenario-based structural index designed to measure the degree to which an occupation's core activities overlap with the capabilities of modern Generative Artificial Intelligence (GenAI). Unlike previous waves of automation that centered on manual, routine, and physically repetitive labor—often displacing blue-collar workers—modern Large Language Models (LLMs) and deep learning systems target cognitive, analytical, and communicative domains traditionally insulated from technological displacement. 
 
-To quantify this paradigm shift, I synthesized historical automation risk probabilities from Frey & Osborne (2013) with current occupational characteristics from the O*NET database (v28.3). By employing natural language processing (TF-IDF and SVD) to extract latent tasks from text, and machine learning (XGBoost) to model risk, I reverse-engineered the 2013 structural relationship between human skills and automation probability. I then forcefully perturbed this baseline model using literature-calibrated capability multipliers to reflect the explosive capabilities of 2026 AI. Acknowledging the inherent uncertainty of technological forecasting, I implemented a 100-iteration Monte Carlo simulation to bound these calibrated assumptions with mathematical error margins ($\pm 10\% \sigma$). Finally, I validated the MAEI against crowdsourced economic datasets (Felten et al., 2021), proving that while the "Anchored" MAEI mathematically visualizes the automation paradigm shift via an inverse correlation ($\rho = -0.394$), the "Pure" 2026 structural calculation converges with independent modern exposure estimates ($\rho = 0.585$). The result is a highly robust, interpretable map of the evolving American workforce.
+To quantify this paradigm shift, I synthesized historical automation risk probabilities from Frey & Osborne (2013) with current occupational characteristics from the O*NET database (v30.1). By employing natural language processing (BERT embeddings compressed via PCA) to extract latent semantic features from task descriptions, and machine learning (a Stacked Ensemble of XGBoost, Random Forest, and SVR) to model risk, I reverse-engineered the 2013 structural relationship between human skills and automation probability. I then forcefully perturbed this baseline model using literature-calibrated capability multipliers to reflect the explosive capabilities of 2026 AI. Acknowledging the inherent uncertainty of technological forecasting, I implemented a 100-iteration Monte Carlo simulation to bound these calibrated assumptions with mathematical error margins ($\pm 10\% \sigma$). Finally, I validated the MAEI against crowdsourced economic datasets (Felten et al., 2021), proving that while the "Anchored" MAEI mathematically visualizes the automation paradigm shift via an inverse correlation ($\rho = -0.357$), the "Pure" 2026 structural calculation converges with independent modern exposure estimates ($\rho = 0.764$). The result is a highly robust, interpretable map of the evolving American workforce.
 
 ---
 
@@ -48,7 +48,7 @@ To build a rigorous index, I needed to ground every mathematical assumption in e
 
 ## 3. Data Strategy and Engineering (`01_data_preparation.py`)
 
-To execute this vision, I turned to **O\*NET (v28.3)**, the U.S. Department of Labor's incredibly granular database of occupational characteristics. The challenge was converting distinct subjective databases into a unified, mathematically viable matrix.
+To execute this vision, I turned to **O\*NET (v30.1)**, the U.S. Department of Labor's incredibly granular database of occupational characteristics. The challenge was converting distinct subjective databases into a unified, mathematically viable matrix.
 
 ### 3.1 Resolving Historical Data Corruption
 I downloaded six massive relational tables from O*NET: *Abilities, Skills, Knowledge, Work Activities, Work Context,* and *Interests*. These rate hundreds of variables (e.g., "Finger Dexterity", "Systems Analysis") on a 1-5 or 1-100 scale.
@@ -116,7 +116,7 @@ $$Uplift = (F_{exposed} \times W_{exposure}) - (F_{protected} \times W_{protecti
 *   $F_{exposed}$: The fraction of an occupation's assigned tasks mapped to high-AI growth features.
 *   $F_{protected}$: The fraction mapped to uniquely human physical/social features.
 
-I rigorously calibrated $W_{exposure}$ and $W_{protection}$. My final selected scenario of $W=10.0$ and $P=3.0$ resulted in a mean index increase of $+2.65$ points across 73.7% of all occupations. This represents a virtually perfect macroeconomic alignment with OpenAI's reported 80% theoretical exposure threshold, dynamically calculated from the ground up for every job rather than hardcoded.
+I rigorously calibrated $W_{exposure}$ and $W_{protection}$. My final selected scenario of $W=10.0$ and $P=3.0$ resulted in a mean index increase of $+3.86$ points across 87.5% of all occupations. This exceeds OpenAI's reported 80% theoretical exposure threshold, dynamically calculated from the ground up for every job rather than hardcoded.
 
 ### 5.3 Resolving the Group Average Flaw
 During this calculation phase, I encountered and fixed a major historical error in the F&O 2013 data. F&O lacked data for 93 complex occupations. For these 93, they simply assigned the "average" score of their broader occupational grouping (often giving vastly different jobs an identical, generic score of 77.24). 
@@ -145,12 +145,12 @@ I validated two distinct elements of the index:
 
 ### 7.1 The Paradigm Shift Inversion
 I cross-referenced the `MAEI_Anchored` score (which retains the historical baseline of the 2013 data + my 2026 adjustments) against the AIOE dataset. 
-*   **Result:** Spearman Rank Correlation $\rho = -0.394$ (A moderate *inverse* correlation).
+*   **Result:** Spearman Rank Correlation $\rho = -0.357$ (A moderate *inverse* correlation).
 *   **Interpretation:** This is exactly the mathematical signature of a paradigm shift. F&O labeled manual laborers at high risk. AIOE identifies high-wage cognitive laborers at high risk. Because the anchored MAEI still carries the historical mass of the 2013 economy, it negatively correlates with modern AI exposure metrics. This mathematically proves that the types of jobs at risk have completely inverted.
 
 ### 7.2 Pure 2026 Component Convergence
 I then ran a structural ablation study: I completely removed the 2013 F&O baseline, looking *only* at the "Pure" exposure score generated organically by my 2026 capability multipliers and the Uplift equation.
-*   **Result:** Spearman Rank Correlation $\rho = 0.585$ (A strong *positive* correlation).
+*   **Result:** Spearman Rank Correlation $\rho = 0.764$ (A strong *positive* correlation).
 *   **Interpretation:** When stripped of its historical 2013 anchor, my structural model rapidly convergences with Felten's independently crowdsourced AIOE metric. Despite using entirely distinct methodologies (XGBoost simulated scaling vs. crowdsourced human survey linkages), both arrive at highly correlated conclusions regarding which white-collar occupations are most exposed to modern AI.
 
 ### 7.3 Rank Stability
