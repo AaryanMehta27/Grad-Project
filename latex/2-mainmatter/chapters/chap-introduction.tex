@@ -1,0 +1,190 @@
+% ============================================================
+%  Chapter 1 -- Introduction
+% ============================================================
+\chapter{Introduction}
+\label{chap:introduction}
+
+% ------------------------------------------------------------
+\section{Background: The Automation Paradigm Shift}
+\label{sec:intro-background}
+% ------------------------------------------------------------
+
+For decades, the dominant fear about automation centered on robots replacing
+factory workers and routine physical labor.  The image of a mechanical arm
+welding car frames on an assembly line came to represent technological
+displacement.  When economists and computer scientists studied automation
+risk, they consistently found that blue-collar, repetitive, and physically
+demanding jobs were the most vulnerable.  This framing shaped public policy,
+workforce development programs, and popular anxiety for an entire generation.
+
+\citet{Frey_Osborne_2017} formalized this understanding in what became the
+most cited paper in automation economics.  They hand-labeled 70~occupations
+as automatable or not, then trained a Gaussian Process Classifier on O*NET
+occupational variables to predict automation probabilities for
+702~U.S.\ occupations.  Their central finding: 47\% of total
+U.S.\ employment fell into the ``high risk'' category, with automation
+probabilities above 70\%.  The jobs at greatest risk were those heavy in
+physical manipulation, routine data processing, and structured environments.
+They identified three ``engineering bottlenecks'' that protected occupations
+from automation: perception and manipulation (fine motor skills in
+unstructured environments), creative intelligence (producing novel ideas),
+and social intelligence (reading human emotions and negotiating).  In 2013,
+these bottlenecks seemed robust.
+
+Between 2022 and 2025, those bottlenecks began to crack.  Large language
+models like GPT-4 started producing legal briefs, writing software,
+summarizing medical literature, and generating marketing copy that was often
+indistinguishable from human-authored work.  GitHub Copilot accelerated
+developer productivity by 55\% in controlled experiments
+\citep{Peng_Kalliamvakou_2023}.  In a randomized trial at MIT, ChatGPT
+users completed mid-level professional writing tasks 37\% faster while
+producing higher-quality output \citep{Noy_Zhang_2023}.  The automation
+crosshairs shifted from the factory floor to the corporate office.  The jobs
+that \citet{Frey_Osborne_2017} had identified as ``safe'' (analytical,
+communicative, and cognitive roles) were suddenly the ones most exposed to AI
+capability.
+
+The metrics used to discuss automation risk are outdated.  Frey and Osborne's probabilities
+reflect 2013-era technology, a world before transformer architectures,
+before ChatGPT, and before AI could write poetry or pass the bar exam.
+Policymakers and workers still reference their findings, but the
+occupational landscape of risk has fundamentally inverted.  I needed a new
+metric, one that acknowledges the historical trajectory of automation while
+accurately measuring the present capability overhang of Generative~AI.
+
+In 2020, GPT-3
+demonstrated that scaling language models to 175~billion parameters produced
+emergent capabilities in writing, translation, and reasoning that
+researchers had not anticipated at smaller scales.  By November~2022,
+ChatGPT attracted 100~million users within two months, the fastest consumer
+technology adoption in history.  Within 18~months, GPT-4 passed the Uniform
+Bar Examination in the 90th percentile and scored competitively on Advanced
+Placement exams in biology, chemistry, and environmental science
+\citep{OpenAI_2023}.  Google, Meta, and Anthropic followed with comparable
+systems, confirming that the frontier was not a single company's achievement
+but a structural property of large transformer architectures trained on
+internet-scale data.
+
+The geographic scope of this dissertation covers the United States labor
+market, reflecting the data foundations I rely on: O*NET is a
+U.S.\ Department of Labor product covering U.S.\ occupational
+classifications, and \citet{Frey_Osborne_2017}'s original study analyzed
+U.S.\ employment data exclusively.  The structural insights about cognitive
+versus manual exposure may generalize to other high-income economies with
+similar occupational distributions, but I do not test that claim here.  The
+temporal scope spans from the 2013 baseline established by
+\citet{Frey_Osborne_2017} to a 2026 counterfactual scenario representing
+current GenAI capabilities.  I do not attempt to forecast capabilities
+beyond 2026, because the pace of AI development makes such projections
+unreliable.
+
+In the broader literature, economists describe a ``Third Wave'' of
+automation anxiety.  The First Wave (1960s--1970s) centered on mainframe
+computers displacing clerical workers.  The Second Wave (1990s--2010s)
+focused on industrial robots and outsourcing threatening manufacturing
+employment.  The Third Wave, beginning around 2022, targets the professional
+class (lawyers, accountants, programmers, writers, and analysts) whose
+educational credentials were previously considered reliable insulation
+against technological displacement.  The MAEI is designed to quantify this
+Third Wave with the same empirical rigor that \citet{Frey_Osborne_2017}
+applied to the Second.
+
+% ------------------------------------------------------------
+\section{Research Rationale, Scope, and Research Contributions}
+\label{sec:intro-rationale}
+% ------------------------------------------------------------
+
+A gap exists in the existing literature.  No published work
+combines all four of the following elements: (1)~an updated automation risk
+framework recalibrated from Frey and Osborne's original structure for modern
+AI capabilities, (2)~natural language processing on occupational task
+descriptions to extract semantic features, (3)~scenario-based capability
+multipliers with Monte Carlo uncertainty quantification, and (4)~external
+validation against an independently constructed AI exposure benchmark.
+Several papers address one or two of these elements in isolation.
+\citet{Felten_Raj_Seamans_2021} constructed an AI exposure index but used
+crowdsourced linkages rather than scenario modeling.
+\citet{Eloundou_Manning_2023} estimated LLM exposure breadth but did not
+build a reproducible occupation-level index.  \citet{Webb_2020} used NLP
+patent-matching but did not anchor to historical baselines.
+\citet{Anthropic_2026} measured observed AI usage patterns but relied on
+proprietary data that cannot be replicated academically.  The MAEI fills
+this gap by integrating all four elements into a single reproducible
+pipeline using only publicly available data.
+
+This dissertation makes three specific contributions to the field:
+
+\textbf{First}, I construct the MAEI itself: a reproducible structural index
+covering 1,016~U.S.\ occupations, built entirely from public O*NET data and
+validated against an independent benchmark.
+
+\textbf{Second}, I introduce a three-layer scoring architecture that
+honestly separates what the machine learning model contributes (structural
+validation) from what the scenario logic contributes (occupation rankings).
+This decomposition emerged from discovering that the ensemble's tree-based
+learners saturate on multiplied features, and rather than hiding this
+finding, I designed the architecture to acknowledge and account for it.
+
+\textbf{Third}, I provide empirical proof of structural stability through a
+seven-scenario multiplier ablation study demonstrating that the occupation
+rankings are invariant to specific multiplier values ($\rho$ range:
+0.7636--0.7651 across all scenarios).  This converts a potential weakness
+(subjective multiplier choice) into a demonstrated strength (structural
+stability).
+
+% ------------------------------------------------------------
+\section{Research Statement and Research Questions}
+\label{sec:intro-rqs}
+% ------------------------------------------------------------
+
+\textbf{Central Thesis:} The MAEI quantifies occupational overlap with
+Generative AI capabilities and shows that the
+occupational profile of automation risk has inverted since 2013, shifting
+from routine physical labor to cognitive, analytical, and communicative work.
+
+Three research questions guide this investigation:
+
+\textbf{RQ1:} Can a machine learning model trained on 2013 automation labels
+and modern O*NET features produce a structurally plausible baseline for
+measuring AI exposure?
+
+\textbf{RQ2:} Does a scenario-based perturbation of cognitive and analytical
+features generate an occupation ranking that converges with independently
+constructed AI exposure benchmarks?
+
+\textbf{RQ3:} How robust are the resulting rankings to changes in the
+underlying multiplier assumptions?
+
+% ------------------------------------------------------------
+\section{Scope and Clarification}
+\label{sec:intro-scope}
+% ------------------------------------------------------------
+
+Before proceeding, I want to clarify what the MAEI is and what it is not.
+The MAEI measures capability overlap, the degree to which an occupation's
+daily tasks map onto the current capabilities of Generative~AI.  A high MAEI
+score for ``Lawyer'' means that AI systems can now perform many tasks lawyers
+do daily (document review, case synthesis, contract drafting).  It does not
+mean that lawyers will be unemployed.  As \citet{Acemoglu_Restrepo_2018}
+have shown, the relationship between task automation and actual job
+displacement is mediated by economic adoption costs, regulatory friction,
+organizational inertia, and worker adaptability.  Anthropic's
+\citeyearpar{Anthropic_2026} recent empirical analysis found ``no systematic
+unemployment increase'' for workers in highly AI-exposed occupations, even
+though capability overlap is substantial.  The MAEI is a scenario-based
+structural index, not an econometric forecast of unemployment.
+
+% ------------------------------------------------------------
+\section{Chapter Outline}
+\label{sec:intro-outline}
+% ------------------------------------------------------------
+
+Chapter~2 reviews the theoretical and empirical literature underpinning this
+project, from \citet{Frey_Osborne_2017}'s foundational work through modern
+GenAI exposure research.  Chapter~3 describes the research methodology,
+including data engineering, NLP feature extraction, ensemble modeling, the
+three-layer MAEI architecture, and Monte Carlo uncertainty quantification.
+Chapter~4 presents the results, including baseline model performance,
+external validation, multiplier ablation, and the tree saturation analysis.
+Chapter~5 discusses limitations, proposes future research directions, and
+concludes.

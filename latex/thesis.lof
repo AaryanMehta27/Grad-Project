@@ -1,0 +1,21 @@
+{\bfseries Figure} \hfill {\bfseries Caption} \hfill {\bfseries Page}\par 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces PCA Cumulative Variance Explained. The gradual slope with no sharp elbow indicates that BERT embedding information is distributed broadly across many dimensions. The vertical line marks the 20-component retention point at 52.76\% variance.}}{18}{}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Actual vs.\ Predicted Automation Scores. The Stacked Ensemble achieves a test $R^2$ of 0.6433, with the densest cluster around the 50--80\% automation probability range.}}{20}{}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Residual Analysis. Model residuals show no systematic bias across the prediction range, supporting the structural validity of the ensemble approach.}}{21}{}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Feature Importance Rankings. Fluency of Ideas and Originality together account for over 40\% of the Stacked Ensemble's predictive power, confirming \citet {Frey_Osborne_2017}'s creative intelligence bottleneck.}}{26}{}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces MAEI Score Distribution. The exposure delta distribution shows a rightward shift, with 87.5\% of occupations experiencing increased AI exposure from their 2013 baseline.}}{27}{}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Occupation Exposure Heatmap by SOC Major Group. Office and Administrative Support (SOC 43), Business and Financial Operations (SOC 13), and Computer and Mathematical (SOC 15) occupations cluster at the highest exposure levels.}}{28}{}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Risk Tier Distribution. The bimodal pattern shows concentration at both extremes, with 265 occupations in the Very High tier and 219 in the Very Low tier.}}{28}{}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces External Validation. The pure MAEI exposure delta shows a strong positive Spearman correlation ($\rho = +0.764$) with \citet {Felten_Raj_Seamans_2021}'s independently constructed AIOE benchmark across 782 overlapping occupations.}}{30}{}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Multiplier Ablation Study. All seven scenarios produce AIOE correlations within the narrow range of 0.7636--0.7651, demonstrating structural invariance to multiplier specification.}}{32}{}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Tree Extrapolation Comparison. Ridge Regression shows extrapolation deltas spanning $-203$ to $+149$, while the Stacked Ensemble's tree-based components produce near-zero deltas (range: $-0.0$ to $+0.6$), confirming the saturation hypothesis.}}{34}{}%
+\addvspace {10\p@ }
+\def \@chapapp {\appendixname }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

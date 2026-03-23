@@ -1,0 +1,38 @@
+\documentclass[phd, smplmath]{flamedissertation}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{pdflscape}
+\usepackage{float}
+
+\dissertationDepartment      {School of Computing and Data Sciences}
+\dissertationAuthorName      {Aaryan Mehta}
+\dissertationDegree          {Bachelor of Science}
+\dissertationTitle           {The Modern AI Exposure Index (MAEI): A Structural Scenario Approach to Quantifying Occupational Overlap with Generative Artificial Intelligence}
+\dissertationMonth           {March}
+\dissertationYear            {2026}
+\dissertationCertificateDate {March 2026}
+\dissertationType            {Graduation Project}
+\dissertationGuides          {Professor Manoranjan Dash}
+
+\setupGlossaryAbbreviationsDefinitions
+
+\begin{document}
+  \prematter
+      \printCertificate
+  \begin{FrontMatter}
+      \printGlossaryAndAbbreviations
+  \end{FrontMatter}
+  \begin{MainMatter}
+      \input{2-mainmatter/chapters/chap-introduction}
+      \input{2-mainmatter/chapters/chap-literature}
+      \input{2-mainmatter/chapters/chap-methodology}
+      \input{2-mainmatter/chapters/chap-results}
+      \input{2-mainmatter/chapters/chap-conclusion}
+      \appendix
+      \input{2-mainmatter/appendices/appn-feature-multipliers}
+      \input{2-mainmatter/appendices/appn-occupation-index}
+  \end{MainMatter}
+  \begin{BackMatter}
+      \printBibliographyReferences{references}
+  \end{BackMatter}
+\end{document}

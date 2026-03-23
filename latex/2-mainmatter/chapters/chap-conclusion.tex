@@ -1,0 +1,166 @@
+% !TEX root = ../../main.tex
+%--------------------------------------------------------------
+%  Chapter 5 – Limitations, Future Directions, and Conclusion
+%--------------------------------------------------------------
+\chapter{Limitations, Future Directions, and Conclusion}
+\label{chap:conclusion}
+
+%--------------------------------------------------------------
+\section{Limitations}
+\label{sec:limitations}
+%--------------------------------------------------------------
+
+Every model has constraints, and they should be stated plainly.
+
+\textbf{Scenario Calibration vs.\ Empirical Estimation.}
+The MAEI is a structured counterfactual scenario, not an econometric estimation
+trained on observed labor market displacement.  Such data simply does not exist
+yet; federal employment statistics have not had time to capture the effects of
+technologies deployed only since 2023.  \citet{Anthropic_2026} found limited
+employment effects to date, suggesting the full labor market impact of GenAI may
+take years to materialize.  Until longitudinal displacement data becomes
+available, the MAEI remains a ``what-if'' structural model rather than a
+predictive one.
+
+\textbf{Circular Uplift Calibration.}
+The Broad Exposure Uplift weights ($W_{\text{exposure}} = 10$,
+$W_{\text{protection}} = 3$) were calibrated to approximately match
+\citet{Eloundou_Manning_2023}'s finding that 80\% of the workforce faces some
+LLM exposure.  The sensitivity analysis (Table~\ref{tab:sensitivity}) shows that
+all tested configurations produce qualitatively similar results
+(82.9\%--87.5\% of occupations affected), but the specific weight values are
+informed by the same literature that motivates the research question.  This
+circularity does not invalidate the rankings (which are stable across weight
+changes) but limits the ability to treat the absolute exposure magnitudes as
+independently derived.
+
+\textbf{Tree Saturation.}
+As documented in Section~\ref{sec:tree_saturation}, the Stacked Ensemble's
+tree-based components produce near-zero prediction deltas when features are
+multiplied beyond the training range.  The ML model validates feature selection
+and structural plausibility but does not drive the final occupation rankings.
+Future work could explore whether linear or kernel-based models that can
+extrapolate would produce more informative model-driven deltas, though the
+meaningfulness of extrapolating far beyond training distributions is itself
+debatable.
+
+\textbf{Shared O*NET Substrate.}
+Both the MAEI and \citet{Felten_Raj_Seamans_2021}'s AIOE dataset are constructed
+from O*NET occupational data.  While the measurement approaches differ
+substantially (scenario-based multipliers vs.\ crowdsourced AI-task linkages),
+the shared underlying data source means the $\rho = +0.764$ correlation may
+partially reflect the common O*NET structure rather than fully independent
+methodological convergence.
+
+\textbf{Ontological Ambiguity of ``Exposure.''}
+The MAEI measures capability overlap, not job loss.  As
+\citet{Acemoglu_Restrepo_2018} emphasize, the path from task automation to job
+displacement runs through economic adoption costs, regulatory barriers,
+organizational inertia, and worker adaptability.  A high MAEI score for
+``Lawyer'' means AI can perform many legal tasks; it does not predict how many
+lawyers will be employed five years from now.
+
+\textbf{O*NET Data Latency.}
+The O*NET database is updated on a rolling basis, and definitions for recently
+emerged occupations (for example, ``Prompt Engineer'' or ``AI Safety
+Researcher'') may not yet be captured in the current taxonomy.
+
+%--------------------------------------------------------------
+\section{Future Directions}
+\label{sec:future_directions}
+%--------------------------------------------------------------
+
+Three research extensions emerge from the MAEI framework:
+
+\textbf{Wage Shock Simulations.}
+By joining the MAEI with Bureau of Labor Statistics Occupational Employment and
+Wage Statistics (OEWS), researchers can calculate the total wage volume
+``exposed'' to AI capability overlap.  Rather than predicting absolute job loss,
+future simulations could model wage-compression scenarios: if GenAI increases
+productivity in high-MAEI roles by 30\%, how does the resulting supply shock of
+cognitive output depress median wages in those sectors?
+
+\textbf{The ``Human Premium.''}
+Isolating occupations with high protective feature scores (Originality, Therapy
+and Counseling, Social Perceptiveness) and regressing these against longitudinal
+wage data could empirically test whether demand for distinctly human skills is
+increasing.  If AI commoditizes cognitive output while human authenticity,
+empathy, and creative originality become scarcer, classic economic theory predicts
+that wages for these human-centric skills should rise, a measurable ``Human
+Premium.''
+
+\textbf{Labor Reallocation Networks.}
+Using cosine similarity between the O*NET feature vectors of high-MAEI and
+low-MAEI occupations, future work could construct reskilling pathway maps.  These
+algorithmic ``lifeboats'' would identify the most efficient transitions for
+workers in highly exposed cognitive roles to move into roles with strong human
+structural advantages, minimizing the retraining distance while maximizing the
+reduction in AI exposure.
+
+%--------------------------------------------------------------
+\section{Conclusion}
+\label{sec:conclusion}
+%--------------------------------------------------------------
+
+Revisiting the three research questions posed in
+Chapter~\ref{chap:introduction}, the evidence supports affirmative answers to
+each.  For RQ1 (structural plausibility), the Stacked Ensemble's cross-validated
+$R^2$ of 0.6794 and test $R^2$ of 0.6433 demonstrate that 2013 automation
+probabilities can be reliably predicted from modern O*NET features, and the
+feature importance hierarchy (Fluency of Ideas at 0.2177, Originality at 0.1919)
+confirms that the model learned \citet{Frey_Osborne_2017}'s theoretical
+bottleneck structure rather than statistical noise.  For RQ2 (convergence with
+external benchmarks), the Spearman correlation of $\rho = +0.764$
+($p < 10^{-150}$) between the pure exposure delta and
+\citet{Felten_Raj_Seamans_2021}'s independently constructed AIOE provides strong
+evidence of construct validity.  The dual-correlation signal ($\rho = -0.357$
+anchored, $\rho = +0.764$ pure delta) is a quantitative marker of the shift in risk profile.  For RQ3 (robustness to assumptions), the seven-scenario
+ablation study ($\rho$ range: 0.7636--0.7651) shows that
+occupation rankings are invariant to multiplier specification, converting a
+potential methodological vulnerability into a demonstrated structural strength.
+
+The Modern AI Exposure Index bridges the analytical gap between the
+robotics-focused automation anxiety of the 2010s and the cognitive-AI reality of
+the 2020s.  Through a five-stage computational pipeline (data engineering, NLP
+feature extraction, ensemble modeling, scenario-based perturbation, and external
+validation) I constructed a transparent, reproducible map of occupational
+exposure to Generative AI across 1,016 U.S.\ occupations.
+
+The external validation produced a dual-correlation signal: $\rho = +0.764$
+($p < 10^{-150}$) for the pure exposure delta against
+\citet{Felten_Raj_Seamans_2021}'s AIOE benchmark, and $\rho = -0.357$ for the
+historically anchored score.  Together, these correlations provide evidence
+of both construct validity and the structural inversion in automation risk: the
+same occupations rated as safe in 2013 are now rated as highly exposed to AI
+capability overlap.
+
+The seven-scenario multiplier ablation study ($\rho$ range: 0.7636--0.7651)
+proves that the occupation rankings are structurally stable, driven by the
+classification of features into risk and protective categories rather than by
+specific multiplier values.  The explicit decomposition of the pipeline into a
+three-layer architecture (where the ML model validates feature selection, the
+feature classification encodes domain knowledge, and the uplift formula generates
+rankings) makes the MAEI more interpretable and defensible than a monolithic
+machine learning approach.
+
+The MAEI does not claim to predict unemployment or forecast the economic
+trajectory of any specific occupation.  What it provides is a rigorous,
+parameter-bounded framework for understanding which occupations overlap most with
+current AI capabilities, how that profile compares to the historical baseline,
+and how stable those conclusions are across a wide range of assumptions.  As
+Generative AI continues to evolve, the MAEI's fully open-source pipeline can be
+recalibrated with updated multipliers, extended to new O*NET releases, and
+validated against emerging labor market data as it becomes available.
+
+In the broadest terms, this dissertation contributes to a growing body of
+evidence that the relationship between human labor and artificial intelligence is
+entering a fundamentally new phase.  The occupations that built the middle class
+of the 20th century (manufacturing, construction, transportation) were the
+primary targets of the Second Wave of automation.  The occupations that promised
+upward mobility in the 21st century (law, finance, programming, analysis) are now
+the primary targets of the Third Wave.  The MAEI does not predict how this
+transition will unfold, but it provides a structural map that policymakers,
+educators, and workers can use to navigate it.  Understanding which capabilities
+overlap most with AI is the essential first step toward building educational
+curricula, workforce development programs, and economic policies that prepare the
+labor force for a world where cognitive work is no longer exclusively human.

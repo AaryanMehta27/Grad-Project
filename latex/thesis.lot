@@ -1,0 +1,18 @@
+{\bfseries Table} \hfill {\bfseries Caption} \hfill {\bfseries Page}\par 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces Baseline Model Performance Comparison}}{19}{}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Sensitivity Analysis Across Uplift Weight Configurations}}{27}{}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Multiplier Ablation Results (7 Scenarios)}}{31}{}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Tree Extrapolation Delta Statistics by Model Architecture}}{32}{}%
+\addvspace {10\p@ }
+\def \@chapapp {\appendixname }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {A.1}{\ignorespaces Literature-Calibrated Feature Multipliers (2013 $\to $ 2026) --- Risk Features (34 features, multipliers $1.60\times $--$3.50\times $, 30th percentile gate)}}{44}{}%
+\contentsline {table}{\numberline {A.2}{\ignorespaces Literature-Calibrated Feature Multipliers (2013 $\to $ 2026) --- Protective Features (34 features, multipliers $1.02\times $--$1.10\times $, 85th percentile gate)}}{45}{}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {B.1}{\ignorespaces Complete MAEI Occupation Index --- all 923 scored occupations sorted by MAEI 2026 Score (descending).}}{47}{}%
+\addvspace {10\p@ }
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

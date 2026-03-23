@@ -1,0 +1,56 @@
+%% See 'tutorial.pdf'
+\documentclass
+    [phd,
+     smplmath]
+    {flamedissertation}
+
+\usepackage{multirow}
+
+\dissertationDepartment      {School of Computing and Data Sciences}
+\dissertationAuthorName      {Myfirstname Mylastname}
+\dissertationDateOfBirth     {Appropriate Datae}
+\dissertationDegree          {Your Degree Name}
+\dissertationTitle           {My Project Title}
+\dissertationMonth           {[Appropriate Month]}
+\dissertationYear            {[Appropriate Year]}
+\dissertationCertificateDate {[Appropriate Month Year]}
+\dissertationType            {Graduation Project}
+\dissertationGuides          {Dr. Firstname Lastname}
+% \dissertationCommitteeName   {Your Degree Name}
+% \dissertationImage           {tux.png}
+
+\setupGlossaryAbbreviationsDefinitions
+\begin{document}
+  \prematter
+      % \input 0-prematter/pre-quote
+      % \input 0-prematter/pre-dedication
+      \printCertificate
+      % \input 0-prematter/pre-list-of-publications
+%%
+%%
+%%
+  \begin{FrontMatter}
+      \printGlossaryAndAbbreviations
+      \printNotation
+  \end{FrontMatter}
+%%
+%%
+%%
+  \begin{MainMatter}
+      \input 2-mainmatter/chapters/chap-introduction
+      \input 2-mainmatter/chapters/chap-lists
+      \input 2-mainmatter/chapters/chap-maths
+      \input 2-mainmatter/chapters/chap-figures-tables
+
+      % \appendix
+      % \input 2-mainmatter/appendices/appn-general-notes
+  \end{MainMatter}
+%%
+%%
+%%
+  \begin{BackMatter}
+      \printBibliographyReferences{references.bib}
+      % \printCV
+      % \printCommittee
+  \end{BackMatter}
+\end{document}
