@@ -12,7 +12,7 @@ from pathlib import Path
 # PATH CONFIGURATION
 # ============================================================================
 
-BASE_PATH = Path("C:/Users/aarya/OneDrive/Desktop/Graduation_Project_Data/MAEI_Project/Grad-Project")
+BASE_PATH = Path(__file__).resolve().parent.parent
 ONET_PATH = BASE_PATH / "data" / "raw" / "db_30_1_text"
 FO_DATA_PATH = BASE_PATH / "data" / "raw" / "F&O" / "automation_data_by_state.csv"
 
