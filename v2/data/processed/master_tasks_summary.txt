@@ -1,0 +1,130 @@
+======================================================================
+Preprocessing Step 1 — Build Master Task File
+======================================================================
+Script: 01_build_master_file.py
+Project root: C:\Users\aarya\OneDrive\Desktop\Graduation_Project_Data\MAEI_Project\Grad-Project\v2
+Raw data: C:\Users\aarya\OneDrive\Desktop\Graduation_Project_Data\MAEI_Project\Grad-Project\v2\data\raw\onet
+Output: C:\Users\aarya\OneDrive\Desktop\Graduation_Project_Data\MAEI_Project\Grad-Project\v2\data\processed
+
+[Step 1] Loading Occupation Data.xlsx ...
+  Rows loaded: 1,016
+  Columns: ['O*NET-SOC Code', 'Title', 'Description']
+  After rename: ['onet_soc_code', 'occupation_title', 'occupation_description']
+
+[Step 2] Loading Task Statements.xlsx ...
+  Rows loaded: 18,796
+  Unique occupations with tasks: 923
+  Task Type breakdown:
+    Core: 13,643
+    Supplemental: 4,308
+    None: 845
+  Domain Source breakdown:
+    Incumbent: 13,193
+    Occupational Expert: 4,413
+    Analyst: 845
+    Analyst - Transition: 345
+
+[Step 3] Loading Task Ratings.xlsx ...
+  Rows loaded: 161,559
+  Scale breakdown:
+    FT: 125,657
+    IM: 17,951
+    RT: 17,951
+  Recommend Suppress = Y (total across scales): 940
+  IM rows extracted: 17,951
+    of which suppressed: 6
+  RT rows extracted: 17,951
+    of which suppressed: 74
+  FT scale NOT extracted (not used in primary index — see Section 1.4)
+
+[Step 4] Loading Occupation Level Metadata.xlsx ...
+  Rows loaded: 32,202
+  Distinct occupations with metadata: 878
+  Occupations with Total Completed Questionnaires: 878
+  Survey N range: 19 to 297
+  Survey N median: 63.0
+  Survey date range (chronological): 12/2004 to 08/2025
+  Survey year distribution:
+    2004: 1
+    2005: 2
+    2006: 3
+    2007: 4
+    2008: 9
+    2009: 1
+    2011: 4
+    2012: 13
+    2013: 17
+    2014: 28
+    2015: 58
+    2016: 51
+    2017: 55
+    2018: 54
+    2019: 79
+    2020: 81
+    2021: 93
+    2022: 77
+    2023: 90
+    2024: 80
+    2025: 78
+
+[Step 5] Merging all tables ...
+  Spine: 18,796 task rows
+  After merging Occupation Data: 18,796 rows, missing occupation info for 0
+  After merging IM ratings: 17,951 tasks have IM weights (845 do not)
+  After merging RT values: 17,951 tasks have RT values
+  After merging Occupation Metadata: missing N/Date for 969 task rows
+
+[Step 6] IM weight imputation ...
+  Imputation logic per Section 3.2 (corrected treatment):
+  - Tasks with their own IM rating: use as-is
+  - Tasks with no IM rating (analyst-coded): impute within-occupation mean IM,
+    excluding suppressed rows from the mean calculation
+  - Occupations with NO IM-rated tasks at all (29 occupations): fall back to
+    corpus-wide mean IM, flag occupation as weighting_mode='unweighted'
+
+  Within-occupation mean IM available for 894 occupations
+  Corpus-wide mean IM (excluding suppressed): 3.9945
+  Occupations with at least one IM-rated task: 894
+  Occupations with zero IM-rated tasks (require corpus-wide fallback): 29
+  Tasks requiring imputation: 845
+  Tasks imputed using within-occupation mean: 285
+  Tasks imputed using corpus-wide fallback: 560
+
+[Step 7] Setting weighting_mode flag per occupation ...
+  Occupations with no IM-rated tasks have weighting_mode='unweighted'
+  because every task receives the same imputed weight, making the
+  IM-weighted mean mathematically identical to a simple unweighted mean.
+
+  Occupations flagged 'unweighted': 29
+  Occupations flagged 'IM-weighted': 894
+
+[Step 8] Reordering columns and saving master file ...
+  Master file saved: C:\Users\aarya\OneDrive\Desktop\Graduation_Project_Data\MAEI_Project\Grad-Project\v2\data\processed\master_tasks.csv
+  Shape: 18,796 rows × 16 columns
+
+======================================================================
+FINAL SUMMARY
+======================================================================
+Total task rows: 18,796
+Unique occupations: 923
+Unique task IDs: 18,796
+
+IM weight status:
+  Original ratings (im_weight_imputed=N): 17,951
+  Imputed (im_weight_imputed=Y): 845
+  Suppressed (im_suppress=Y, will be excluded at aggregation): 6
+
+Weighting mode by occupation:
+  IM-weighted occupations: 894
+  Unweighted (no IM data): 29
+
+Task type distribution in final file:
+  Core: 13,643
+  Supplemental: 4,308
+  Unrated: 845
+
+Domain source distribution in final file:
+  Incumbent: 13,193
+  Occupational Expert: 4,413
+  Analyst: 845
+  Analyst - Transition: 345

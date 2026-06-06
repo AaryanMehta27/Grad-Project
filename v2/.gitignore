@@ -1,0 +1,23 @@
+# ── v2 ignore rules ───────────────────────────────────────────────
+# (the repo-root .gitignore already excludes *.docx, *.zip, *.log, __pycache__)
+
+# Raw O*NET data — large and publicly downloadable (onetcenter.org); not versioned.
+data/raw/
+
+# Run artefacts produced by 03_score_tasks.py — regenerable, and some are written
+# live during a run. The pipeline INPUT csvs (master_tasks*.csv, pilot_tasks.csv,
+# smoke_test_tasks.csv) are kept; only the OUTPUTS are ignored.
+data/processed/scored_*.csv
+data/processed/progress_*.jsonl
+data/processed/log_*.txt
+data/processed/archive/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS / OneDrive cruft
+desktop.ini
+**/desktop.ini
+.DS_Store
+Thumbs.db
