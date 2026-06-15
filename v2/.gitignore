@@ -21,3 +21,6 @@ desktop.ini
 **/desktop.ini
 .DS_Store
 Thumbs.db
+
+# Handoff staging (deliverable zip + duplicated data/source for Prof. Dash) — not source
+handoff/
