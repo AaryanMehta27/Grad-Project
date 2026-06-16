@@ -753,12 +753,13 @@ After scoring, the following columns are added:
 
 | Column | Description |
 |---|---|
-| `score_decomposability` | LLM rubric criterion 1 score (0/1/2) |
-| `score_information_sufficiency` | LLM rubric criterion 2 score (0/1/2) |
-| `score_output_verifiability` | LLM rubric criterion 3 score (0/1/2) |
-| `score_capability_match` | LLM rubric criterion 4 score (0/1/2) |
-| `composite_score` | Aggregated task-level composite per Section 3.2 |
-| `gated_by` | Which criterion(s) zero-gated the task; null if not gated |
+| `information_sufficiency_reasoning`, `information_sufficiency_score` | Criterion 1 (physical) — one-sentence reasoning + score (0/1/2) |
+| `objective_verifiability_reasoning`, `objective_verifiability_score` | Criterion 2 (objective vs. subjective success) — reasoning + score |
+| `contextual_independence_reasoning`, `contextual_independence_score` | Criterion 3 (social / tacit-knowledge) — reasoning + score |
+| `capability_match_what_works`, `capability_match_what_might_fail`, `capability_match_score` | Criterion 4 (current-model capability) — two reasoning fields + score |
+| `composite_score` | Design-Y task-level composite per Section 3.2 |
+| `gated_by` | Which gating criterion(s) zeroed the task (`information_sufficiency` / `capability_match`); null if PASS |
+| `content_round` | Which content-retry round produced the accepted parse (0 = first attempt) |
 | `flagged_artefact` | Y/N — flagged during post-scoring audit as interpretation artefact (excluded from index if Y) |
 | `claude_score_*` | Same four criterion scores from Claude 3.5 Sonnet, populated for the ~10% reliability sample |
 | `bert_embedding` | 768-dimensional sentence-BERT embedding of the task text (stored separately due to size) |
@@ -1676,6 +1677,24 @@ Prof. Dash executed the full run on the college key. It paused once at 81% (afte
 **Tier-2 validity re-confirmed against the published scores.** The κ/α analysis (`src/06_analyze_validation.py`) was re-run with the validation key refreshed from the final scores (the pool key is retained as `validation_sample_100_KEY_pool.csv`). The result is materially identical to the pool-based finding (9.9 / 5.28): composite Spearman ρ = 0.847 (Mukherjee) / 0.710 (Mehta), gate agreement 79–87%; pooled criterion κ 0.30 / 0.44; inter-rater agreement unchanged. The conclusion stands — the published composite index is human-corroborated; criterion-level caveats are as in Section 6.11. The third rater's workbook can be folded in at any time.
 
 **Status — the Generative AI Exposure Index (Part 1) is COMPLETE.** The published per-task index is `data/processed/scored_master_tasks_shuffled.csv` (18,796 rows, four criterion scores + Design-Y composite per task). Remaining work is downstream: occupation-level IM-weighted aggregation (Section 3.6), the external validation tiers (Eloundou convergent, Webb discriminant — Section 3.4), the Claude reliability sample (Tier 1), BERT reproducibility (Section 3.5), and then Part 2 (the PIAAC Adaptation-Capacity dimension and the two-dimensional vulnerability framework).
+
+### 9.12 Occupation-Level Index (Outputs A–C) and Criterion Dimensionality (Output D) (07 June 2026)
+
+With the per-task index complete, the corpus-internal analytical outputs of Section 3.6 were computed.
+
+**Outputs A–C — occupation-level exposure** (`src/07_aggregate_occupations.py` → `data/processed/occupation_exposure_index.csv`, 923 occupations). Exposure = IM-weighted mean of task composites (analyst-coded tasks carry the within-occupation mean IM; the 29 all-analyst occupations get an unweighted mean; the 6 `im_suppress = Y` tasks are excluded from weighting). Distribution: mean 0.320, median 0.277, SD 0.236, range 0–0.978 (no occupation is fully exposed).
+
+Face validity is strong and matches the task-based exposure literature (Eloundou, Felten):
+- **Most exposed:** Bookkeeping/Accounting/Auditing Clerks (0.978), Payroll & Timekeeping Clerks (0.917), Insurance Claims & Policy Processing Clerks (0.915), Data Entry Keyers (0.898), Logistics Analysts, Order Clerks, Medical Records Specialists, Correspondence Clerks — routine cognitive/clerical work.
+- **Least exposed (0.000):** Orderlies, Ophthalmic Lab Technicians, Packaging Machine Operators, Painters, Prosthodontists, Surgical Assistants, Stonemasons, Carpet/Floor Layers, Agricultural Equipment Operators — physical/embodied work.
+
+*Output B (dispersion):* highest within-occupation SD (~0.47) in mixed-profile occupations (Prepress Technicians, Gambling Cage Workers, Library Assistants, Printing Press Operators) — clerical tasks alongside physical ones; interfaces with Part 2 (an adaptive worker could specialise into the protected tasks). *Output C (barrier mix):* the dominant protective barrier is physical embodiment — IM-weighted mean share physically gated (IS = 0) = 0.555; capability-gated-while-digital is rare (0.005). Among non-gated tasks, mean Objective Verifiability 1.50/2 and Contextual Independence 1.32/2 modulate exposure down.
+
+*Robustness (Section 6.10):* recomputing exposure without the 845 analyst-imputed tasks gives Spearman ρ = **0.9995** with the full index (mean |Δ| 0.0016; only 10 occupations move > 0.05). The analyst-task imputation is empirically inconsequential — the strongest possible result for that assumption.
+
+**Output D — criterion dimensionality** (`src/08_dimensionality.py`). The redesign's separability goal is met relative to v3 (which collapsed at 0.95–0.99). Full-corpus Spearman: IS–CM 0.92 (the one-directional gate property — 95% of gated tasks fire both gates), IS–CtxI / CtxI–CM 0.68, OV largely independent (0.05–0.38). On the **PASS subset** (the honest test, where the criteria modulate): IS–CM falls to 0.12, and the one substantial pair is **OV–CtxI 0.75** — among digital tasks, subjective-success and relational/tacit dependence co-occur. PCA: full corpus PC1 = 64% (the gate factor), PC2 = 26% (OV); PASS subset spreads over three components (56 / 22 / 16%). Gate attribution: of 10,297 gated tasks, 9,777 fire both gates, 427 Information-Sufficiency-only (physical), 93 Capability-Match-only (digital but beyond capability); mean **3.16** criteria simultaneously 0 per gated task.
+
+*Honest reading (reported, not a model-selection trigger — Section 5.20):* the four criteria are **separable enough to be meaningful** (the v3 collapse is fixed; OV is independent; the IS–CM link is a structural gate property, not redundancy) but are **not four orthogonal dimensions** — effectively ~2–3 latent dimensions (a physical/capability gate, a verifiability axis, and a relational axis that partly shares variance with verifiability). Adopted consequences: (a) the binding-constraint decomposition (Output C) is reported with the caution that gated tasks fail a mean of 3.16 criteria simultaneously, so single-criterion gate attribution is approximate; (b) per-criterion reporting carries the OV–CtxI 0.75 caveat (and the Capability-Match human-agreement caveat, Section 6.11); (c) the structure is presented as a *finding about the shape of AI substitutability*, not a defect. This quantifies and subsumes the Section 6.6 limitation.
 
 ---
 
