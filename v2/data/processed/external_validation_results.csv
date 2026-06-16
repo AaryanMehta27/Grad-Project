@@ -1,0 +1,10 @@
+comparator,spearman_rho,n,tier
+Eloundou E1 (human-labelled),0.8582880881905104,923,Tier 3 convergent
+Eloundou E1 (model-labelled),0.9107950414623798,923,Tier 3 convergent
+Eloundou E2 with-tools (human),0.8725687369446008,923,Tier 3 convergent
+Brynjolfsson SML,-0.16206838374406207,750,Tier 5 mixed
+Felten AIOE,0.21402931691676738,750,reference
+Frey-Osborne computerisation,-0.2354499815763189,681,reference
+"Webb AI (patent, pre-LLM)",0.17643360818578083,750,Tier 6 discriminant
+Webb software,-0.17051965528772528,750,Tier 6 discriminant
+Webb robots,-0.6369179617497689,750,Tier 6 discriminant
