@@ -1,0 +1,101 @@
+task_id,occupation_title,task_text,information_sufficiency_score,objective_verifiability_score,contextual_independence_score,capability_match_score,composite_score,scoring_status
+12,Sales Managers,Visit franchised dealers to stimulate interest in establishment or expansion of leasing programs.,0,0,0,0,0.0,GATED
+226,Urban and Regional Planners,"Advise planning officials on project feasibility, cost-effectiveness, regulatory conformance, or possible alternatives.",2,1,1,1,0.625,PASS
+287,Art Directors,"Confer with creative, art, copywriting, or production department heads to discuss client requirements and presentation concepts and to coordinate creative activities.",0,0,0,0,0.0,GATED
+379,Physical Therapists,Teach physical therapy students or those in other health professions.,0,0,0,0,0.0,GATED
+552,Dental Assistants,Record treatment information in patient records.,2,2,2,2,1.0,PASS
+1106,Lodging Managers,"Assign duties to workers, and schedule shifts.",2,2,1,1,0.75,PASS
+1284,Computer User Support Specialists,"Install and perform minor repairs to hardware, software, or peripheral equipment, following design or installation specifications.",0,2,1,0,0.0,GATED
+1648,Curators,"Negotiate and authorize purchase, sale, exchange, or loan of collections.",2,0,0,1,0.375,PASS
+1710,Library Technicians,"Operate and maintain audio-visual equipment, such as projectors, tape recorders, and videocassette recorders.",0,2,0,0,0.0,GATED
+1780,Editors,"Verify facts, dates, and statistics, using standard reference sources.",2,2,2,1,0.875,PASS
+1972,Surgical Technologists,Maintain files and records of surgical procedures.,2,2,2,2,1.0,PASS
+2013,Physical Therapist Assistants,Secure patients into or onto therapy equipment.,0,2,0,0,0.0,GATED
+2025,Medical Assistants,Show patients to examination rooms and prepare them for the physician.,0,1,0,0,0.0,GATED
+2097,Bailiffs,Announce entrance of judge.,0,2,0,0,0.0,GATED
+2232,Bartenders,Serve snacks or food items to customers seated at the bar.,0,2,0,0,0.0,GATED
+2381,Recreation Workers,"Organize, lead, and promote interest in recreational activities, such as arts, crafts, sports, games, camping, and hobbies.",0,0,0,0,0.0,GATED
+2658,"Library Assistants, Clerical","Prepare, store, and retrieve classification and catalog information, lecture notes, or other information related to stored documents, using computers.",2,2,2,2,1.0,PASS
+2790,"Secretaries and Administrative Assistants, Except Legal, Medical, and Executive","Answer telephones and give information to callers, take messages, or transfer calls to appropriate individuals.",2,2,1,1,0.75,PASS
+2891,Electricians,"Perform physically demanding tasks, such as digging trenches to lay conduit or moving or lifting heavy objects.",0,2,2,0,0.0,GATED
+3025,"Maintenance and Repair Workers, General",Record type and cost of maintenance or repair work.,2,2,2,2,1.0,PASS
+3217,"Packers and Packagers, Hand",Load materials and products into package processing equipment.,0,2,2,0,0.0,GATED
+3234,Advertising and Promotions Managers,"Read trade journals and professional literature to stay informed on trends, innovations, and changes that affect media planning.",2,0,1,1,0.5,PASS
+3912,"Umpires, Referees, and Other Sports Officials",Inspect sporting equipment or examine participants to ensure compliance with event and safety regulations.,0,2,0,0,0.0,GATED
+4550,Tour Guides and Escorts,Select travel routes and sites to be visited based on knowledge of specific areas.,2,1,1,1,0.625,PASS
+5516,Political Scientists,"Disseminate research results through academic publications, written reports, or public presentations.",2,0,1,1,0.5,PASS
+5834,"Forestry and Conservation Science Teachers, Postsecondary","Maintain student attendance records, grades, and other required records.",2,2,2,2,1.0,PASS
+6213,"Criminal Justice and Law Enforcement Teachers, Postsecondary",Participate in campus and community events.,0,0,0,0,0.0,GATED
+6570,"Elementary School Teachers, Except Special Education","Select, store, order, issue, and inventory classroom equipment, materials, and supplies.",0,2,0,1,0.0,GATED
+7164,Bridge and Lock Tenders,Turn valves to increase or decrease water levels in locks.,0,2,0,0,0.0,GATED
+7166,Bridge and Lock Tenders,Raise drawbridges and observe passage of water traffic or lower drawbridges and raise automobile gates.,0,2,0,0,0.0,GATED
+7403,Computer Hardware Engineers,"Specify power supply requirements and configuration, drawing on system performance expectations and design specifications.",2,2,2,1,0.875,PASS
+7498,Range Managers,"Maintain soil stability and vegetation for non-grazing uses, such as wildlife habitats and outdoor recreation.",0,1,0,0,0.0,GATED
+8680,Self-Enrichment Teachers,Meet with other instructors to discuss individual students and their progress.,0,0,0,0,0.0,GATED
+9027,Soil and Plant Scientists,"Study soil characteristics to classify soils on the basis of factors such as geographic location, landscape position, or soil properties.",2,2,2,1,0.875,PASS
+9220,Health Education Specialists,Develop operational plans and policies necessary to achieve health education objectives and services.,2,1,1,1,0.625,PASS
+9512,First-Line Supervisors of Housekeeping and Janitorial Workers,"Direct activities for stopping the spread of infections in facilities, such as hospitals.",1,2,0,1,0.5,PASS
+9619,Costume Attendants,"Assign lockers to employees and maintain locker rooms, dressing rooms, wig rooms, or costume storage or laundry areas.",0,1,0,0,0.0,GATED
+9862,Operating Engineers and Other Construction Equipment Operators,"Connect hydraulic hoses, belts, mechanical linkages, or power takeoff shafts to tractors.",0,2,0,0,0.0,GATED
+10619,Airfield Operations Specialists,"Relay departure, arrival, delay, aircraft and airfield status, and other pertinent information to upline controlling agencies.",2,2,1,1,0.75,PASS
+11281,Correspondence Clerks,Ensure that money collected is properly recorded and secured.,2,2,2,1,0.875,PASS
+11598,Hazardous Materials Removal Workers,"Operate cranes to move or load baskets, casks, or canisters.",0,2,0,0,0.0,GATED
+11760,Security and Fire Alarm Systems Installers,"Mount and fasten control panels, door and window contacts, sensors, or video cameras, and attach electrical and telephone wiring to connect components.",0,2,0,0,0.0,GATED
+11778,"Control and Valve Installers and Repairers, Except Mechanical Door","Connect regulators to test stands, and turn screw adjustments until gauges indicate that inlet and outlet pressures meet specifications.",0,2,0,0,0.0,GATED
+11846,Telecommunications Line Installers and Repairers,"Travel to customers' premises to install, maintain, or repair audio and visual electronic reception equipment or accessories.",0,2,0,0,0.0,GATED
+12385,"Crushing, Grinding, and Polishing Machine Setters, Operators, and Tenders",Clean work areas.,0,2,2,0,0.0,GATED
+12497,"Inspectors, Testers, Sorters, Samplers, and Weighers","Interpret legal requirements, provide safety information, or recommend compliance procedures to contractors, craft workers, engineers, or property owners.",2,1,1,1,0.625,PASS
+12933,Biochemists and Biophysicists,"Develop or execute tests to detect diseases, genetic disorders, or other abnormalities.",0,2,0,1,0.0,GATED
+12986,"Directors, Religious Activities and Education",Analyze revenue and program cost data to determine budget priorities.,2,1,1,1,0.625,PASS
+13117,Tree Trimmers and Pruners,"Trim, top, and reshape trees to achieve attractive shapes or to remove low-hanging branches.",0,1,0,0,0.0,GATED
+13141,First-Line Supervisors of Personal Service Workers,Observe and evaluate workers' appearance and performance to ensure quality service and compliance with specifications.,0,0,0,0,0.0,GATED
+13218,Models,Report job completions to agencies and obtain information about future appointments.,2,2,2,2,1.0,PASS
+13294,"Office Machine Operators, Except Computer","Monitor machine operation, and make adjustments as necessary to ensure proper operation.",0,2,0,0,0.0,GATED
+13419,"Farmworkers, Farm, Ranch, and Aquacultural Animals","Herd livestock to pastures for grazing or to scales, trucks, or other enclosures.",0,2,0,0,0.0,GATED
+13491,Fallers,"Control the direction of a tree's fall by scoring cutting lines with axes, sawing undercuts along scored lines with chainsaws, knocking slabs from cuts with single-bit axes, and driving wedges.",0,2,0,0,0.0,GATED
+14413,Tire Builders,"Inspect worn tires for faults, cracks, cuts, and nail holes, and to determine if tires are suitable for retreading.",0,2,0,0,0.0,GATED
+15210,Environmental Engineers,"Design, or supervise the design of, systems, processes, or equipment for control, management, or remediation of water, air, or soil quality.",2,2,1,1,0.75,PASS
+15454,Biofuels Production Managers,"Supervise production employees in the manufacturing of biofuels, such as biodiesel or ethanol.",0,0,0,0,0.0,GATED
+15810,Wind Energy Operations Managers,"Provide technical support to wind field customers, employees, or subcontractors.",2,2,1,1,0.75,PASS
+15876,Logistics Engineers,"Analyze or interpret logistics data involving customer service, forecasting, procurement, manufacturing, inventory, transportation, or warehousing.",2,2,2,1,0.875,PASS
+15938,Customs Brokers,Maintain relationships with customs brokers in other ports to expedite clearing of cargo.,0,0,0,0,0.0,GATED
+16274,Clinical Data Managers,"Track the flow of work forms, including in-house data flow or electronic forms transfer.",2,2,2,2,1.0,PASS
+16377,Human Factors Engineers and Ergonomists,Estimate time or resource requirements for ergonomic or human factors research or development projects.,2,1,1,1,0.625,PASS
+16834,Geneticists,Evaluate genetic data by performing appropriate mathematical or statistical calculations and analyses.,2,2,2,1,0.875,PASS
+17580,Retail Loss Prevention Specialists,"Respond to critical incidents, such as catastrophic events, violent weather, or civil disorders.",0,0,0,0,0.0,GATED
+17760,Solar Photovoltaic Installers,"Select mechanical designs, installation equipment, or installation plans that conform to environmental, architectural, structural, site, and code requirements.",2,2,1,1,0.75,PASS
+18331,Critical Care Nurses,"Advocate for patients' and families' needs, or provide emotional support for patients and their families.",0,0,0,0,0.0,GATED
+18364,Nurse Anesthetists,"Prepare prescribed solutions and administer local, intravenous, spinal, or other anesthetics, following specified methods and procedures.",0,2,0,0,0.0,GATED
+18694,Home Health Aides,"Care for patients by changing bed linens, washing and ironing laundry, cleaning, or assisting with their personal care.",0,1,0,0,0.0,GATED
+18761,Childcare Workers,"Perform general administrative tasks, such as taking attendance, editing internal paperwork, and making phone calls.",1,1,1,1,0.5,PASS
+18776,"Library Assistants, Clerical","Repair books using mending tape, paste, and brushes or prepare books to be sent to a bindery for repair.",0,2,2,0,0.0,GATED
+18867,Human Resources Specialists,"Provide management with information or training related to interviewing, performance appraisals, counseling techniques, or documentation of performance issues.",2,1,1,1,0.625,PASS
+19266,Ophthalmic Medical Technologists,Conduct ocular motility tests to measure function of eye muscles.,0,2,0,0,0.0,GATED
+19453,Print Binding and Finishing Workers,Read work orders to determine instructions and specifications for machine set-up.,2,2,2,2,1.0,PASS
+19613,Transportation Engineers,"Design transportation systems or structures with sustainable materials or products, such as porous pavement or bioretention structures.",2,2,2,1,0.875,PASS
+19870,Hazardous Materials Removal Workers,Identify or separate waste products or materials for recycling or reuse.,0,2,0,0,0.0,GATED
+19975,Industrial Ecologists,"Perform analyses to determine how human behavior can affect, and be affected by, changes in the environment.",2,1,1,1,0.625,PASS
+20573,Cytogenetic Technologists,Archive case documentation and study materials as required by regulations and laws.,2,2,2,1,0.875,PASS
+20753,Merchandise Displayers and Window Trimmers,"Maintain props, products, or mannequins, inspecting them for imperfections, doing touch-ups, cleaning up after customers, or applying preservative coatings as necessary.",0,0,0,0,0.0,GATED
+21198,Bailiffs,"Provide assistance to the public, such as directions to court offices.",2,2,2,2,1.0,PASS
+21566,Appraisers and Assessors of Real Estate,Check building codes and zoning bylaws to determine any effects on the properties being appraised.,2,2,2,1,0.875,PASS
+21808,Blockchain Engineers,"Design and deploy blockchain design patterns to make transactions secure, transparent, and immutable.",2,2,1,1,0.75,PASS
+21883,"Health and Safety Engineers, Except Mining Safety Engineers and Inspectors",Design and build safety equipment.,1,2,1,1,0.625,PASS
+22089,Calibration Technologists and Technicians,"Attend conferences, workshops, or other training sessions to learn about new tools or methods.",0,0,0,0,0.0,GATED
+22110,Surveying and Mapping Technicians,Identify and compile database information to create requested maps.,2,2,2,1,0.875,PASS
+22130,Surveying and Mapping Technicians,"Search for section corners, property irons, or survey points.",0,2,0,0,0.0,GATED
+22136,Conservation Scientists,Visit areas affected by erosion problems to identify causes or determine solutions.,0,0,0,0,0.0,GATED
+22218,Clinical Neuropsychologists,"Identify and communicate risks associated with specific neurological surgical procedures, such as epilepsy surgery.",0,1,0,1,0.0,GATED
+22293,Hydrologic Technicians,"Answer technical questions from hydrologists, policymakers, or other customers developing water conservation plans.",2,2,1,1,0.75,PASS
+22749,"Orthopedic Surgeons, Except Pediatric","Direct and coordinate activities of nurses, assistants, specialists, residents, and other medical staff.",0,0,0,0,0.0,GATED
+22821,Radiologic Technologists and Technicians,Provide assistance in dressing or changing seriously ill or injured patients or patients with disabilities.,0,0,0,0,0.0,GATED
+22836,Medical Dosimetrists,"Create and transfer reference images and localization markers for treatment delivery, using image-guided radiation therapy.",2,2,1,1,0.75,PASS
+22942,First-Line Supervisors of Security Workers,Assign security personnel to posts or patrols.,2,2,1,1,0.75,PASS
+23051,Police and Sheriff's Patrol Officers,"Identify, pursue, and arrest suspects and perpetrators of criminal acts.",0,0,0,0,0.0,GATED
+23099,Fast Food and Counter Workers,"Communicate with customers regarding orders, comments, and complaints.",2,0,0,1,0.375,PASS
+23123,Fast Food and Counter Workers,"Deliver orders to kitchens, and pick up and serve food when it is ready.",0,2,0,0,0.0,GATED
+23450,Carpenters,"Apply shock-absorbing, sound-deadening, or decorative paneling to ceilings or walls.",0,2,0,0,0.0,GATED
+23653,"Coating, Painting, and Spraying Machine Setters, Operators, and Tenders",Buff and wax the finished paintwork.,0,2,0,0,0.0,GATED
+23690,"Molders, Shapers, and Casters, Except Metal and Plastic",Tap or tilt molds to ensure uniform distribution of materials.,0,2,0,0,0.0,GATED
+23761,Taxi Drivers,"Determine fares based on trip distances and times, using taximeters and fee schedules, and announce fares to passengers.",0,2,0,0,0.0,GATED
+23768,Taxi Drivers,"Provide passengers with assistance entering and exiting vehicles, and help them with any luggage.",0,2,0,0,0.0,GATED
