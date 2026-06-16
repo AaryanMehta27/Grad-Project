@@ -24,3 +24,4 @@ Thumbs.db
 
 # Handoff staging (deliverable zip + duplicated data/source for Prof. Dash) — not source
 handoff/
+bert_embeddings*.npy
