@@ -73,7 +73,7 @@ ch.push(new Paragraph({ children: [new TextRun({ text: "Pipeline validation, thr
 ch.push(spacer(500));
 ch.push(p([txt("Prepared for: ", { bold: true }), txt("Prof. Manoranjan Dash  ·  Dr. Shreya Mukherjee")], { align: AlignmentType.CENTER }));
 ch.push(p([txt("Prepared by: ", { bold: true }), txt("Aaryan Mehta — FLAME University")], { align: AlignmentType.CENTER }));
-ch.push(p([txt("Date: ", { bold: true }), txt("6 June 2026")], { align: AlignmentType.CENTER }));
+ch.push(p([txt("Date: ", { bold: true }), txt("16 June 2026")], { align: AlignmentType.CENTER }));
 ch.push(p([txt("Status: ", { bold: true }), txt("Scoring prompt locked at v3.2. Pilot passed. Awaiting go-ahead for the full run.", { bold: true, color: C.good })], { align: AlignmentType.CENTER }));
 
 // ============================ HOW TO READ ============================
@@ -256,7 +256,7 @@ ch.push(p([txt("We are ready to begin the full scoring run on your go-ahead.", {
 ch.push(spacer(200));
 ch.push(p([txt("Supporting detail for every point above — the exact reasoning excerpts, the full decision history, and the literature justifications — is in the project’s living methodology document and the prompt-change record, available on request.", { italics: true, color: C.muted })], { align: AlignmentType.LEFT }));
 ch.push(spacer(300));
-ch.push(new Paragraph({ children: [txt("Aaryan Mehta  ·  FLAME University  ·  6 June 2026", { italics: true, color: C.muted, size: 20 })], alignment: AlignmentType.CENTER }));
+ch.push(new Paragraph({ children: [txt("Aaryan Mehta  ·  FLAME University  ·  16 June 2026", { italics: true, color: C.muted, size: 20 })], alignment: AlignmentType.CENTER }));
 
 // ============================ DOC ============================
 const doc = new Document({

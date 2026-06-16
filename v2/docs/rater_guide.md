@@ -5,7 +5,7 @@
 **For:** Aaryan Mehta (researcher), Prof. Manoranjan Dash (supervisor), Dr. Shreya Mukherjee (supervisor)
 **Purpose:** independent task-level rating of 100 O*NET tasks for comparison against the LLM scores
 **Created:** 21 May 2026
-**Revised:** 06 June 2026 — rubric **v3.2**, and the construct, disambiguation rule, and four criterion definitions/anchors below are now **reproduced verbatim from the system prompt given to GPT-4o** (see the boxed note in §2). Earlier revisions paraphrased them; this version removes any wording difference so that human–model disagreement is genuine, not an artefact of different instructions.
+**Revised:** 16 June 2026 — rubric **v3.2**, and the construct, disambiguation rule, and four criterion definitions/anchors below are now **reproduced verbatim from the system prompt given to GPT-4o** (see the boxed note in §2). Earlier revisions paraphrased them; this version removes any wording difference so that human–model disagreement is genuine, not an artefact of different instructions.
 **Status:** Use as-is for the rating session. Any clarifications can be added in the margins; revisions to the guide itself trigger a new rating round.
 
 ---

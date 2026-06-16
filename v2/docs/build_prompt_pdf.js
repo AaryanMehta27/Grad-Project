@@ -60,7 +60,7 @@ const ch = [];
 ch.push(new Paragraph({ alignment: AlignmentType.CENTER, spacing: { before: 200, after: 60 }, children: [new TextRun({ text: "Exact LLM Prompt", font: F.head, size: 44, bold: true, color: C.primary })] }));
 ch.push(new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 200 }, children: [new TextRun({ text: "Generative AI Exposure Index — locked rubric v3.2", font: F.head, size: 24, italics: true, color: C.muted })] }));
 ch.push(p([txt("This document reproduces, verbatim, the exact system prompt and user message sent to GPT-4o for every one of the 18,796 task statements, together with the request configuration. It is generated directly from the project source files (", {}), txt("src/rubric_prompt.py", { font: F.mono, size: 20 }), txt(", ", {}), txt("src/03_score_tasks.py", { font: F.mono, size: 20 }), txt("), so it is guaranteed to match what the model actually receives. The same wording is reproduced in the Rater Guide so that the human validity raters and the model judge against identical instructions.", {})]));
-ch.push(p([txt("Aaryan Mehta · FLAME University · 6 June 2026", { italics: true, color: C.muted, size: 20 })], { align: AlignmentType.CENTER, before: 40, after: 120 }));
+ch.push(p([txt("Aaryan Mehta · FLAME University · 16 June 2026", { italics: true, color: C.muted, size: 20 })], { align: AlignmentType.CENTER, before: 40, after: 120 }));
 
 ch.push(h1("Request configuration"));
 ch.push(kvTable([

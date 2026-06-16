@@ -69,7 +69,7 @@ children.push(spacer(800));
 children.push(p([txt("For: ", { bold: true }), txt("Aaryan Mehta (researcher), Prof. Manoranjan Dash (supervisor), Dr. Shreya Mukherjee (supervisor)")]));
 children.push(p([txt("Purpose: ", { bold: true }), txt("independent task-level rating of 100 O*NET tasks for comparison against the LLM scores")]));
 children.push(p([txt("Created: ", { bold: true }), txt("21 May 2026")]));
-children.push(p([txt("Revised: ", { bold: true }), txt("06 June 2026 — rubric v3.2, with the construct, disambiguation rule, and all four criterion definitions and anchors reproduced verbatim from the system prompt given to GPT-4o, so raters and the model judge against identical wording.")]));
+children.push(p([txt("Revised: ", { bold: true }), txt("16 June 2026 — rubric v3.2, with the construct, disambiguation rule, and all four criterion definitions and anchors reproduced verbatim from the system prompt given to GPT-4o, so raters and the model judge against identical wording.")]));
 children.push(p([txt("Status: ", { bold: true }), txt("Use as-is for the rating session. Any clarifications can be added in the margins; revisions to the guide itself trigger a new rating round.")]));
 
 // 1. WHAT YOU ARE DOING
